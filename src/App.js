@@ -4,6 +4,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Card from "./Components/Card/Card";
 import Hero from "./Components/Hero/Hero";
+import Modal from "./Components/Modal/Modal";
 /**
  * //[x] Header component: A component that displays the header of the app, usually containing the logo and navigation links.
 
@@ -17,7 +18,7 @@ import Hero from "./Components/Hero/Hero";
 
 //[x] Form component: A component that displays a form for users to input data, typically used for user registration, login, or data submission.
 
-//[ ] Modal component: A component that displays a pop-up dialog, typically used to display additional information or to prompt the user for input.
+//[x] Modal component: A component that displays a pop-up dialog, typically used to display additional information or to prompt the user for input.
 
 //[ ] Popover component: A component that displays a small pop-up with additional information, typically used to display additional information when the user hovers over an item.
 
@@ -36,7 +37,7 @@ function App() {
 		<>
 			{/*
        <Navigation /> 
-       //[ ] need to implement Routing before the nav works
+       // TODO need to implement Routing before the nav works
         */}
 
 			{/* /**
@@ -53,6 +54,14 @@ function App() {
 				backgroundImage={heroBackgroundImage}
 			/>
 			<Header>Header Title</Header>
+			{/*
+			 * Component that displays a modal with header, body, and footer
+			 * @function
+			 * @param {string} header - Header of the modal
+			 * @param {string} body - Body of the modal
+			 * @returns {JSX.Element}
+			 */}
+			<Modal header={"modal header"} body={"modal body"} />
 			<Card
 				image={
 					"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg"
