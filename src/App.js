@@ -2,6 +2,7 @@ import "./App.css";
 import ContactForm from "./Components/Form/ContactForm";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import Card from "./Components/Card/Card";
 /**
  * //[x] Header component: A component that displays the header of the app, usually containing the logo and navigation links.
 
@@ -21,12 +22,26 @@ import Header from "./Components/Header/Header";
 
 //[ ] Loader component: A component that displays an animation indicating that data is being loaded or processed, typically used to indicate that the app is working on a background task.
  */
+let cardTitle = "new album";
+let cardDescription =
+	"this is a description for the card. Eventually we will be fetching this information from a server";
 
 function App() {
 	return (
 		<>
-			{/* <Navigation />  //[ ] need to implement Routing before the nav works */}
+			{/*
+       <Navigation /> 
+       //[ ] need to implement Routing before the nav works
+        */}
+
 			<Header>Header Title</Header>
+			<Card
+				image={
+					"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg"
+				}
+				title={cardTitle}
+				description={cardDescription}
+			/>
 			<ContactForm />
 			<Footer />
 		</>
