@@ -31,6 +31,18 @@ const ContactForm = () => {
 	};
 
 	/**
+	 * Resets the form data to its initial state.
+	 */
+	const resetFormData = () => {
+		setFormData({
+			name: "",
+			email: "",
+			messageType: "",
+			message: "",
+		});
+	};
+
+	/**
 	 * Handles the form submit event.
 	 *
 	 * @param {React.FormEvent<HTMLFormElement>} event The form submit event.
@@ -41,10 +53,13 @@ const ContactForm = () => {
 		// Log the form data to the console for demonstration purposes
 		console.log("Form Data:", formData);
 		// Perform some action with the form data, such as sending an API request
+
+		// Reset the form data to default once the form has been submitted
+		resetFormData();
 	};
 
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit} className="form-container">
 			<div>
 				<label htmlFor="name">Name:</label>
 				<input
@@ -53,6 +68,7 @@ const ContactForm = () => {
 					name="name"
 					value={formData.name}
 					onChange={handleInputChange}
+					required
 				/>
 			</div>
 			<div>
@@ -63,6 +79,7 @@ const ContactForm = () => {
 					name="email"
 					value={formData.email}
 					onChange={handleInputChange}
+					required
 				/>
 			</div>
 			<div>
@@ -74,6 +91,7 @@ const ContactForm = () => {
 						value="feedback"
 						checked={formData.messageType === "feedback"}
 						onChange={handleInputChange}
+						required
 					/>
 					Feedback
 				</label>
@@ -84,6 +102,7 @@ const ContactForm = () => {
 						value="suggestion"
 						checked={formData.messageType === "suggestion"}
 						onChange={handleInputChange}
+						required
 					/>
 					Suggestion
 				</label>
@@ -94,6 +113,7 @@ const ContactForm = () => {
 						value="question"
 						checked={formData.messageType === "question"}
 						onChange={handleInputChange}
+						required
 					/>
 					Question
 				</label>
@@ -105,6 +125,7 @@ const ContactForm = () => {
 					name="message"
 					value={formData.message}
 					onChange={handleInputChange}
+					required
 				/>
 			</div>
 			<button type="submit">Submit</button>
