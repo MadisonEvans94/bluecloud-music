@@ -3,6 +3,7 @@ import ContactForm from "./Components/Form/ContactForm";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Card from "./Components/Card/Card";
+import Hero from "./Components/Hero/Hero";
 /**
  * //[x] Header component: A component that displays the header of the app, usually containing the logo and navigation links.
 
@@ -10,9 +11,9 @@ import Card from "./Components/Card/Card";
 
 //[x] Footer component: A component that displays the footer of the app, usually containing copyright information, links to the company's social media profiles, and other relevant information.
 
-//[ ] Hero component: A component that displays a large banner image or video, with text or other elements overlaid on top, usually used to promote the app's main features or values.
+//[x] Hero component: A component that displays a large banner image or video, with text or other elements overlaid on top, usually used to promote the app's main features or values.
 
-//[ ] Card component: A component that displays a compact representation of an item or content, usually used to display a list of items in a grid or other layout.
+//[x] Card component: A component that displays a compact representation of an item or content, usually used to display a list of items in a grid or other layout.
 
 //[x] Form component: A component that displays a form for users to input data, typically used for user registration, login, or data submission.
 
@@ -26,6 +27,10 @@ let cardTitle = "new album";
 let cardDescription =
 	"this is a description for the card. Eventually we will be fetching this information from a server";
 
+let heroTitle = "hero";
+let heroSubtitle = "this is the subtitle for the hero";
+let heroBackgroundImage =
+	"https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 function App() {
 	return (
 		<>
@@ -34,6 +39,19 @@ function App() {
        //[ ] need to implement Routing before the nav works
         */}
 
+			{/* /**
+			 * Component that displays a hero section with title and subtitle
+			 * @function
+			 * @param {string} title - Title of the hero
+			 * @param {string} subtitle - Subtitle of the hero
+			 * @param {string} backgroundImage - URL of the background image
+			 * @returns {JSX.Element}
+			 */}
+			<Hero
+				title={heroTitle}
+				subtitle={heroSubtitle}
+				backgroundImage={heroBackgroundImage}
+			/>
 			<Header>Header Title</Header>
 			<Card
 				image={
