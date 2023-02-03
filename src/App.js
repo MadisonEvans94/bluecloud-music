@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header";
 import Card from "./Components/Card/Card";
 import Hero from "./Components/Hero/Hero";
 import Modal from "./Components/Modal/Modal";
+import Popover from "./Components/Popover/Popover";
 /**
  * //[x] Header component: A component that displays the header of the app, usually containing the logo and navigation links.
 
@@ -24,6 +25,7 @@ import Modal from "./Components/Modal/Modal";
 
 //[ ] Loader component: A component that displays an animation indicating that data is being loaded or processed, typically used to indicate that the app is working on a background task.
  */
+
 let cardTitle = "new album";
 let cardDescription =
 	"this is a description for the card. Eventually we will be fetching this information from a server";
@@ -62,13 +64,19 @@ function App() {
 			 * @returns {JSX.Element}
 			 */}
 			<Modal header={"modal header"} body={"modal body"} />
-			<Card
-				image={
-					"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg"
-				}
-				title={cardTitle}
-				description={cardDescription}
-			/>
+			<Popover
+				content={
+					"this is an album cover. And a working implementation of the Popover Component"
+				}>
+				<Card
+					image={
+						"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg"
+					}
+					title={cardTitle}
+					description={cardDescription}
+				/>
+			</Popover>
+
 			<ContactForm />
 			<Footer />
 		</>

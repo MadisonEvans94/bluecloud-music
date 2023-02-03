@@ -5,8 +5,10 @@ import styled from "styled-components";
  * Styled component for the card container
  */
 const CardContainer = styled.div`
-	width: 300px;
-	height: 400px;
+	position: relative;
+
+	max-width: 20rem;
+	height: fit-content;
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +21,7 @@ const CardContainer = styled.div`
  */
 const CardImage = styled.img`
 	width: 100%;
-	height: 200px;
+	height: auto;
 	object-fit: cover;
 `;
 
