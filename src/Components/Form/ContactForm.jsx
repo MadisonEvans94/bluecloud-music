@@ -83,18 +83,8 @@ const ContactForm = () => {
 				/>
 			</div>
 			<div>
-				<label>
-					Message Type:
-					<input
-						type="radio"
-						name="messageType"
-						value="feedback"
-						checked={formData.messageType === "feedback"}
-						onChange={handleInputChange}
-						required
-					/>
-					Feedback
-				</label>
+				<label>Message Type</label>
+
 				<label>
 					<input
 						type="radio"

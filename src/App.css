@@ -1,9 +1,22 @@
 .form-container {
 	display: flex;
 	flex-direction: column;
-	max-width: 600px;
-}
-.form-container form {
 	display: flex;
 	flex-direction: column;
+	background-color: gray;
+	align-items: flex-start;
+	width: fit-content;
+	padding: 1rem;
+	border-radius: 6px;
+}
+.form-container > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-container div * {
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+	border-style: none;
 }
