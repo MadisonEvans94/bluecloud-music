@@ -1,9 +1,9 @@
 import "./App.css";
 import ContactForm from "./Components/Form/ContactForm";
 import Footer from "./Components/Footer/Footer";
-
+import Header from "./Components/Header/Header";
 /**
- * //[ ]Header component: A component that displays the header of the app, usually containing the logo and navigation links.
+ * //[x] Header component: A component that displays the header of the app, usually containing the logo and navigation links.
 
 //[ ] Navigation component: A component that displays the navigation menu, allowing users to navigate between different pages or sections of the app.
 
@@ -25,6 +25,8 @@ import Footer from "./Components/Footer/Footer";
 function App() {
 	return (
 		<>
+			{/* <Navigation />  //[ ] need to implement Routing before the nav works */}
+			<Header>Header Title</Header>
 			<ContactForm />
 			<Footer />
 		</>
