@@ -1,87 +1,100 @@
 import React from "react";
+import customFont from "../../assets/Ahoire Font/Ahoire.ttf";
 import styled from "styled-components";
-import { useEffect, useState } from "react";
 
-/**
- * Styled component for the card container
- */
-const CardContainer = styled.div`
-	position: relative;
-
-	max-width: 20rem;
-	height: fit-content;
-	background-color: white;
-	border-radius: 10px;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	margin: 20px auto;
+const ProductCardContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	justify-self: center;
 `;
-
 /**
- * Styled component for the card image
+ * A styled component for the ImageContainer
  */
-const CardImage = styled.img`
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-`;
-
-/**
- * Styled component for the card title
- */
-const CardTitle = styled.h2`
-	font-size: 22px;
-	font-weight: bold;
+const ImageContainer = styled.div`
+	background-image: url(${(props) => props.backgroundImg});
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	margin: 20px;
-	text-align: center;
 `;
 
 /**
- * Styled component for the card description
+ * A styled component for the title
  */
-const CardDescription = styled.p`
-	font-size: 16px;
-	margin: 20px;
-	text-align: justify;
-`;
+const Title = styled.h2`
+	font-family: "Custom Font", sans-serif;
 
-/**
- * Component that displays a card with image, title, and description
- * @function
- * @param {string} image - URL of the image to display
- * @param {string} title - Title of the card
- * @param {string} description - Description of the card
- * @returns {JSX.Element}
- */
-const Card = ({ id }) => {
-	const [cardInfo, setCardInfo] = useState({
-		imageUrl: "",
-		title: "",
-		description: "",
-	});
-	function updateCard(obj) {
-		setCardInfo({
-			imageUrl: obj.imageUrl,
-			title: obj.title,
-			description: obj.description,
-		});
+	@font-face {
+		font-family: "Custom Font";
+		src: url(${customFont}) format("truetype");
+		font-weight: normal;
+		font-style: normal;
 	}
-	useEffect(() => {
-		//[ ] write functionality that sends GET request to server
-		fetch(`http://localhost:3000/products/#${id}`)
-			.then((response) => response.json())
-			.then((obj) => {
-				updateCard(obj[id - 1]);
-			})
-			.catch((error) => console.log(error));
-	}, []);
-	return (
-		<CardContainer>
-			<CardImage src={cardInfo.imageUrl} alt={cardInfo.title} />
-			<CardTitle>{cardInfo.title}</CardTitle>
-			<CardDescription>{cardInfo.description}</CardDescription>
-		</CardContainer>
-	);
-};
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 10px;
+`;
 
-export default Card;
+/**
+ * A styled component for the description
+ */
+const Description = styled.p`
+	color: white;
+	font-size: 16px;
+	margin-bottom: 10px;
+`;
+
+/**
+ * A styled component for the price
+ */
+const Price = styled.p`
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+`;
+
+/**
+ * A card component that displays a background image, title, description, and price
+ *
+ * @param {string} backgroundImg - The URL of the background image
+ * @param {string} title - The title to be displayed
+ * @param {string} description - The description to be displayed
+ * @param {string} price - The price to be displayed
+ */
+const ProductCard = ({ backgroundImg, title, description, price }) => (
+	<>
+		<ProductCardContainer>
+			<div
+				style={{
+					margin: "1rem 1rem 1rem 1rem",
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "space-between",
+					alignItems: "space-between",
+					width: "40%",
+				}}>
+				<Title>{title}</Title>
+				<hr
+					style={{
+						color: "white",
+						border: "none",
+						backgroundColor: "white",
+						width: "100%",
+						height: "1px",
+					}}
+				/>
+				<Description>{description}</Description>
+				<Price>{price}</Price>
+			</div>
+			<ImageContainer backgroundImg={backgroundImg}></ImageContainer>
+		</ProductCardContainer>
+	</>
+);
+
+export default ProductCard;

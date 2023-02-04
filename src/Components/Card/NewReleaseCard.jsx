@@ -74,7 +74,7 @@ const Card = ({ id }) => {
 				updateCard(obj[id - 1]);
 			})
 			.catch((error) => console.log(error));
-	}, []);
+	});
 	return (
 		<CardContainer>
 			<CardImage src={cardInfo.imageUrl} alt={cardInfo.title} />
