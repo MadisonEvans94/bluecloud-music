@@ -1,12 +1,14 @@
 import React from "react";
+import { useState } from "react";
 
-const ItemCounter = () => {
+const AddToBasketButton = () => {
+	//TODO future iterations will not use qty, since this doesn't make since for a sample pack
+	const [qty, setQty] = useState(0);
 	function handleClick(e) {
 		if (e.target.textContent === "+") {
-			console.log("add");
+			setQty(qty + 1);
 		}
 		if (e.target.textContent === "-") {
-			console.log("remove");
 		}
 	}
 	return (
@@ -31,7 +33,7 @@ const ItemCounter = () => {
 						onClick={(e) => handleClick(e)}>
 						-
 					</div>
-					<div style={{ marginBlock: "auto" }}>6</div>
+					<div style={{ marginBlock: "auto" }}>{qty}</div>
 					<div
 						style={{
 							margin: "0 .25rem",
@@ -47,4 +49,4 @@ const ItemCounter = () => {
 	);
 };
 
-export default ItemCounter;
+export default AddToBasketButton;

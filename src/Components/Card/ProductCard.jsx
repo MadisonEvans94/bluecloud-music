@@ -1,6 +1,6 @@
 import React from "react";
 import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
-import ItemCounter from "../Utility/ItemCounter";
+import AddToBasketButton from "../Utility/AddToBasketButton";
 import styled from "styled-components";
 
 const ProductCardContainer = styled.div`
@@ -98,7 +98,7 @@ const ProductCard = ({ backgroundImg, title, description, price }) => (
 				<Price>{price}</Price>
 
 				{/* TODO create a separate component for adding items to basket. "ItemCounter" */}
-				<ItemCounter />
+				<AddToBasketButton />
 			</div>
 			<ImageContainer backgroundImg={backgroundImg}></ImageContainer>
 		</ProductCardContainer>
