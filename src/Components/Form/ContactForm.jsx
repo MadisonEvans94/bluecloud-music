@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-//TODO: create a form component that is organized as grid. 2/3 is input and 1/3 is contact details, location, and social links
 const FormContainer = styled.form`
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 	height: min(40rem, 100%);
-	background-color: pink;
+
 	padding: 1rem;
 `;
 const FormInput = styled.form`
 	grid-rea: 1 / 1 / 2 / 3;
 	width: 100%;
-	background-color: yellow;
 `;
 const ContactInfo = styled.form`
 	grid-rea: 1 / 3 / 2 / 4;
@@ -51,7 +49,8 @@ const ContactForm = () => {
 	return (
 		<FormContainer onSubmit={handleSubmit}>
 			<FormInput>
-				<div>
+				{/* //TODO name input  */}
+				<div style={{ display: "flex", flexDirection: "column" }}>
 					<label htmlFor="name">Name:</label>
 					<input
 						type="text"
@@ -62,7 +61,8 @@ const ContactForm = () => {
 						required
 					/>
 				</div>
-				<div>
+				{/* //TODO email input */}
+				<div style={{ display: "flex", flexDirection: "column" }}>
 					<label htmlFor="email">Email:</label>
 					<input
 						type="email"
@@ -73,33 +73,8 @@ const ContactForm = () => {
 						required
 					/>
 				</div>
-				<div>
-					<label>Message Type</label>
-
-					<label>
-						<input
-							type="radio"
-							name="messageType"
-							value="suggestion"
-							checked={formData.messageType === "suggestion"}
-							onChange={handleInputChange}
-							required
-						/>
-						Suggestion
-					</label>
-					<label>
-						<input
-							type="radio"
-							name="messageType"
-							value="question"
-							checked={formData.messageType === "question"}
-							onChange={handleInputChange}
-							required
-						/>
-						Question
-					</label>
-				</div>
-				<div>
+				{/* //TODO Message Content  */}
+				<div style={{ display: "flex", flexDirection: "column" }}>
 					<label htmlFor="message">Message:</label>
 					<textarea
 						id="message"
@@ -112,7 +87,6 @@ const ContactForm = () => {
 				<button type="submit">Submit</button>
 			</FormInput>
 			<ContactInfo>
-				<h2 style={{ backgroundColor: "white" }}>contact details</h2>
 				<h2>contact details</h2>
 				<h2>contact details</h2>
 			</ContactInfo>
