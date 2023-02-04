@@ -17,6 +17,7 @@ const Home = () => {
 	const description =
 		"Introducing a new music sample pack for producers and beat-makers. This pack offers a diverse collection of high-quality samples, including drums, synths, basslines, and more. Suitable for various genres, elevate your productions with this must-have pack. Get your copy now!";
 	const price = "$30";
+
 	return (
 		<>
 			<div

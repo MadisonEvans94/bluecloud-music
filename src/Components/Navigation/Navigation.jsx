@@ -9,12 +9,23 @@ import styled from "styled-components";
  */
 const Navigation = () => {
 	return (
-		<NavContainer>
-			<NavLink to="/">Home</NavLink>
-			<NavLink to="/about">About</NavLink>
-			<NavLink to="/services">Services</NavLink>
-			<NavLink to="/contact">Contact</NavLink>
-		</NavContainer>
+		<>
+			<NavContainer>
+				<NavLink to="/">Home</NavLink>
+				<NavLink to="/music">Music</NavLink>
+				<NavLink to="/contact">Contact</NavLink>
+				<NavLink to="/checkout">Checkout</NavLink>
+			</NavContainer>
+			<hr
+				style={{
+					color: "white",
+					border: "none",
+					backgroundColor: "white",
+					width: "100%",
+					height: "1px",
+				}}
+			/>
+		</>
 	);
 };
 
@@ -28,8 +39,7 @@ const NavContainer = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
-	background-color: #333;
+	padding: 1rem 6rem;
 	color: #fff;
 `;
 
