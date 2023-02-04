@@ -1,65 +1,12 @@
 import "./App.css";
-import ContactForm from "./Components/Form/ContactForm";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Card from "./Components/Card/Card";
-import Hero from "./Components/Hero/Hero";
-import Modal from "./Components/Modal/Modal";
-import Popover from "./Components/Popover/Popover";
 
 //[x] create db.json and test it
 //[x] add the card info and hero info to the db.json
 
-//TODO: connect the Hero component to the db.json
-//[ ] add Hero info by fetching from db.json
-
-let heroTitle = "hero";
-let heroSubtitle = "this is the subtitle for the hero";
-let heroBackgroundImage =
-	"https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+//[ ] Set up Browser Router and pages
 
 function App() {
-	return (
-		<>
-			{/*
-       <Navigation /> 
-       // TODO need to implement Routing before the nav works
-        */}
-
-			{/* /**
-			 * Component that displays a hero section with title and subtitle
-			 * @function
-			 * @param {string} title - Title of the hero
-			 * @param {string} subtitle - Subtitle of the hero
-			 * @param {string} backgroundImage - URL of the background image
-			 * @returns {JSX.Element}
-			 */}
-			<Hero
-				title={heroTitle}
-				subtitle={heroSubtitle}
-				backgroundImage={heroBackgroundImage}
-			/>
-			<Header>Header Title</Header>
-			{/*
-			 * Component that displays a modal with header, body, and footer
-			 * @function
-			 * @param {string} header - Header of the modal
-			 * @param {string} body - Body of the modal
-			 * @returns {JSX.Element}
-			 */}
-			<Modal header={"modal header"} body={"modal body"} />
-			<Popover
-				content={
-					"this is an album cover. And a working implementation of the Popover Component"
-				}>
-				<Card id={1} />
-				<Card id={2} />
-			</Popover>
-
-			<ContactForm />
-			<Footer />
-		</>
-	);
+	return <></>;
 }
 
 export default App;
