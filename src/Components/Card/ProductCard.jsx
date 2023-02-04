@@ -1,11 +1,13 @@
 import React from "react";
-import customFont from "../../assets/Ahoire Font/Ahoire.ttf";
+import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
+import paragraphFont from "../../assets/Univers/Univers-light-normal.ttf";
 import styled from "styled-components";
 
 const ProductCardContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	justify-self: center;
+	max-width: 65rem;
 `;
 /**
  * A styled component for the ImageContainer
@@ -14,8 +16,9 @@ const ImageContainer = styled.div`
 	background-image: url(${(props) => props.backgroundImg});
 	background-size: cover;
 	background-position: center;
-	width: 50%;
-	height: inherit;
+	min-width: 20rem;
+	min-height: 20rem;
+	max-height: 30rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,16 +30,16 @@ const ImageContainer = styled.div`
  * A styled component for the title
  */
 const Title = styled.h2`
-	font-family: "Custom Font", sans-serif;
+	font-family: "Title Font", sans-serif;
 
 	@font-face {
-		font-family: "Custom Font";
-		src: url(${customFont}) format("truetype");
+		font-family: "Title Font";
+		src: url(${titleFont}) format("truetype");
 		font-weight: normal;
 		font-style: normal;
 	}
 	color: white;
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: bold;
 	margin-bottom: 10px;
 `;
@@ -48,6 +51,13 @@ const Description = styled.p`
 	color: white;
 	font-size: 16px;
 	margin-bottom: 10px;
+
+	font-family: "Paragraph Font", sans-serif;
+
+	@font-face {
+		font-family: "Paragraph Font";
+		src: url(${paragraphFont});
+	}
 `;
 
 /**
@@ -77,7 +87,8 @@ const ProductCard = ({ backgroundImg, title, description, price }) => (
 					flexDirection: "column",
 					justifyContent: "space-between",
 					alignItems: "space-between",
-					width: "40%",
+					width: "fit-content",
+					maxWidth: "40rem",
 				}}>
 				<Title>{title}</Title>
 				<hr
