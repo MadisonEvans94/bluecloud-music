@@ -6,15 +6,17 @@ const FormContainer = styled.form`
 	width: 100%;
 	height: min(40rem, 100%);
 
-	padding: 1rem;
+	padding: 1rem 6rem;
 `;
 const FormSubSection = styled.form`
 	grid-rea: 1 / 1 / 2 / 3;
 	width: 100%;
+	margin-right: 4rem;
 `;
 const ContactInfo = styled.form`
 	grid-rea: 1 / 3 / 2 / 4;
 	min-width: 16rem;
+	color: white;
 `;
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -126,7 +128,12 @@ const ContactForm = () => {
 				<h2>Location</h2>
 				<p>Phoenix, Arizona</p>
 				<h2>Social</h2>
-				<div style={{ display: "flex", justifyContent: "space-between" }}>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "space-between",
+					}}>
 					<a href="http://instagram.com">Instagram</a>
 					<a href="http://spotify.com">Spotify</a>
 				</div>
