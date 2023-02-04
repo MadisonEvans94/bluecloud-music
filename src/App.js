@@ -10,15 +10,23 @@ import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 
 function App() {
 	return (
-		<Routes>
-			<Route exact path="/" element={<Home />} />
-			<Route path="/music" element={<Music />} />
-			<Route path="/checkout" element={<Checkout />} />
-			<Route path="/contact" element={<Contact />} />
+		<div
+			style={{
+				backgroundColor: "#46CDFF",
+				position: "absolute",
+				width: "100%",
+				height: "100%",
+			}}>
+			<Routes>
+				<Route exact path="/" element={<Home />} />
+				<Route path="/music" element={<Music />} />
+				<Route path="/checkout" element={<Checkout />} />
+				<Route path="/contact" element={<Contact />} />
 
-			{/* this will be our 404 redirect page */}
-			<Route path="*" element={<PageNotFound />} />
-		</Routes>
+				{/* this will be our 404 redirect page */}
+				<Route path="*" element={<PageNotFound />} />
+			</Routes>
+		</div>
 	);
 }
 

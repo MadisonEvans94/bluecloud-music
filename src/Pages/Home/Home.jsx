@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../../Components/Hero/Hero";
+import NewReleaseCard from "../../Components/Card/NewReleaseCard";
 
 const Home = () => {
 	return (
 		<>
-			<Hero></Hero>
+			<NewReleaseCard />
 		</>
 	);
 };
