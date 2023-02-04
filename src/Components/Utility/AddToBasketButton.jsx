@@ -1,51 +1,47 @@
 import React from "react";
 import { useState } from "react";
+import styled from "styled-components";
+
+const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+`;
+
+const Title = styled.div`
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+`;
+
+const Controls = styled.div`
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+`;
+
+const Button = styled.div`
+	margin: 0 0.25rem;
+	padding: 0.25rem;
+	cursor: pointer;
+`;
 
 const AddToBasketButton = () => {
-	//TODO future iterations will not use qty, since this doesn't make since for a sample pack
 	const [qty, setQty] = useState(0);
-	function handleClick(e) {
-		if (e.target.textContent === "+") {
-			setQty(qty + 1);
-		}
-		if (e.target.textContent === "-") {
-		}
-	}
+	const handleIncrease = () => setQty(qty + 1);
+	const handleDecrease = () => (qty > 0 ? setQty(qty - 1) : null);
 	return (
-		<>
-			<div
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					width: "100%",
-					backgroundColor: "white",
-					justifyContent: "center",
-					alignItems: "center",
-				}}>
-				<div>Add to Basket</div>
-				<div style={{ display: "flex" }}>
-					<div
-						style={{
-							margin: "0 .25rem",
-							padding: ".25rem",
-							backgroundColor: "pink",
-						}}
-						onClick={(e) => handleClick(e)}>
-						-
-					</div>
-					<div style={{ marginBlock: "auto" }}>{qty}</div>
-					<div
-						style={{
-							margin: "0 .25rem",
-							padding: ".25rem",
-							backgroundColor: "pink",
-						}}
-						onClick={(e) => handleClick(e)}>
-						+
-					</div>
-				</div>
-			</div>
-		</>
+		<Container>
+			<Title>Add to Basket</Title>
+			<Controls>
+				<Button onClick={handleDecrease}>-</Button>
+				<div>{qty}</div>
+				<Button onClick={handleIncrease}>+</Button>
+			</Controls>
+		</Container>
 	);
 };
 
