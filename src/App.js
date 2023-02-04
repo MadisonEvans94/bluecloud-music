@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Navigation from "./Components/Navigation/Navigation";
 
 import Home from "./Pages/Home/Home";
 // import Music from "./Pages/Music/Music";
@@ -17,9 +18,10 @@ function App() {
 				width: "100%",
 				height: "100%",
 				display: "flex",
-
+				flexDirection: "column",
 				alignItems: "center",
 			}}>
+			<Navigation />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				{/* <Route path="/music" element={<Music />} />

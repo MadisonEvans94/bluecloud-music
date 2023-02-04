@@ -19,12 +19,21 @@ const Home = () => {
 	const price = "$30";
 	return (
 		<>
-			<ProductCard
-				title={title}
-				description={description}
-				backgroundImg={backgroundImg}
-				price={price}
-			/>
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+					width: "100%",
+					height: "100%",
+				}}>
+				<ProductCard
+					title={title}
+					description={description}
+					backgroundImg={backgroundImg}
+					price={price}
+				/>
+			</div>
 		</>
 	);
 };
