@@ -6,25 +6,10 @@ import Card from "./Components/Card/Card";
 import Hero from "./Components/Hero/Hero";
 import Modal from "./Components/Modal/Modal";
 import Popover from "./Components/Popover/Popover";
-/**
- * //[x] Header component: A component that displays the header of the app, usually containing the logo and navigation links.
 
-//[ ] Navigation component: A component that displays the navigation menu, allowing users to navigate between different pages or sections of the app.
-
-//[x] Footer component: A component that displays the footer of the app, usually containing copyright information, links to the company's social media profiles, and other relevant information.
-
-//[x] Hero component: A component that displays a large banner image or video, with text or other elements overlaid on top, usually used to promote the app's main features or values.
-
-//[x] Card component: A component that displays a compact representation of an item or content, usually used to display a list of items in a grid or other layout.
-
-//[x] Form component: A component that displays a form for users to input data, typically used for user registration, login, or data submission.
-
-//[x] Modal component: A component that displays a pop-up dialog, typically used to display additional information or to prompt the user for input.
-
-//[x] Popover component: A component that displays a small pop-up with additional information, typically used to display additional information when the user hovers over an item.
-
-//[ ] Loader component: A component that displays an animation indicating that data is being loaded or processed, typically used to indicate that the app is working on a background task.
- */
+//TODO: set up a sample db.json
+//[ ] create db.json and test it
+//[ ] add the card info and hero info to the db.json
 
 let cardTitle = "new album";
 let cardDescription =
@@ -34,6 +19,7 @@ let heroTitle = "hero";
 let heroSubtitle = "this is the subtitle for the hero";
 let heroBackgroundImage =
 	"https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+
 function App() {
 	return (
 		<>
@@ -68,13 +54,8 @@ function App() {
 				content={
 					"this is an album cover. And a working implementation of the Popover Component"
 				}>
-				<Card
-					image={
-						"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg"
-					}
-					title={cardTitle}
-					description={cardDescription}
-				/>
+				<Card id={1} />
+				<Card id={2} />
 			</Popover>
 
 			<ContactForm />

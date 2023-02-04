@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useEffect, useState } from "react";
 
 /**
  * Styled component for the card container
@@ -52,12 +53,33 @@ const CardDescription = styled.p`
  * @param {string} description - Description of the card
  * @returns {JSX.Element}
  */
-const Card = ({ image, title, description }) => {
+const Card = ({ id }) => {
+	const [cardInfo, setCardInfo] = useState({
+		imageUrl: "",
+		title: "",
+		description: "",
+	});
+	function updateCard(obj) {
+		setCardInfo({
+			imageUrl: obj.imageUrl,
+			title: obj.title,
+			description: obj.description,
+		});
+	}
+	useEffect(() => {
+		//[ ] write functionality that sends GET request to server
+		fetch(`http://localhost:3000/products/#${id}`)
+			.then((response) => response.json())
+			.then((obj) => {
+				updateCard(obj[id - 1]);
+			})
+			.catch((error) => console.log(error));
+	}, []);
 	return (
 		<CardContainer>
-			<CardImage src={image} alt={title} />
-			<CardTitle>{title}</CardTitle>
-			<CardDescription>{description}</CardDescription>
+			<CardImage src={cardInfo.imageUrl} alt={cardInfo.title} />
+			<CardTitle>{cardInfo.title}</CardTitle>
+			<CardDescription>{cardInfo.description}</CardDescription>
 		</CardContainer>
 	);
 };
