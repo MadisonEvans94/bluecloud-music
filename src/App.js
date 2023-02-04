@@ -7,13 +7,11 @@ import Hero from "./Components/Hero/Hero";
 import Modal from "./Components/Modal/Modal";
 import Popover from "./Components/Popover/Popover";
 
-//TODO: set up a sample db.json
-//[ ] create db.json and test it
-//[ ] add the card info and hero info to the db.json
+//[x] create db.json and test it
+//[x] add the card info and hero info to the db.json
 
-let cardTitle = "new album";
-let cardDescription =
-	"this is a description for the card. Eventually we will be fetching this information from a server";
+//TODO: connect the Hero component to the db.json
+//[ ] add Hero info by fetching from db.json
 
 let heroTitle = "hero";
 let heroSubtitle = "this is the subtitle for the hero";
