@@ -21,7 +21,7 @@ import Popover from "./Components/Popover/Popover";
 
 //[x] Modal component: A component that displays a pop-up dialog, typically used to display additional information or to prompt the user for input.
 
-//[ ] Popover component: A component that displays a small pop-up with additional information, typically used to display additional information when the user hovers over an item.
+//[x] Popover component: A component that displays a small pop-up with additional information, typically used to display additional information when the user hovers over an item.
 
 //[ ] Loader component: A component that displays an animation indicating that data is being loaded or processed, typically used to indicate that the app is working on a background task.
  */
