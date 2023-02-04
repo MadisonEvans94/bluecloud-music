@@ -8,7 +8,7 @@ const FormContainer = styled.form`
 
 	padding: 1rem;
 `;
-const FormInput = styled.form`
+const FormSubSection = styled.form`
 	grid-rea: 1 / 1 / 2 / 3;
 	width: 100%;
 `;
@@ -48,44 +48,78 @@ const ContactForm = () => {
 
 	return (
 		<FormContainer onSubmit={handleSubmit}>
-			<FormInput>
+			<FormSubSection>
 				{/* //TODO name input  */}
 				<div style={{ display: "flex", flexDirection: "column" }}>
-					<label htmlFor="name">Name:</label>
 					<input
+						placeholder="Name"
 						type="text"
 						id="name"
 						name="name"
 						value={formData.name}
 						onChange={handleInputChange}
 						required
+						style={{
+							backgroundColor: "transparent",
+							border: "none",
+							height: "2rem",
+						}}
 					/>
 				</div>
+				<hr
+					style={{
+						color: "white",
+						border: "none",
+						backgroundColor: "white",
+						width: "100%",
+						height: "1px",
+						marginBottom: "10px",
+					}}
+				/>
 				{/* //TODO email input */}
 				<div style={{ display: "flex", flexDirection: "column" }}>
-					<label htmlFor="email">Email:</label>
 					<input
+						placeholder="Email"
 						type="email"
 						id="email"
 						name="email"
 						value={formData.email}
 						onChange={handleInputChange}
 						required
+						style={{
+							backgroundColor: "transparent",
+							border: "none",
+							height: "2rem",
+						}}
 					/>
 				</div>
+				<hr
+					style={{
+						color: "white",
+						border: "none",
+						backgroundColor: "white",
+						width: "100%",
+						height: "1px",
+						marginBottom: "1rem",
+					}}
+				/>
 				{/* //TODO Message Content  */}
 				<div style={{ display: "flex", flexDirection: "column" }}>
-					<label htmlFor="message">Message:</label>
 					<textarea
+						placeholder="Message"
 						id="message"
 						name="message"
 						value={formData.message}
 						onChange={handleInputChange}
 						required
+						style={{
+							marginBottom: "1rem",
+							minHeight: "10rem",
+						}}
 					/>
 				</div>
 				<button type="submit">Submit</button>
-			</FormInput>
+			</FormSubSection>
 			<ContactInfo>
 				<h2>contact details</h2>
 				<h2>contact details</h2>
