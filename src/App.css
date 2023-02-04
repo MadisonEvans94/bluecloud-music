@@ -1,14 +1,3 @@
-.form-container {
-	display: flex;
-	flex-direction: column;
-	display: flex;
-	flex-direction: column;
-	background-color: gray;
-	align-items: flex-start;
-	width: fit-content;
-	padding: 1rem;
-	border-radius: 6px;
-}
 .form-container > div {
 	display: flex;
 	flex-direction: column;

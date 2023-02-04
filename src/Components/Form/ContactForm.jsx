@@ -1,16 +1,24 @@
 import React, { useState } from "react";
-
-/**
- * ContactForm component that renders a form with a text input field for name,
- * an email input for email, a radio button input for message type, and a text
- * area for the message content.
- *
- * @returns {JSX.Element} The rendered form element.
- */
+import styled from "styled-components";
+//TODO: create a form component that is organized as grid. 2/3 is input and 1/3 is contact details, location, and social links
+const FormContainer = styled.form`
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: min(40rem, 100%);
+	background-color: pink;
+	padding: 1rem;
+`;
+const FormInput = styled.form`
+	grid-rea: 1 / 1 / 2 / 3;
+	width: 100%;
+	background-color: yellow;
+`;
+const ContactInfo = styled.form`
+	grid-rea: 1 / 3 / 2 / 4;
+	min-width: 16rem;
+`;
 const ContactForm = () => {
-	/**
-	 * State to store the form data.
-	 */
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -18,11 +26,6 @@ const ContactForm = () => {
 		message: "",
 	});
 
-	/**
-	 * Handles the input change event by updating the form data in state.
-	 *
-	 * @param {React.ChangeEvent<HTMLInputElement>} event The input change event.
-	 */
 	const handleInputChange = (event) => {
 		setFormData({
 			...formData,
@@ -30,9 +33,6 @@ const ContactForm = () => {
 		});
 	};
 
-	/**
-	 * Resets the form data to its initial state.
-	 */
 	const resetFormData = () => {
 		setFormData({
 			name: "",
@@ -42,84 +42,81 @@ const ContactForm = () => {
 		});
 	};
 
-	/**
-	 * Handles the form submit event.
-	 *
-	 * @param {React.FormEvent<HTMLFormElement>} event The form submit event.
-	 */
 	const handleSubmit = (event) => {
-		// Prevent the default form submit behavior
 		event.preventDefault();
-		// Log the form data to the console for demonstration purposes
 		console.log("Form Data:", formData);
-		// Perform some action with the form data, such as sending an API request
-
-		// Reset the form data to default once the form has been submitted
 		resetFormData();
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="form-container">
-			<div>
-				<label htmlFor="name">Name:</label>
-				<input
-					type="text"
-					id="name"
-					name="name"
-					value={formData.name}
-					onChange={handleInputChange}
-					required
-				/>
-			</div>
-			<div>
-				<label htmlFor="email">Email:</label>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					value={formData.email}
-					onChange={handleInputChange}
-					required
-				/>
-			</div>
-			<div>
-				<label>Message Type</label>
+		<FormContainer onSubmit={handleSubmit}>
+			<FormInput>
+				<div>
+					<label htmlFor="name">Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						value={formData.name}
+						onChange={handleInputChange}
+						required
+					/>
+				</div>
+				<div>
+					<label htmlFor="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						value={formData.email}
+						onChange={handleInputChange}
+						required
+					/>
+				</div>
+				<div>
+					<label>Message Type</label>
 
-				<label>
-					<input
-						type="radio"
-						name="messageType"
-						value="suggestion"
-						checked={formData.messageType === "suggestion"}
+					<label>
+						<input
+							type="radio"
+							name="messageType"
+							value="suggestion"
+							checked={formData.messageType === "suggestion"}
+							onChange={handleInputChange}
+							required
+						/>
+						Suggestion
+					</label>
+					<label>
+						<input
+							type="radio"
+							name="messageType"
+							value="question"
+							checked={formData.messageType === "question"}
+							onChange={handleInputChange}
+							required
+						/>
+						Question
+					</label>
+				</div>
+				<div>
+					<label htmlFor="message">Message:</label>
+					<textarea
+						id="message"
+						name="message"
+						value={formData.message}
 						onChange={handleInputChange}
 						required
 					/>
-					Suggestion
-				</label>
-				<label>
-					<input
-						type="radio"
-						name="messageType"
-						value="question"
-						checked={formData.messageType === "question"}
-						onChange={handleInputChange}
-						required
-					/>
-					Question
-				</label>
-			</div>
-			<div>
-				<label htmlFor="message">Message:</label>
-				<textarea
-					id="message"
-					name="message"
-					value={formData.message}
-					onChange={handleInputChange}
-					required
-				/>
-			</div>
-			<button type="submit">Submit</button>
-		</form>
+				</div>
+				<button type="submit">Submit</button>
+			</FormInput>
+			<ContactInfo>
+				<h2 style={{ backgroundColor: "white" }}>contact details</h2>
+				<h2>contact details</h2>
+				<h2>contact details</h2>
+			</ContactInfo>
+		</FormContainer>
 	);
 };
 
