@@ -8,6 +8,7 @@ const ProductCardContainer = styled.div`
 	justify-content: space-between;
 	justify-self: center;
 	max-width: 65rem;
+	margin-inline: auto;
 `;
 /**
  * A styled component for the ImageContainer

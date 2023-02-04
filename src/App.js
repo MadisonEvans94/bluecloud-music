@@ -16,6 +16,9 @@ function App() {
 				position: "absolute",
 				width: "100%",
 				height: "100%",
+				display: "flex",
+
+				alignItems: "center",
 			}}>
 			<Routes>
 				<Route path="/" element={<Home />} />
