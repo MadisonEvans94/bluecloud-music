@@ -29,12 +29,15 @@ const Button = styled.div`
 	cursor: pointer;
 `;
 const SubmitButton = styled.div`
-	padding: 1rem;
-	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0.8rem;
+	margin: 0.25rem;
+	background-color: rgba(255, 255, 255, 0);
 	transition: 0.2s;
 	cursor: pointer;
+	border-radius: 6px;
 	&:hover {
-		border-radius: 15px;
+		background-color: rgba(255, 255, 255, 1);
+		color: rgb(70, 205, 255);
 	}
 `;
 
