@@ -121,8 +121,15 @@ const ContactForm = () => {
 				<button type="submit">Submit</button>
 			</FormSubSection>
 			<ContactInfo>
-				<h2>contact details</h2>
-				<h2>contact details</h2>
+				<h2>Contact Details</h2>
+				<p>bluecloudbeats@gmail.com</p>
+				<h2>Location</h2>
+				<p>Phoenix, Arizona</p>
+				<h2>Social</h2>
+				<div style={{ display: "flex", justifyContent: "space-between" }}>
+					<a href="http://instagram.com">Instagram</a>
+					<a href="http://spotify.com">Spotify</a>
+				</div>
 			</ContactInfo>
 		</FormContainer>
 	);
