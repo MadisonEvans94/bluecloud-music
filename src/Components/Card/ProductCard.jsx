@@ -1,6 +1,6 @@
 import React from "react";
 import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
-import paragraphFont from "../../assets/Univers/Univers-light-normal.ttf";
+import ItemCounter from "../Utility/ItemCounter";
 import styled from "styled-components";
 
 const ProductCardContainer = styled.div`
@@ -52,13 +52,6 @@ const Description = styled.p`
 	color: white;
 	font-size: 16px;
 	margin-bottom: 10px;
-
-	font-family: "Paragraph Font", sans-serif;
-
-	@font-face {
-		font-family: "Paragraph Font";
-		src: url(${paragraphFont});
-	}
 `;
 
 /**
@@ -103,6 +96,9 @@ const ProductCard = ({ backgroundImg, title, description, price }) => (
 				/>
 				<Description>{description}</Description>
 				<Price>{price}</Price>
+
+				{/* TODO create a separate component for adding items to basket. "ItemCounter" */}
+				<ItemCounter />
 			</div>
 			<ImageContainer backgroundImg={backgroundImg}></ImageContainer>
 		</ProductCardContainer>
