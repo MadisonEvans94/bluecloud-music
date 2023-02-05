@@ -1,0 +1,155 @@
+.landing-title a {
+	transition: 0.25s;
+}
+#landing-title {
+	color: white !important;
+}
+.cloud1 {
+	z-index: 10;
+	width: 100%;
+	position: fixed;
+	bottom: -22rem;
+	background-color: transparent;
+	background-image: url("../../images/long-cloud-1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center;
+	aspect-ratio: 2338/3336;
+	pointer-events: none;
+}
+
+.cloud2 {
+	z-index: -2;
+	width: 100%;
+	position: fixed;
+	bottom: -10rem;
+	background-color: transparent;
+	background-image: url("../../images/long-cloud-2.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center;
+
+	aspect-ratio: 2338/3336;
+}
+.cloud3 {
+	z-index: -5;
+	width: 100%;
+	position: fixed;
+	bottom: -6rem;
+	background-color: transparent;
+	background-image: url("../../images/long-cloud-3.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center;
+
+	aspect-ratio: 2338/3336;
+}
+.cloud4 {
+	z-index: -10;
+	width: 100%;
+	position: fixed;
+	bottom: -2rem;
+	background-color: transparent;
+	background-image: url("../../images/long-cloud-4.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center;
+
+	aspect-ratio: 2338/3336;
+}
+.home--container h1 {
+	font-size: 2rem;
+}
+.home--container {
+	height: fit-content;
+	width: 100%;
+	display: grid;
+	position: absolute;
+	top: 55%;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
+	color: white;
+	overscroll-behavior: none;
+}
+.home--container a h1 {
+	font-size: 2rem;
+	transition: 0.5s;
+}
+.home--container a h1:hover {
+	font-size: 2.25rem;
+}
+
+@media (min-aspect-ratio: 1/2) {
+	.cloud1 {
+		bottom: -30rem;
+		z-index: -1;
+	}
+	.cloud2 {
+		bottom: -20rem;
+	}
+	.cloud3 {
+		bottom: -16rem;
+	}
+	.cloud4 {
+		bottom: -12rem;
+	}
+}
+@media (min-aspect-ratio: 68/100) {
+	.landing-title a {
+		font-size: larger;
+	}
+	.cloud1 {
+		bottom: -46rem;
+		z-index: -1;
+	}
+	.cloud2 {
+		bottom: -38rem;
+	}
+	.cloud3 {
+		bottom: -32rem;
+	}
+	.cloud4 {
+		bottom: -29rem;
+	}
+}
+@media (min-aspect-ratio: 88/100) {
+	.landing-title a {
+		font-size: 3rem;
+	}
+	.cloud1 {
+		bottom: -70rem;
+		z-index: -1;
+	}
+	.cloud2 {
+		bottom: -60rem;
+	}
+	.cloud3 {
+		bottom: -55rem;
+	}
+	.cloud4 {
+		bottom: -48rem;
+	}
+}
+@media (min-aspect-ratio: 5/3) {
+	.landing-title a {
+		font-size: 3rem;
+	}
+	.cloud1 {
+		bottom: -140rem;
+		z-index: -1;
+	}
+	.cloud2 {
+		bottom: -130rem;
+	}
+	.cloud3 {
+		bottom: -120rem;
+	}
+	.cloud4 {
+		bottom: -110rem;
+	}
+}

@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./Components/Navigation/Navigation";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
 import Music from "./Pages/Music/Music";
@@ -15,7 +15,7 @@ const backgroundColor = "#2ca7ff";
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<Router>
 				<div
 					style={{
 						backgroundColor: `${backgroundColor}`,
@@ -37,7 +37,7 @@ function App() {
 						<Route path="*" element={<PageNotFound />} />
 					</Routes>
 				</div>
-			</BrowserRouter>
+			</Router>
 		</>
 	);
 }
