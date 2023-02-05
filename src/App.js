@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navigation from "./Components/Navigation/Navigation";
+
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
@@ -26,12 +26,12 @@ function App() {
 						flexDirection: "column",
 						alignItems: "center",
 					}}>
-					<Navigation />
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/music" element={<Music />} />
-						<Route path="/checkout" element={<Checkout />} />
-						<Route path="/contact" element={<Contact />} />
+						<Route path="/" element={<Home />}>
+							<Route path="music" element={<Music />} />
+							<Route path="checkout" element={<Checkout />} />
+							<Route path="contact" element={<Contact />} />
+						</Route>
 
 						{/* this will be our 404 redirect page */}
 						<Route path="*" element={<PageNotFound />} />

@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "../../Components/Card/ProductCard";
+import Navigation from "../../Components/Navigation/Navigation";
 
 const Home = () => {
 	const backgroundImg =
@@ -13,13 +14,15 @@ const Home = () => {
 		<>
 			<div
 				style={{
+					position: "relative",
 					display: "flex",
+					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
 					width: "100%",
 					height: "100%",
-					padding: "0 5rem",
 				}}>
+				<Navigation />
 				<ProductCard
 					title={title}
 					description={description}

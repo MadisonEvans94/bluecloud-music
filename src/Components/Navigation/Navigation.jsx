@@ -10,21 +10,23 @@ import styled from "styled-components";
 const Navigation = () => {
 	return (
 		<>
-			<NavContainer>
-				<NavLink to="/">Home</NavLink>
-				<NavLink to="/music">Music</NavLink>
-				<NavLink to="/contact">Contact</NavLink>
-				<NavLink to="/checkout">Checkout</NavLink>
-			</NavContainer>
-			<hr
-				style={{
-					color: "white",
-					border: "none",
-					backgroundColor: "white",
-					width: "100%",
-					height: "1px",
-				}}
-			/>
+			<div style={{ position: "absolute", top: "0", left: "0", width: "100%" }}>
+				<NavContainer>
+					<NavLink to="/">Home</NavLink>
+					<NavLink to="/music">Music</NavLink>
+					<NavLink to="/contact">Contact</NavLink>
+					<NavLink to="/checkout">Checkout</NavLink>
+				</NavContainer>
+				<hr
+					style={{
+						color: "white",
+						border: "none",
+						backgroundColor: "white",
+						width: "100%",
+						height: "1px",
+					}}
+				/>
+			</div>
 		</>
 	);
 };
