@@ -1,6 +1,28 @@
 .contact-page-container {
+	position: relative;
 	height: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.form-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 20rem;
+	margin-inline: 2rem;
+	border: 1px white solid;
+	border-radius: 10px;
+}
+.form-subsection {
+	grid-area: 1 / 1 / 2 / 3;
+	width: 100%;
+	margin-right: 4rem;
+}
+.contact-info {
+	grid-area: 1 / 3 / 2 / 4;
+	min-width: 16rem;
+	color: white;
 }

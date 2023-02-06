@@ -1,23 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-const FormContainer = styled.form`
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: min(40rem, 100%);
 
-	padding: 1rem 6rem;
-`;
-const FormSubSection = styled.form`
-	grid-rea: 1 / 1 / 2 / 3;
-	width: 100%;
-	margin-right: 4rem;
-`;
-const ContactInfo = styled.form`
-	grid-rea: 1 / 3 / 2 / 4;
-	min-width: 16rem;
-	color: white;
-`;
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
 		name: "",
@@ -49,9 +31,8 @@ const ContactForm = () => {
 	};
 
 	return (
-		<FormContainer onSubmit={handleSubmit}>
-			<FormSubSection>
-				{/* //TODO name input  */}
+		<div className="form-container" onSubmit={handleSubmit}>
+			<div className="form-subsection">
 				<div style={{ display: "flex", flexDirection: "column" }}>
 					<input
 						placeholder="Name"
@@ -107,12 +88,12 @@ const ContactForm = () => {
 				/>
 
 				<button type="submit">Submit</button>
-			</FormSubSection>
-			<ContactInfo>
+			</div>
+			<div className="contact-info">
 				<h2>For All Other Inquiries: </h2>
 				<p>bluecloudbeats@gmail.com</p>
-			</ContactInfo>
-		</FormContainer>
+			</div>
+		</div>
 	);
 };
 
