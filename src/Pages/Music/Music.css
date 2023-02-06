@@ -30,7 +30,7 @@
 }
 .featured-container {
 	grid-area: 2 / 1 / 4 / 3;
-	background-color: blue;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -39,34 +39,65 @@
 .featured-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	background-color: yellow;
+
+	height: 30rem;
 }
 .featured-description {
 	margin-left: 1rem;
 }
 .featured-title {
-	text-align: center;
-	margin-block: 2rem;
+	width: 100%;
+	margin: 2rem auto 1rem auto;
+	font-size: 3rem;
 }
 .featured-content {
 	display: flex;
 }
 .featured-content img {
-	width: 50%;
+	height: 14rem;
 }
 .featured-links {
 	margin-top: 1rem;
 }
+.connect-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
 .connect-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-
-	background-color: green;
+	height: 30rem;
+	width: 100%;
 }
 .connect-header {
-	margin-block: 2rem;
+	margin: 2rem auto 1rem auto;
+	font-size: 3rem;
+	width: 100%;
+}
+.catalog-container {
+	background-color: greenyellow;
+	width: 100%;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+
+	overflow: auto;
+}
+.catalog-item {
+	border: 1px solid black;
+	width: 100%;
+	height: 50px;
+	margin-block: 3rem;
+}
+.connect-links ul {
+	display: flex;
+}
+.connect-links ul li {
+	margin-inline: 1rem;
 }

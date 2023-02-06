@@ -32,9 +32,8 @@ const Music = () => {
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
 								sunt voluptatum veniam eligendi magni quaerat voluptas illo
 								blanditiis earum omnis, soluta ipsam, eveniet est. Recusandae ut
-								minus quia ab qui ea molestiae praesentium laborum dolor aut!
-								Delectus nulla in corrupti eum iure rerum maiores voluptatibus
-								sint iste quidem, beatae sunt.
+								rum dolor aut! Delectus nulla in corrupti eum iure rerum maiores
+								voluptatibus sint iste quidem, beatae sunt.
 							</p>
 						</div>
 						<p className="featured-links">
@@ -52,18 +51,25 @@ const Music = () => {
 						<h2 className="connect-header">Connect</h2>
 						<p className="connect-links">
 							<ul>
-								<li>Instagram</li>
-								<li>Bandcamp</li>
+								<li>
+									<a href="http://instagram.com">Instagram</a>
+								</li>
+								<li>
+									<a href="http://instagram.com">BandCamp</a>
+								</li>
 							</ul>
 						</p>
-					</div>
-					<div className="catalog-container">
-						<div className="catalog-item">catalog item</div>
-						<div>catalog item</div>
-						<div>catalog item</div>
-						<div>catalog item</div>
-						<div>catalog item</div>
-						<div>catalog item</div>
+						<div className="catalog-container">
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+							<div className="catalog-item">catalog item</div>
+						</div>
 					</div>
 				</div>
 			</div>
