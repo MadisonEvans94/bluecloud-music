@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
 import styled from "styled-components";
 import "./ProductCard.css";
 import { motion } from "framer-motion";
+
 const ImageContainer = styled.div`
 	background-image: url(${(props) => props.backgroundImg});
 	background-size: cover;
@@ -32,20 +33,28 @@ const Title = styled.h2`
 	margin-bottom: 10px;
 `;
 
-const ProductCard = ({ backgroundImg, title, description, price }) => (
-	<>
-		<motion.div
-			className="product-card"
-			initial={{ y: 600, opacity: 0 }}
-			animate={{ y: 0, opacity: 1 }}
-			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
-			<div className="product-card-text">
-				<Title>{title}</Title>
-				<p className="description">{description}</p>
-			</div>
-			<ImageContainer backgroundImg={backgroundImg}></ImageContainer>
-		</motion.div>
-	</>
-);
+const MemoizedImageContainer = React.memo(ImageContainer);
+
+const ProductCard = ({ backgroundImg, title, description }) => {
+	const memoizedImageContainer = useMemo(() => {
+		return <MemoizedImageContainer backgroundImg={backgroundImg} />;
+	}, [backgroundImg]);
+
+	return (
+		<>
+			<motion.div
+				className="product-card"
+				initial={{ y: 600, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ type: "spring", stiffness: 40, damping: 10 }}>
+				<div className="product-card-text">
+					<Title>{title}</Title>
+					<p className="description">{description}</p>
+				</div>
+				{memoizedImageContainer}
+			</motion.div>
+		</>
+	);
+};
 
 export default ProductCard;

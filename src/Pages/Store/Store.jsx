@@ -1,8 +1,8 @@
 import React from "react";
 import ProductCard from "../../Components/Card/ProductCard";
 import "./Store.css";
-const background =
-	"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg";
+import productImg from "../../assets/images/product-image.png";
+
 const ProductPage = () => {
 	//assets/images/honeypack.png";
 
@@ -17,7 +17,7 @@ const ProductPage = () => {
 				<ProductCard
 					title={title}
 					description={description}
-					backgroundImg={background}
+					backgroundImg={productImg}
 					price={price}
 				/>
 			</div>
