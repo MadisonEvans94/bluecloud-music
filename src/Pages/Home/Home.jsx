@@ -2,23 +2,12 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navigation from "../../Components/Navigation/Navigation";
 
-const backgroundColor = "#2ca7ff";
+const backgroundColor = "rgb(175,220,255)";
 
 const Home = () => {
 	return (
 		<>
-			<div
-				style={{
-					top: "0",
-					position: "fixed",
-					backgroundColor: `${backgroundColor}`,
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "flex-start",
-					alignItems: "center",
-					width: "100%",
-					height: "100%",
-				}}>
+			<div className="home-container">
 				<Navigation />
 
 				<Outlet />

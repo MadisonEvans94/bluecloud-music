@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Navigation = () => {
 	return (
 		<>
-			<div style={{ top: "0", left: "0", width: "100%" }}>
+			<div style={{ top: "0", left: "0", width: "100%" }} className="nav">
 				<NavContainer>
 					<NavLink to="/home/store">Store</NavLink>
 					<NavLink to="/home/music">Music</NavLink>
