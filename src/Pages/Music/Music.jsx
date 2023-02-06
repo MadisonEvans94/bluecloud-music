@@ -46,19 +46,10 @@ const Music = () => {
 					</div>
 				</div>
 
-				<div className="connect-container">
-					<div className="connect-card">
-						<h2 className="connect-header">Connect</h2>
-						<p className="connect-links">
-							<ul>
-								<li>
-									<a href="http://instagram.com">Instagram</a>
-								</li>
-								<li>
-									<a href="http://instagram.com">BandCamp</a>
-								</li>
-							</ul>
-						</p>
+				<div className="my-music-container">
+					<div className="my-music-card">
+						<h2 className="my-music-header">My Music</h2>
+
 						<div className="catalog-container">
 							<div className="catalog-item">catalog item</div>
 							<div className="catalog-item">catalog item</div>
