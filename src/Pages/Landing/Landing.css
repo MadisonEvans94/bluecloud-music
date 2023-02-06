@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "Aquaa";
+	src: url("../../assets/fonts/aqua.ttf");
+}
+
+* {
+	font-family: "Aquaa";
+	box-sizing: border-box;
+	margin: 0;
+}
