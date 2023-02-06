@@ -1,3 +1,4 @@
+/* Styles for the music page container */
 .music-page-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -8,13 +9,19 @@
 	width: 100%;
 	overflow-y: auto;
 }
+
+/* Remove bullets from list items */
 .music-page-container li {
 	list-style: none;
 }
+
+/* Styles for the music link icon */
 .music-link-icon {
 	margin-inline: 4rem;
 	color: white;
 }
+
+/* Styles for the music link container */
 .music-link-container {
 	grid-area: 1 / 1 / 2 / 4;
 	border-bottom: 1px solid white;
@@ -24,8 +31,19 @@
 	align-items: center;
 	height: 100%;
 	padding: 2rem;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 1),
+			rgba(255, 255, 255, 0)
+		),
+		url("../../assets/images/test-image.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0 -35rem;
 }
 
+/* Styles for the featured container */
 .featured-container {
 	grid-area: 2 / 1 / 3 / 3;
 	color: white;
@@ -34,6 +52,8 @@
 	align-items: center;
 	margin-left: 6rem;
 }
+
+/* Styles for the featured card */
 .featured-card {
 	display: flex;
 	flex-direction: column;
@@ -45,10 +65,14 @@
 	background-color: var(--primary);
 	border-radius: 10px;
 }
+
+/* Styles for the featured description */
 .featured-description {
 	margin-left: 1rem;
 	max-width: 50%;
 }
+
+/* Styles for the featured title */
 .featured-title {
 	max-width: 40rem;
 	width: 100%;
@@ -56,6 +80,8 @@
 	font-size: 3rem;
 	color: white;
 }
+
+/* Styles for the featured content */
 .featured-content {
 	display: flex;
 	justify-content: center;
@@ -63,12 +89,18 @@
 	height: 100%;
 	padding: 1rem;
 }
+
+/* Styles for the featured content image */
 .featured-content img {
 	height: 14rem;
 }
+
+/* Styles for the featured links */
 .featured-links {
 	margin-top: 1rem;
 }
+
+/* Styles for the my music container */
 .my-music-container {
 	grid-area: 2 / 3 / 4 / 4;
 	display: flex;
@@ -78,6 +110,7 @@
 	padding: 0 6rem 4rem 0;
 }
 
+/* Styles for the music page header */
 .music-page-header {
 	width: 100%;
 	margin: 2rem auto 1rem auto;
@@ -85,6 +118,8 @@
 	font-size: 3rem;
 	color: white;
 }
+
+/* Styles for the catalog item */
 .catalog-item {
 	position: relative;
 	width: 100%;
@@ -95,6 +130,8 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* Styles for the catalog item image */
 .catalog-item img {
 	width: 100%;
 	border-radius: inherit;
@@ -144,9 +181,9 @@
 
 	.music-link-icon {
 		margin: 0;
-		color: white;
 	}
 	.music-link-container {
+		position: relative;
 		border-bottom: 1px solid white;
 		background-color: black;
 		display: flex;
@@ -155,6 +192,7 @@
 		height: 100%;
 		padding: 1rem;
 	}
+
 	.my-music-container {
 		position: relative;
 		padding: 2.5rem;
