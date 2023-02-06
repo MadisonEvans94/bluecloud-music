@@ -1,28 +1,21 @@
 import React from "react";
+import MusicHero from "../../Components/MusicHero/MusicHero";
 import spotifyIcon from "../../assets/svg/iOS/spotify-icon.svg";
 import soundcloudIcon from "../../assets/svg/soundcloud-icon.svg";
 import "./Music.css";
 import featuredImg from "../../assets/images/badsnacks-reference-img.png";
 // [ ] apple and soundcloud logo]
 // [x] page grid layout
-// [ ] complete the featured section
+// [x] complete the featured section
+// [ ] refactor
+// [ ] finish completely styling the featured section
 // [ ] complete the connect section
 const Music = () => {
 	return (
 		<>
 			<div className="music-page-container">
-				<div className="music-link-container">
-					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<img className="music-link-icon" src={spotifyIcon} alt="logo" />
-					</a>
-					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<img className="music-link-icon" src={spotifyIcon} alt="logo" />
-					</a>
-					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<img className="music-link-icon" src={spotifyIcon} alt="logo" />
-					</a>
-				</div>
-
+				<MusicHero icon={spotifyIcon} />
+				{/* Featured */}
 				<div className="featured-container">
 					<div className="featured-card">
 						<h1 className="featured-title">Featured</h1>
@@ -46,7 +39,7 @@ const Music = () => {
 						</p> */}
 					</div>
 				</div>
-
+				{/* MyMusic */}
 				<div className="my-music-container">
 					<div className="my-music-card">
 						<h2 className="my-music-header">My Music</h2>
