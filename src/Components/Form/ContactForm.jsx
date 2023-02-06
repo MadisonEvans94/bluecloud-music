@@ -86,7 +86,7 @@ const ContactForm = () => {
 						marginBottom: "1rem",
 					}}
 				/>
-
+				<input className="feedback-section" type="text-area" rows={5} />
 				<button type="submit">Submit</button>
 			</div>
 			<div className="contact-info">
