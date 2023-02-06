@@ -5,9 +5,9 @@ const Featured = ({ featuredImg }) => {
 	return (
 		<motion.div
 			className="featured-container"
-			initial={{ x: -600, opacity: 0 }}
+			initial={{ x: -300, opacity: 0 }}
 			animate={{ x: 0, opacity: 1 }}
-			transition={{ type: "spring", stiffness: 100, damping: 20 }}>
+			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
 			<h1 className="featured-title">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">

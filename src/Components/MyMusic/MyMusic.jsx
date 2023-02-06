@@ -7,9 +7,9 @@ const MyMusic = () => {
 	return (
 		<motion.div
 			className="my-music-container"
-			initial={{ x: 600, opacity: 0 }}
+			initial={{ x: 300, opacity: 0 }}
 			animate={{ x: 0, opacity: 1 }}
-			transition={{ type: "spring", stiffness: 100, damping: 20 }}>
+			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
 			<h2 className="my-music-header">My Music</h2>
 			<CatalogContainer>
 				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />

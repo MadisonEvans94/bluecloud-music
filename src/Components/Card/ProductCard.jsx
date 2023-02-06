@@ -2,7 +2,7 @@ import React from "react";
 import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
 import styled from "styled-components";
 import "./ProductCard.css";
-
+import { motion } from "framer-motion";
 const ImageContainer = styled.div`
 	background-image: url(${(props) => props.backgroundImg});
 	background-size: cover;
@@ -34,13 +34,17 @@ const Title = styled.h2`
 
 const ProductCard = ({ backgroundImg, title, description, price }) => (
 	<>
-		<div className="product-card">
+		<motion.div
+			className="product-card"
+			initial={{ y: 600, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
 			<div className="product-card-text">
 				<Title>{title}</Title>
 				<p className="description">{description}</p>
 			</div>
 			<ImageContainer backgroundImg={backgroundImg}></ImageContainer>
-		</div>
+		</motion.div>
 	</>
 );
 
