@@ -23,13 +23,24 @@ const Landing = () => {
 	const [isClicked, setIsClicked] = useState(false);
 	return (
 		<>
-			<Link to="/home/music">
-				<LandingTitle onClick={() => setIsClicked((prev) => !prev)}>
-					blue cloud
-				</LandingTitle>
-			</Link>
+			<div
+				style={{
+					position: "absolute",
+					left: "0",
+					right: "0",
+					top: "0",
+					bottom: "0",
+					backgroundColor: "pink",
+					zIndex: "-10",
+				}}>
+				<Link to="/home/music">
+					<LandingTitle onClick={() => setIsClicked((prev) => !prev)}>
+						blue cloud
+					</LandingTitle>
+				</Link>
 
-			<Clouds isClicked={isClicked} />
+				<Clouds isClicked={isClicked} />
+			</div>
 		</>
 	);
 };
