@@ -12,7 +12,7 @@ const MusicHero = () => {
 				animate={{ opacity: 1, y: 0 }}
 				whileHover={{ scale: 1.2 }}
 				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
-				<a href="https://google.com">
+				<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
 					<BsSpotify size="100px" style={{ cursor: "pointer" }} />
 				</a>
 			</motion.div>
@@ -22,7 +22,7 @@ const MusicHero = () => {
 				animate={{ opacity: 1, y: 0 }}
 				whileHover={{ scale: 1.2 }}
 				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
-				<a href="https://google.com">
+				<a href="https://music.apple.com/us/artist/blue-cloud/1510449426">
 					<FaApple size="100px" style={{ cursor: "pointer" }} />
 				</a>
 			</motion.div>
@@ -32,7 +32,7 @@ const MusicHero = () => {
 				animate={{ opacity: 1, y: 0 }}
 				whileHover={{ scale: 1.2 }}
 				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
-				<a href="https://google.com">
+				<a href="https://soundcloud.com/bluecloudmusic">
 					<FaSoundcloud size="100px" style={{ cursor: "pointer" }} />
 				</a>
 			</motion.div>
