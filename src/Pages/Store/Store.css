@@ -38,6 +38,7 @@
 	.product-card {
 		flex-direction: column;
 		align-items: center;
+		padding: 1rem;
 	}
 
 	.product-card-text {
@@ -67,6 +68,7 @@
 	.product-card {
 		flex-direction: column;
 		align-items: center;
+		padding: 1rem;
 	}
 
 	.product-card-text {
@@ -96,6 +98,7 @@
 	.product-card {
 		flex-direction: row;
 		justify-content: space-between;
+		padding: 1rem;
 	}
 
 	.product-card-text {

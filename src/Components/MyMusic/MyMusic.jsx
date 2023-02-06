@@ -16,7 +16,11 @@ const MyMusic = () => {
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/more-than-enough-1"}
 				/>
-				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
+				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/faded-2"} />
+				<CatalogItem
+					url={"https://soundcloud.com/bluecloudmusic/i-think-were-lost-2"}
+				/>
+				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/jelly"} />
 			</CatalogContainer>
 		</motion.div>
 	);
