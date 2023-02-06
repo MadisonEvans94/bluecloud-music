@@ -3,21 +3,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
+import styled from "styled-components";
+
+const LandingLinkContainer = styled`
+position: absolute;
+left: 50%; 
+bottom: 30%; 
+transform: translate(-50%, -50%);
+`;
+
+const BlueCloudHeader = styled`
+
+color: white; 
+font-size: 5rem; 
+
+`;
 
 const Landing = () => {
 	return (
 		<>
-			<div
-				style={{
-					position: "absolute",
-					left: "50%",
-					bottom: "30%",
-					transform: "translate(-50%, -50%)",
-				}}>
+			<LandingLinkContainer>
 				<Link to="/home">
-					<h1 style={{ color: "white", fontSize: "5rem" }}>blue cloud</h1>
+					<BlueCloudHeader>blue cloud</BlueCloudHeader>
 				</Link>
-			</div>
+			</LandingLinkContainer>
 			<Clouds />
 		</>
 	);
