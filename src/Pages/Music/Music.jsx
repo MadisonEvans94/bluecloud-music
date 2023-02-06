@@ -2,7 +2,7 @@ import React from "react";
 import spotifyLogo from "../../assets/svg/iOS/spotify-icon.svg";
 import "./Music.css";
 // [ ] apple and soundcloud logo]
-// [ ] page grid layout
+// [x] page grid layout
 // [ ] complete the featured section
 // [ ] complete the connect section
 const Music = () => {
@@ -11,39 +11,15 @@ const Music = () => {
 			<div className="music-page-container">
 				{/* .div1 */}
 				<div className="music-link-container">
-					{/* <a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-					<img
-						src={spotifyLogo}
-						alt="logo"
-						style={{
-							minWidth: "10rem",
-							margin: "2rem",
-							color: "white",
-						}}
-					/>
-				</a>
-				<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-					<img
-						src={spotifyLogo}
-						alt="logo"
-						style={{
-							minWidth: "10rem",
-							margin: "2rem",
-							color: "white",
-						}}
-					/>
-				</a>
-				<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-					<img
-						src={spotifyLogo}
-						alt="logo"
-						style={{
-							minWidth: "10rem",
-							margin: "2rem",
-							color: "white",
-						}}
-					/>
-				</a> */}
+					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
+						<img className="music-link-icon" src={spotifyLogo} alt="logo" />
+					</a>
+					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
+						<img className="music-link-icon" src={spotifyLogo} alt="logo" />
+					</a>
+					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
+						<img className="music-link-icon" src={spotifyLogo} alt="logo" />
+					</a>
 				</div>
 				{/* .div2 */}
 				<div className="featured-container">

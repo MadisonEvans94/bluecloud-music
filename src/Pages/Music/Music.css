@@ -11,6 +11,11 @@
 .music-link-container {
 	grid-area: 1 / 1 / 2 / 4;
 	background-color: pink;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	padding: 2rem;
 }
 .featured-container {
 	grid-area: 2 / 1 / 4 / 3;
@@ -18,4 +23,10 @@
 }
 .connect-container {
 	grid-area: 2 / 3 / 4 / 4;
+}
+
+.music-link-icon {
+	min-width: 8rem;
+
+	color: white;
 }
