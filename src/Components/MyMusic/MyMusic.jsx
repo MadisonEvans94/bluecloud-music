@@ -10,7 +10,7 @@ const MyMusic = () => {
 			initial={{ x: 300, opacity: 0 }}
 			animate={{ x: 0, opacity: 1 }}
 			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
-			<h2 className="my-music-header">My Music</h2>
+			<h2 className="music-page-header">My Music</h2>
 			<CatalogContainer>
 				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
 				<CatalogItem

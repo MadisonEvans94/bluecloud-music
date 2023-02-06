@@ -26,13 +26,6 @@
 	padding: 2rem;
 }
 
-/* [ ] still need to fix this */
-/* .my-music-container {
-	grid-area: 2 / 3 / 4 / 4;
-	position: relative;
-	padding-block: 2rem;
-	
-} */
 .featured-container {
 	grid-area: 2 / 1 / 3 / 3;
 	color: white;
@@ -83,13 +76,14 @@
 	flex-direction: column;
 	align-items: center;
 	height: 100%;
-	padding-bottom: 4rem;
+	padding: 0 2rem 4rem 0;
 }
 
-.my-music-header {
-	margin: 0 auto 1rem auto;
+.music-page-header {
+	width: 100%;
+	margin: 2rem auto 1rem auto;
+	text-align: center;
 	font-size: 3rem;
-	width: 16.25rem;
 	color: white;
 }
 .catalog-item {
@@ -115,29 +109,25 @@
 	align-items: center;
 	border: white 1px solid;
 	border-radius: 10px;
-	padding: 1rem;
+	padding: 1rem 1rem 0 1rem;
 	overflow-y: auto;
 	background-color: var(--primary);
 }
 .catalog-container div {
-	margin-block-end: 1rem;
+	margin-bottom: 0.5rem;
 }
-
 .div4 {
+	position: relative;
 	grid-area: 3 / 1 / 4 / 3;
 	color: white;
-	margin: 2rem 0 2.5rem 2rem;
-	position: relative;
+	margin-left: 2rem;
+	padding-inline: 5rem;
 }
 .div4-container {
 	background-color: var(--primary);
-	max-width: 40rem;
-	position: absolute;
+	width: 100%;
+	padding: 1rem;
 	margin-inline: auto;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
 	border: 1px solid white;
 	border-radius: 10px;
 	margin-bottom: 2rem;
@@ -167,7 +157,7 @@
 	}
 	.my-music-container {
 		position: relative;
-		padding-block: 2rem;
+		padding: 2.5rem;
 		height: 100%;
 		margin: 0;
 	}
@@ -178,16 +168,9 @@
 		flex-direction: column;
 		align-items: center;
 		margin: 0;
+		padding: 0 2.5rem;
 	}
-	.featured-card {
-	}
-	.featured-title {
-		width: 100%;
-		margin: 2rem auto 1rem auto;
-		text-align: center;
-		font-size: 3rem;
-		color: white;
-	}
+
 	.featured-content {
 		display: flex;
 		flex-direction: column;
@@ -197,7 +180,10 @@
 	.featured-description {
 		margin: 0;
 		max-width: 100%;
-		max-width: 14rem;
+	}
+	.my-music-container {
+		padding-bottom: 0;
+		padding-top: 0;
 	}
 	.catalog-item {
 		height: 14rem;
@@ -207,6 +193,23 @@
 	.catalog-item img {
 		width: 100%;
 		border-radius: inherit;
+	}
+	.div4 {
+		position: relative;
+
+		color: white;
+		margin: 0;
+		padding-inline: 2.5rem;
+		padding-top: 0;
+	}
+	.div4-container {
+		background-color: var(--primary);
+		width: 100%;
+		padding: 1rem;
+		margin-inline: auto;
+		border: 1px solid white;
+		border-radius: 10px;
+		margin-bottom: 2rem;
 	}
 }
 

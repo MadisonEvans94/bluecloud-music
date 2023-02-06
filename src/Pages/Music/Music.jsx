@@ -19,7 +19,8 @@ const Music = () => {
 					initial={{ y: 600, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
 					transition={{ type: "spring", stiffness: 40, damping: 10 }}>
-					<div className="div4-container" />
+					<h2 className="music-page-header">Other</h2>
+					<div className="div4-container">some text</div>
 				</motion.div>
 			</div>
 		</>
