@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Featured = ({ featuredImg }) => {
 	return (
-		<div className="featured-container">
+		<motion.div
+			className="featured-container"
+			initial={{ x: -600, opacity: 0 }}
+			animate={{ x: 0, opacity: 1 }}
+			transition={{ type: "spring", stiffness: 100, damping: 20 }}>
 			<h1 className="featured-title">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">
@@ -15,17 +20,9 @@ const Featured = ({ featuredImg }) => {
 						iste quidem, beatae sunt.
 					</p>
 				</div>
-
-				{/* <p className="featured-links">
-							<ul>
-								<li>spotify</li>
-								<li>apple music</li>
-								<li>bad snacks page</li>
-							</ul>
-						</p> */}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
-export default Featured;
+export default React.memo(Featured);
