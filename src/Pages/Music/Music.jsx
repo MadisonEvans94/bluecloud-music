@@ -27,9 +27,14 @@ const Music = () => {
 						<h1 className="featured-title">Featured</h1>
 						<div className="featured-content">
 							<img src={featuredImg} alt="" />
+
 							<p className="featured-description">
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-								Officia, odio magnam?
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+								sunt voluptatum veniam eligendi magni quaerat voluptas illo
+								blanditiis earum omnis, soluta ipsam, eveniet est. Recusandae ut
+								minus quia ab qui ea molestiae praesentium laborum dolor aut!
+								Delectus nulla in corrupti eum iure rerum maiores voluptatibus
+								sint iste quidem, beatae sunt.
 							</p>
 						</div>
 						<p className="featured-links">
@@ -47,11 +52,18 @@ const Music = () => {
 						<h2 className="connect-header">Connect</h2>
 						<p className="connect-links">
 							<ul>
-								<li>link</li>
-								<li>link</li>
-								<li>link</li>
+								<li>Instagram</li>
+								<li>Bandcamp</li>
 							</ul>
 						</p>
+					</div>
+					<div className="catalog-container">
+						<div className="catalog-item">catalog item</div>
+						<div>catalog item</div>
+						<div>catalog item</div>
+						<div>catalog item</div>
+						<div>catalog item</div>
+						<div>catalog item</div>
 					</div>
 				</div>
 			</div>
