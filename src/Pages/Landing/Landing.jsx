@@ -9,7 +9,7 @@ import styled from "styled-components";
 const LandingTitle = styled.h1`
 	position: absolute;
 
-	color: blue; 
+	color: white; 
 	font-size:5rem; 
 	width: fit-content;  
 	height; 100%;
@@ -30,7 +30,7 @@ const Landing = () => {
 					right: "0",
 					top: "0",
 					bottom: "0",
-					backgroundColor: "pink",
+					backgroundColor: "#2ea8ff",
 					zIndex: "-10",
 				}}>
 				<Link to="/home/music">
