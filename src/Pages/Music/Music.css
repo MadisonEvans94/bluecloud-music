@@ -112,4 +112,13 @@
 	height: 100%;
 	position: absolute;
 	border-radius: inherit;
+	border-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.play-button {
+	padding: 1rem;
+	border-radius: 20%;
+	border-style: none;
 }
