@@ -6,12 +6,15 @@ import Contact from "../Contact/Contact";
 import Checkout from "../Checkout/Checkout";
 import Music from "../../Pages/Music/Music";
 
+const backgroundColor = "#2ca7ff";
+
 const Home = () => {
 	return (
 		<>
 			<div
 				style={{
-					position: "relative",
+					position: "absolute",
+					backgroundColor: `${backgroundColor}`,
 					display: "flex",
 					flexDirection: "column",
 					justifyContent: "center",

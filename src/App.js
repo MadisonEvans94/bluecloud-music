@@ -17,29 +17,18 @@ function App() {
 	return (
 		<>
 			<Router>
-				<div
-					style={{
-						backgroundColor: `${backgroundColor}`,
-						position: "absolute",
-						width: "100%",
-						height: "100%",
-						display: "flex",
-						flexDirection: "column",
-						alignItems: "center",
-					}}>
-					<Routes>
-						<Route path="/" element={<Landing />} />
-						<Route path="/home" element={<Home />}>
-							<Route path="product-page" element={<ProductPage />} />
-							<Route path="music" element={<Music />} />
-							<Route path="checkout" element={<Checkout />} />
-							<Route path="contact" element={<Contact />} />
+				<Routes>
+					<Route path="/" element={<Landing />} />
+					<Route path="/home" element={<Home />}>
+						<Route path="product-page" element={<ProductPage />} />
+						<Route path="music" element={<Music />} />
+						<Route path="checkout" element={<Checkout />} />
+						<Route path="contact" element={<Contact />} />
 
-							{/* this will be our 404 redirect page */}
-							<Route path="*" element={<PageNotFound />} />
-						</Route>
-					</Routes>
-				</div>
+						{/* this will be our 404 redirect page */}
+						<Route path="*" element={<PageNotFound />} />
+					</Route>
+				</Routes>
 			</Router>
 		</>
 	);
