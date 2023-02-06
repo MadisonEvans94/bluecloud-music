@@ -77,18 +77,6 @@
 	align-items: center;
 }
 
-.music-list-card {
-	max-width: 40rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border: white 1px solid;
-	border-radius: 10px;
-	padding: 1rem;
-	overflow-y: auto;
-}
-
 .my-music-header {
 	margin: 0 auto 1rem auto;
 	font-size: 3rem;
