@@ -1,20 +1,16 @@
 import React from "react";
 import CatalogItem from "../CatalogItem/CatalogItem";
 import img from "../../assets/images/songImg.png";
-import { motion } from "framer-motion";
+import CatalogContainer from "../CatalogContainer/CatalogContainer";
+
 const MyMusic = () => {
 	return (
-		<motion.div
-			className="my-music-container"
-			initial={{ x: 600, opacity: 0 }}
-			animate={{ x: 0, opacity: 1 }}
-			transition={{ type: "spring", stiffness: 100, damping: 20 }}>
+		<div className="my-music-container">
 			<h2 className="my-music-header">My Music</h2>
-
-			<div className="music-list-card">
+			<CatalogContainer>
 				<CatalogItem img={img} />
-			</div>
-		</motion.div>
+			</CatalogContainer>
+		</div>
 	);
 };
 

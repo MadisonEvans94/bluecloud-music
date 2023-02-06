@@ -24,7 +24,8 @@ const Landing = () => {
 						className="landing-title"
 						onClick={() => setIsClicked((prev) => !prev)}
 						initial={{ x: 0, y: 0 }}
-						whileHover={{ scale: 1.1 }}>
+						transition={{ type: "spring", stiffness: 100 }}
+						whileHover={{ scale: 1.05 }}>
 						blue cloud
 					</motion.h1>
 				</Link>

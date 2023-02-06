@@ -10,7 +10,7 @@ const MusicHero = ({ icon }) => {
 				className="music-link-icon"
 				initial={{ y: 50, opacity: 0 }}
 				animate={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.3 }}
+				whileHover={{ scale: 1.2 }}
 				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
 				<a href="https://google.com">
 					<BsSpotify size="100px" style={{ cursor: "pointer" }} />
@@ -20,7 +20,7 @@ const MusicHero = ({ icon }) => {
 				className="music-link-icon"
 				initial={{ y: 50, opacity: 0 }}
 				animate={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.3 }}
+				whileHover={{ scale: 1.2 }}
 				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
 				<a href="https://google.com">
 					<FaApple size="100px" style={{ cursor: "pointer" }} />
@@ -30,7 +30,7 @@ const MusicHero = ({ icon }) => {
 				className="music-link-icon"
 				initial={{ y: 50, opacity: 0 }}
 				animate={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.3 }}
+				whileHover={{ scale: 1.2 }}
 				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
 				<a href="https://google.com">
 					<FaSoundcloud size="100px" style={{ cursor: "pointer" }} />
