@@ -18,7 +18,7 @@ const Music = () => {
 					initial={{ y: 600, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
 					transition={{ type: "spring", stiffness: 100, damping: 20 }}>
-					<div className="div4-container"></div>
+					<div className="div4-container" />
 				</motion.div>
 			</div>
 		</>
