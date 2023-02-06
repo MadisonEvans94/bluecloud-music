@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Landing from "./Pages/Landing/Landing";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import ProductPage from "./Pages/ProductPage/ProductPage";
@@ -27,7 +28,8 @@ function App() {
 						alignItems: "center",
 					}}>
 					<Routes>
-						<Route path="/" element={<Home />}>
+						<Route path="/" element={<Landing />} />
+						<Route path="/home" element={<Home />}>
 							<Route path="product-page" element={<ProductPage />} />
 							<Route path="music" element={<Music />} />
 							<Route path="checkout" element={<Checkout />} />

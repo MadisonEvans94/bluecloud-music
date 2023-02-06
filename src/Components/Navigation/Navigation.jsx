@@ -12,10 +12,10 @@ const Navigation = () => {
 		<>
 			<div style={{ position: "absolute", top: "0", left: "0", width: "100%" }}>
 				<NavContainer>
-					<NavLink to="/">Home</NavLink>
-					<NavLink to="/music">Music</NavLink>
-					<NavLink to="/contact">Contact</NavLink>
-					<NavLink to="/checkout">Checkout</NavLink>
+					<NavLink to="/home">Home</NavLink>
+					<NavLink to="/home/music">Music</NavLink>
+					<NavLink to="/home/contact">Contact</NavLink>
+					<NavLink to="/home/checkout">Checkout</NavLink>
 				</NavContainer>
 				<hr
 					style={{
