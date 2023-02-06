@@ -1,0 +1,21 @@
+.music-page-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.music-link-container {
+	grid-area: 1 / 1 / 2 / 4;
+	background-color: pink;
+}
+.featured-container {
+	grid-area: 2 / 1 / 4 / 3;
+	background-color: blue;
+}
+.connect-container {
+	grid-area: 2 / 3 / 4 / 4;
+}

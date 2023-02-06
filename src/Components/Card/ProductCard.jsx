@@ -8,6 +8,8 @@ const ProductCardContainer = styled.div`
 	justify-content: space-between;
 	justify-self: center;
 	max-width: 65rem;
+	min-width: 50rem
+
 	margin-inline: auto;
 `;
 /**
