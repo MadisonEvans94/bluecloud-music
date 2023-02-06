@@ -22,8 +22,6 @@ function App() {
 						<Route path="music" element={<Music />} />
 						<Route path="checkout" element={<Checkout />} />
 						<Route path="contact" element={<Contact />} />
-
-						{/* this will be our 404 redirect page */}
 						<Route path="*" element={<PageNotFound />} />
 					</Route>
 				</Routes>

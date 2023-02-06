@@ -3,7 +3,7 @@ import spotifyLogo from "../../assets/svg/iOS/spotify-icon.svg";
 
 const Music = () => {
 	//[ ] add apple svg and link
-	//[ ] add spotify svg and link
+	//[x] add spotify svg and link
 
 	console.log(spotifyLogo);
 

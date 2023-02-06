@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Navigation from "../../Components/Navigation/Navigation";
 import ProductPage from "../ProductPage/ProductPage";
 import Contact from "../Contact/Contact";
@@ -25,10 +25,11 @@ const Home = () => {
 				<Navigation />
 				<Routes>
 					<Route path="/" element={<ProductPage />} />
-					<Route path="music" element={<Music />} />
-					<Route path="checkout" element={<Checkout />} />
-					<Route path="contact" element={<Contact />} />
+					<Route path="/home/music" element={<Music />} />
+					<Route path="/home/checkout" element={<Checkout />} />
+					<Route path="/home/contact" element={<Contact />} />
 				</Routes>
+				<Outlet />
 			</div>
 		</>
 	);
