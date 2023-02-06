@@ -8,7 +8,6 @@
 	border-radius: 10px;
 	padding: 1rem;
 	overflow-y: auto;
-	height: 100%;
 }
 .catalog-container div {
 	margin-block-end: 1rem;
