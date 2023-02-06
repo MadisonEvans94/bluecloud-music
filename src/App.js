@@ -11,8 +11,6 @@ import Checkout from "./Pages/Checkout/Checkout";
 import Contact from "./Pages/Contact/Contact";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 
-const backgroundColor = "#2ca7ff";
-
 function App() {
 	return (
 		<>
