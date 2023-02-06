@@ -4,3 +4,127 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.product-card-text {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+	width: fit-content;
+	max-width: 40rem;
+}
+
+.product-card {
+	display: flex;
+	justify-content: space-between;
+	justify-self: center;
+
+	background-color: var(--primary);
+	margin-inline: auto;
+	border: white 1px solid;
+	border-radius: 10px;
+	margin-inline: 2rem;
+}
+
+.description {
+	color: white;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+	.product-card {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product-card-text {
+		margin: 1rem 1rem 0 1rem;
+		width: 100%;
+	}
+
+	.product-card-text h2 {
+		font-size: 28px;
+		text-align: center;
+	}
+
+	.product-card-text .description {
+		font-size: 16px;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.product-card > div {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.product-card {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product-card-text {
+		margin: 1rem 1rem 0 1rem;
+		width: 100%;
+	}
+
+	.product-card-text h2 {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.product-card-text .description {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.product-card > div {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/* Small desktop styles */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+	.product-card {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.product-card-text {
+		margin: 1rem;
+		width: 50%;
+	}
+
+	.product-card-text h2 {
+		font-size: 48px;
+		text-align: left;
+	}
+
+	.product-card-text .description {
+		font-size: 18px;
+		text-align: left;
+		margin-top: 1rem;
+	}
+
+	.product-card > div {
+		width: 50%;
+		margin: 0;
+	}
+}
+/* Large desktop styles */
+@media only screen and (min-width: 1280px) {
+	.store-page-container {
+		padding: 0 80px;
+	}
+	.product-card-text h2 {
+		font-size: 60px;
+	}
+}
