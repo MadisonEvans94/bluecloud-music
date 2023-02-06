@@ -7,9 +7,6 @@ import MyMusic from "../../Components/MyMusic/MyMusic";
 import "./Music.css";
 import featuredImg from "../../assets/images/badsnacks-reference-img.png";
 // [ ] apple and soundcloud logo]
-// [x] page grid layout
-// [x] complete the featured section
-// [ ] refactor
 // [ ] finish completely styling the featured section
 // [ ] complete the connect section
 const Music = () => {
