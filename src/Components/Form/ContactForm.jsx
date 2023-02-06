@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { animate, motion } from "framer-motion";
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
 		name: "",
@@ -31,7 +31,12 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className="form-container" onSubmit={handleSubmit}>
+		<motion.div
+			className="form-container"
+			onSubmit={handleSubmit}
+			initial={{ y: 200, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			transition={{ type: "spring", damper: 10 }}>
 			<div className="form-subsection">
 				{/* name input section*/}
 				<div>
@@ -71,7 +76,7 @@ const ContactForm = () => {
 				<h2>For All Other Inquiries: </h2>
 				<p>bluecloudbeats@gmail.com</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
