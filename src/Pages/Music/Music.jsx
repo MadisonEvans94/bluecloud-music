@@ -1,5 +1,6 @@
 import React from "react";
-import spotifyLogo from "../../assets/svg/iOS/spotify-icon.svg";
+import spotifyIcon from "../../assets/svg/iOS/spotify-icon.svg";
+import soundcloudIcon from "../../assets/svg/soundcloud-icon.svg";
 import "./Music.css";
 import featuredImg from "../../assets/images/badsnacks-reference-img.png";
 // [ ] apple and soundcloud logo]
@@ -12,13 +13,13 @@ const Music = () => {
 			<div className="music-page-container">
 				<div className="music-link-container">
 					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<img className="music-link-icon" src={spotifyLogo} alt="logo" />
+						<img className="music-link-icon" src={spotifyIcon} alt="logo" />
 					</a>
 					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<img className="music-link-icon" src={spotifyLogo} alt="logo" />
+						<img className="music-link-icon" src={spotifyIcon} alt="logo" />
 					</a>
 					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<img className="music-link-icon" src={spotifyLogo} alt="logo" />
+						<img className="music-link-icon" src={spotifyIcon} alt="logo" />
 					</a>
 				</div>
 
@@ -27,7 +28,6 @@ const Music = () => {
 						<h1 className="featured-title">Featured</h1>
 						<div className="featured-content">
 							<img src={featuredImg} alt="" />
-
 							<p className="featured-description">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
 								sunt voluptatum veniam eligendi magni quaerat voluptas illo
@@ -36,13 +36,14 @@ const Music = () => {
 								voluptatibus sint iste quidem, beatae sunt.
 							</p>
 						</div>
-						<p className="featured-links">
+
+						{/* <p className="featured-links">
 							<ul>
 								<li>spotify</li>
 								<li>apple music</li>
 								<li>bad snacks page</li>
 							</ul>
-						</p>
+						</p> */}
 					</div>
 				</div>
 
