@@ -2,10 +2,14 @@
 	max-width: 40rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	border: white 1px solid;
 	border-radius: 10px;
 	padding: 1rem;
 	overflow-y: auto;
+	height: 100%;
+}
+.catalog-container div {
+	margin-block-end: 1rem;
 }

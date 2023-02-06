@@ -23,13 +23,13 @@
 	height: 100%;
 	padding: 2rem;
 }
-.music-link-container img {
-	background-color: pink;
-}
+
+/* [ ] still need to fix this */
 .my-music-container {
 	grid-area: 2 / 3 / 4 / 4;
 	margin-inline: 2rem;
 	padding-block: 2rem;
+	height: 42rem;
 }
 .featured-container {
 	grid-area: 2 / 1 / 4 / 3;

@@ -9,6 +9,8 @@ const MyMusic = () => {
 			<h2 className="my-music-header">My Music</h2>
 			<CatalogContainer>
 				<CatalogItem img={img} />
+				<CatalogItem img={img} />
+				<CatalogItem img={img} />
 			</CatalogContainer>
 		</div>
 	);
