@@ -1,15 +1,12 @@
 import React from "react";
-import ProductCard from "../../Components/Card/ProductCard";
+import { Routes, Route } from "react-router-dom";
 import Navigation from "../../Components/Navigation/Navigation";
+import ProductPage from "../ProductPage/ProductPage";
+import Contact from "../Contact/Contact";
+import Checkout from "../Checkout/Checkout";
+import Music from "../../Pages/Music/Music";
 
 const Home = () => {
-	const backgroundImg =
-		"https://marketplace.canva.com/EAFJ9TROiw8/1/0/1600w/canva-renaissance-bust-vaporwave-aesthetic-album-cover-SVO6_i94IGk.jpg";
-	const title = "Blue Tape Vol: 1";
-	const description =
-		"Introducing a new music sample pack for producers and beat-makers. This pack offers a diverse collection of high-quality samples, including drums, synths, basslines, and more. Suitable for various genres, elevate your productions with this must-have pack. Get your copy now!";
-	const price = "$30";
-
 	return (
 		<>
 			<div
@@ -23,12 +20,12 @@ const Home = () => {
 					height: "100%",
 				}}>
 				<Navigation />
-				<ProductCard
-					title={title}
-					description={description}
-					backgroundImg={backgroundImg}
-					price={price}
-				/>
+				<Routes>
+					<Route path="/" element={<ProductPage />} />
+					<Route path="music" element={<Music />} />
+					<Route path="checkout" element={<Checkout />} />
+					<Route path="contact" element={<Contact />} />
+				</Routes>
 			</div>
 		</>
 	);
