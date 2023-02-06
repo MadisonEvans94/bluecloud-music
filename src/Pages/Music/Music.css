@@ -27,6 +27,7 @@
 /* [ ] still need to fix this */
 .my-music-container {
 	grid-area: 2 / 3 / 4 / 4;
+	position: relative;
 
 	padding-block: 2rem;
 	height: 42rem;
@@ -125,4 +126,21 @@
 	padding: 1rem;
 	border-radius: 20%;
 	border-style: none;
+}
+.div4 {
+	grid-area: 3 / 1 / 4 / 3;
+	color: white;
+
+	margin: 2rem 0 2.5rem 2rem;
+	position: relative;
+}
+.div4-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-bottom: 2rem;
 }
