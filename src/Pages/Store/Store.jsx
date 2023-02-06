@@ -2,7 +2,6 @@ import React from "react";
 import ProductCard from "../../Components/Card/ProductCard";
 import "./Store.css";
 import productImg from "../../assets/images/product-image.png";
-
 const ProductPage = () => {
 	//assets/images/honeypack.png";
 
