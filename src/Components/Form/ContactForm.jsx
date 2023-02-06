@@ -105,38 +105,12 @@ const ContactForm = () => {
 						marginBottom: "1rem",
 					}}
 				/>
-				{/* //TODO Message Content  */}
-				<div style={{ display: "flex", flexDirection: "column" }}>
-					<textarea
-						placeholder="Message"
-						id="message"
-						name="message"
-						value={formData.message}
-						onChange={handleInputChange}
-						required
-						style={{
-							marginBottom: "1rem",
-							minHeight: "10rem",
-						}}
-					/>
-				</div>
+
 				<button type="submit">Submit</button>
 			</FormSubSection>
 			<ContactInfo>
-				<h2>Contact Details</h2>
+				<h2>For All Other Inquiries: </h2>
 				<p>bluecloudbeats@gmail.com</p>
-				<h2>Location</h2>
-				<p>Phoenix, Arizona</p>
-				<h2>Social</h2>
-				<div
-					style={{
-						display: "flex",
-						flexDirection: "column",
-						justifyContent: "space-between",
-					}}>
-					<a href="http://instagram.com">Instagram</a>
-					<a href="http://spotify.com">Spotify</a>
-				</div>
 			</ContactInfo>
 		</FormContainer>
 	);
