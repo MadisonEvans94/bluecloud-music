@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPlayCircle } from "react-icons/fa";
-const CatalogItem = ({ song, img }) => {
+const CatalogItem = ({ img }) => {
 	return (
 		<>
 			<div className="catalog-item">
-				<motion.button
+				{/* <motion.button
 					className="song-overlay"
 					initial={{ opacity: 0, transition: { duration: 0.1 } }}
 					whileHover={{
@@ -17,9 +17,17 @@ const CatalogItem = ({ song, img }) => {
 						color="white"
 						style={{ cursor: "pointer" }}
 					/>
-				</motion.button>
+				</motion.button> */}
 
-				<img src={img} alt="" />
+				<img
+					src={img}
+					style={{
+						objectFit: "contain",
+						objectPosition: "center",
+						width: "14rem",
+					}}
+					alt="cover"
+				/>
 			</div>
 		</>
 	);

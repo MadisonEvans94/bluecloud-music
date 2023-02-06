@@ -54,6 +54,7 @@
 	margin-left: 1rem;
 }
 .featured-title {
+	max-width: 40rem;
 	width: 100%;
 	margin: 2rem auto 1rem auto;
 	font-size: 3rem;
@@ -77,9 +78,11 @@
 }
 
 .music-list-card {
-	width: 100%;
+	max-width: 40rem;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	border: white 1px solid;
 	border-radius: 10px;
 	padding: 0 1rem;
@@ -89,7 +92,7 @@
 .my-music-header {
 	margin: 0 auto 1rem auto;
 	font-size: 3rem;
-	width: 100%;
+	width: 16.25rem;
 	color: white;
 }
 
@@ -98,6 +101,10 @@
 	width: 100%;
 	height: 14rem;
 	margin-block: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .catalog-item img {
 	width: 100%;
@@ -111,7 +118,7 @@
 }
 .song-overlay {
 	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
+	width: 14rem;
 	height: 100%;
 	position: absolute;
 	border-radius: inherit;
