@@ -1,9 +1,12 @@
 import React from "react";
 
-const CatalogItem = ({ song }) => {
+const CatalogItem = ({ song, img }) => {
 	return (
 		<>
-			<div className="catalog-item"></div>
+			<div className="catalog-item">
+				<div className="song-overlay" />
+				<img src={img} alt="" />
+			</div>
 		</>
 	);
 };
