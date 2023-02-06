@@ -1,5 +1,7 @@
 :root {
-	--secondary: #afdcff;
+	/* --secondary: #afdcff; */
+	/* --primary: #0052be; */
+	--secondary: #2ea8ff;
 	--primary: #0052be;
 }
 .home-container {
