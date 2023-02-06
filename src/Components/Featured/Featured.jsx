@@ -11,7 +11,11 @@ const Featured = ({ featuredImg }) => {
 			<h1 className="featured-title">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">
-					<CatalogItem img={featuredImg} />
+					<CatalogItem
+						url={
+							"https://soundcloud.com/bad-snacks/lucky-blue-cloud-remix?si=1b847eac94c248b7a9771941ed9c1ecf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+						}
+					/>
 					<p className="featured-description">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt
 						voluptatum veniam eligendi magni quaerat voluptas illo blanditiis

@@ -38,7 +38,6 @@ const ContactForm = () => {
 			animate={{ y: 0, opacity: 1 }}
 			transition={{ type: "spring", damper: 10 }}>
 			<div className="form-subsection">
-				{/* name input section*/}
 				<div>
 					<input
 						placeholder="Name"
@@ -52,7 +51,7 @@ const ContactForm = () => {
 					/>
 				</div>
 				<hr className="divider" />
-				{/* email input section */}
+
 				<div>
 					<input
 						placeholder="Email"
@@ -66,7 +65,7 @@ const ContactForm = () => {
 					/>
 				</div>
 				<hr className="divider" />
-				{/* feedback section */}
+
 				<input className="feedback-section" type="text-area" rows={5} />
 				<button className="submit-button" type="submit">
 					Submit

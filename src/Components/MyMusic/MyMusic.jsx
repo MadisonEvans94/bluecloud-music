@@ -1,6 +1,6 @@
 import React from "react";
 import CatalogItem from "../CatalogItem/CatalogItem";
-import img from "../../assets/images/songImg.png";
+
 import CatalogContainer from "../CatalogContainer/CatalogContainer";
 import { motion } from "framer-motion";
 const MyMusic = () => {
@@ -12,9 +12,11 @@ const MyMusic = () => {
 			transition={{ type: "spring", stiffness: 100, damping: 20 }}>
 			<h2 className="my-music-header">My Music</h2>
 			<CatalogContainer>
-				<CatalogItem img={img} />
-				<CatalogItem img={img} />
-				<CatalogItem img={img} />
+				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
+				<CatalogItem
+					url={"https://soundcloud.com/bluecloudmusic/more-than-enough-1"}
+				/>
+				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
 			</CatalogContainer>
 		</motion.div>
 	);

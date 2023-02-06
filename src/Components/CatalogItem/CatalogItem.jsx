@@ -1,18 +1,17 @@
 import React from "react";
-// import { motion } from "framer-motion";
-// import { FaPlayCircle } from "react-icons/fa";
-const CatalogItem = ({ img }) => {
+
+import "./CatalogItem.css";
+import ReactPlayer from "react-player";
+const CatalogItem = ({ url }) => {
+	const urlColorWrapper = `${url}?color=0064BE`;
 	return (
 		<>
 			<div className="catalog-item">
-				<img
-					src={img}
-					style={{
-						objectFit: "contain",
-						objectPosition: "center",
-						width: "14rem",
-					}}
-					alt="cover"
+				<ReactPlayer
+					url={urlColorWrapper}
+					playing={false}
+					controls={true}
+					width="100%"
 				/>
 			</div>
 		</>

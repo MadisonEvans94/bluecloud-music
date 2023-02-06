@@ -61,6 +61,7 @@
 }
 .submit-button:hover {
 	color: rgb(0, 100, 190);
+	background-color: white;
 }
 .submit-button {
 	background-color: rgb(0, 100, 190);
