@@ -29,3 +29,9 @@
 	background-color: #2ea8ff;
 	z-index: -100;
 }
+@media only screen and (max-width: 767px) {
+	.landing-title {
+		font-size: 3rem;
+		top: 45%;
+	}
+}
