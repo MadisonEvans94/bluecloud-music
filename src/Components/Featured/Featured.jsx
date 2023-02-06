@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import CatalogItem from "../CatalogItem/CatalogItem";
 const Featured = ({ featuredImg }) => {
 	return (
 		<motion.div
@@ -11,7 +11,7 @@ const Featured = ({ featuredImg }) => {
 			<h1 className="featured-title">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">
-					<img src={featuredImg} alt="" />
+					<CatalogItem img={featuredImg} />
 					<p className="featured-description">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt
 						voluptatum veniam eligendi magni quaerat voluptas illo blanditiis

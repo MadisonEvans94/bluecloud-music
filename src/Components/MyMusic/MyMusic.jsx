@@ -13,7 +13,6 @@ const MyMusic = () => {
 
 			<div className="music-list-card">
 				<CatalogItem img={img} />
-				<CatalogItem img={img} />
 			</div>
 		</motion.div>
 	);
