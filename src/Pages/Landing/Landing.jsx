@@ -22,7 +22,7 @@ const LandingTitle = styled.h1`
 const Landing = () => {
 	return (
 		<>
-			<Link to="/home">
+			<Link to="/home/music">
 				<LandingTitle>blue cloud</LandingTitle>
 			</Link>
 
