@@ -14,7 +14,9 @@ const Landing = () => {
 					bottom: "30%",
 					transform: "translate(-50%, -50%)",
 				}}>
-				<h1 style={{ color: "white", fontSize: "5rem" }}>blue cloud</h1>
+				<Link to="/home">
+					<h1 style={{ color: "white", fontSize: "5rem" }}>blue cloud</h1>
+				</Link>
 			</div>
 			<Clouds />
 		</>
