@@ -33,7 +33,8 @@ const ContactForm = () => {
 	return (
 		<div className="form-container" onSubmit={handleSubmit}>
 			<div className="form-subsection">
-				<div style={{ display: "flex", flexDirection: "column" }}>
+				{/* name input section*/}
+				<div>
 					<input
 						placeholder="Name"
 						type="text"
@@ -42,25 +43,12 @@ const ContactForm = () => {
 						value={formData.name}
 						onChange={handleInputChange}
 						required
-						style={{
-							backgroundColor: "transparent",
-							border: "none",
-							height: "2rem",
-						}}
+						className="name-input"
 					/>
 				</div>
-				<hr
-					style={{
-						color: "white",
-						border: "none",
-						backgroundColor: "white",
-						width: "100%",
-						height: "1px",
-						marginBottom: "10px",
-					}}
-				/>
-				{/* //TODO email input */}
-				<div style={{ display: "flex", flexDirection: "column" }}>
+				<hr className="divider" />
+				{/* email input section */}
+				<div>
 					<input
 						placeholder="Email"
 						type="email"
@@ -69,25 +57,15 @@ const ContactForm = () => {
 						value={formData.email}
 						onChange={handleInputChange}
 						required
-						style={{
-							backgroundColor: "transparent",
-							border: "none",
-							height: "2rem",
-						}}
+						className="email-input"
 					/>
 				</div>
-				<hr
-					style={{
-						color: "white",
-						border: "none",
-						backgroundColor: "white",
-						width: "100%",
-						height: "1px",
-						marginBottom: "1rem",
-					}}
-				/>
+				<hr className="divider" />
+				{/* feedback section */}
 				<input className="feedback-section" type="text-area" rows={5} />
-				<button type="submit">Submit</button>
+				<button className="submit-button" type="submit">
+					Submit
+				</button>
 			</div>
 			<div className="contact-info">
 				<h2>For All Other Inquiries: </h2>
