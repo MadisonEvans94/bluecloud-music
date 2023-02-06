@@ -5,28 +5,25 @@ import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
 import styled from "styled-components";
 
-const LandingLinkContainer = styled`
-position: absolute;
-left: 50%; 
-bottom: 30%; 
-transform: translate(-50%, -50%);
-`;
-
-const BlueCloudHeader = styled`
-
-color: white; 
-font-size: 5rem; 
-
+const LandingTitle = styled.h1`
+	position: absolute;
+	color: white; 
+	font-size:5rem; 
+	width: fit-content;  
+	height; 100%;
+	left: 50%; 
+	bottom: 30%; 
+	transform: translate(-50%, -50%); 
+	
 `;
 
 const Landing = () => {
 	return (
 		<>
-			<LandingLinkContainer>
-				<Link to="/home">
-					<BlueCloudHeader>blue cloud</BlueCloudHeader>
-				</Link>
-			</LandingLinkContainer>
+			<Link to="/home">
+				<LandingTitle>blue cloud</LandingTitle>
+			</Link>
+
 			<Clouds />
 		</>
 	);
