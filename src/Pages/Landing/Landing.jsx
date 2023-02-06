@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
+import { motion } from "framer-motion";
 
 const Landing = () => {
 	const [isClicked, setIsClicked] = useState(false);
@@ -19,11 +20,13 @@ const Landing = () => {
 					zIndex: "-10",
 				}}>
 				<Link to="/home/music">
-					<h1
+					<motion.h1
 						className="landing-title"
-						onClick={() => setIsClicked((prev) => !prev)}>
+						onClick={() => setIsClicked((prev) => !prev)}
+						initial={{ x: 0, y: 0 }}
+						whileHover={{ scale: 1.1 }}>
 						blue cloud
-					</h1>
+					</motion.h1>
 				</Link>
 
 				<Clouds isClicked={isClicked} />
