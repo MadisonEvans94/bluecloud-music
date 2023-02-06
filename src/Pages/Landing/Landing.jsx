@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
@@ -20,13 +20,16 @@ const LandingTitle = styled.h1`
 `;
 
 const Landing = () => {
+	const [isClicked, setIsClicked] = useState(false);
 	return (
 		<>
 			<Link to="/home/music">
-				<LandingTitle>blue cloud</LandingTitle>
+				<LandingTitle onClick={() => setIsClicked((prev) => !prev)}>
+					blue cloud
+				</LandingTitle>
 			</Link>
 
-			<Clouds />
+			<Clouds isClicked={isClicked} />
 		</>
 	);
 };
