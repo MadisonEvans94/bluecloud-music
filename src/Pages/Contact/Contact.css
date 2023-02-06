@@ -43,7 +43,7 @@
 }
 .contact-info p {
 	margin-top: 1rem;
-	color: rgb(0, 101, 208);
+	color: rgb(0, 100, 190);
 }
 .feedback-section {
 	height: 10rem;
@@ -69,5 +69,5 @@
 }
 .submit-button {
 	color: white;
-	background-color: rgb(0, 101, 208);
+	background-color: rgb(0, 100, 190);
 }

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { BsSpotify } from "react-icons/bs";
 import { FaApple } from "react-icons/fa";
 import { FaSoundcloud } from "react-icons/fa";
-const MusicHero = ({ icon }) => {
+const MusicHero = () => {
 	return (
 		<div className="music-link-container">
 			<motion.div

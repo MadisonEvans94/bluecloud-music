@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-/**
- * Navigation component that displays the navigation links of the app
- * @function
- * @returns {JSX.Element}
- */
+//TODO: refactor this code
 const Navigation = () => {
 	return (
 		<>
@@ -52,7 +48,7 @@ const NavLink = styled(Link)`
 	text-decoration: none;
 	margin-right: 1rem;
 	&:hover {
-		color: #aaa;
+		color: rgb(0, 100, 190);
 	}
 `;
 

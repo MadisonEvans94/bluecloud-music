@@ -4,28 +4,52 @@ import { Link } from "react-router-dom";
 import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
 import { motion } from "framer-motion";
+const pageVariants = {
+	initial: {
+		opacity: 0,
+		scale: 0.8,
+	},
+	animate: {
+		opacity: 1,
+		scale: 1.05,
+		transition: {
+			type: "spring",
+			damper: 20,
+			duration: 1,
+		},
+	},
+	exit: {
+		opacity: 0,
+		x: "-100",
+		transition: {
+			duration: 1,
+		},
+	},
+	transition: { type: "spring", stiffness: 100 },
+	hover: {
+		scale: 1.1,
+		transition: {
+			duration: 1,
+		},
+	},
+};
 
 const Landing = () => {
 	const [isClicked, setIsClicked] = useState(false);
+
 	return (
 		<>
-			<div
-				style={{
-					position: "absolute",
-					left: "0",
-					right: "0",
-					top: "0",
-					bottom: "0",
-					backgroundColor: "#2ea8ff",
-					zIndex: "-10",
-				}}>
+			<div className="landing-page">
 				<Link to="/home/music">
 					<motion.h1
 						className="landing-title"
 						onClick={() => setIsClicked((prev) => !prev)}
-						initial={{ x: 0, y: 0 }}
-						transition={{ type: "spring", stiffness: 100 }}
-						whileHover={{ scale: 1.05 }}>
+						variants={pageVariants}
+						initial="initial"
+						animate="animate"
+						exit="exit"
+						whileHover="hover"
+						transition="transition">
 						blue cloud
 					</motion.h1>
 				</Link>

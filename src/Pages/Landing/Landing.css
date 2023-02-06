@@ -18,3 +18,12 @@
 	width: 100%;
 	margin-top: 70%;
 }
+.landing-page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #2ea8ff;
+	z-index: -10;
+}
