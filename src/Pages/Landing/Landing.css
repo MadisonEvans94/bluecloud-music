@@ -8,3 +8,15 @@
 	box-sizing: border-box;
 	margin: 0;
 }
+
+.landing-title {
+	position: absolute;
+
+	color: white;
+	font-size: 5rem;
+
+	left: 50%;
+	bottom: 20%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}

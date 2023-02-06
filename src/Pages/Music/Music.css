@@ -33,7 +33,7 @@
 }
 .featured-container {
 	grid-area: 2 / 1 / 4 / 3;
-
+	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
