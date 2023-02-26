@@ -6,7 +6,7 @@ import { FaSoundcloud } from "react-icons/fa";
 
 const MusicHero = () => {
 	return (
-		<div className="music-link-container">
+		<div className="hero-section">
 			<motion.div
 				className="music-link-icon"
 				initial={{ y: 50, opacity: 0 }}

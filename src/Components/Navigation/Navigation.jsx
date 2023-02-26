@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 //TODO: refactor this code
 const Navigation = () => {
 	return (
 		<>
 			<div style={{ top: "0", left: "0", width: "100%" }} className="nav">
 				<NavContainer>
-					<NavLink to="/home/store">Store</NavLink>
-					<NavLink to="/home/music">Music</NavLink>
-					<NavLink to="/home/contact">Contact</NavLink>
+					<Link to="/home/store">Store</Link>
+					<Link to="/home/music">Music</Link>
+					<Link to="/home/contact">Contact</Link>
 				</NavContainer>
 				<hr
 					style={{
@@ -47,9 +47,6 @@ const NavLink = styled(Link)`
 	color: #fff;
 	text-decoration: none;
 	margin-right: 1rem;
-	&:hover {
-		color: rgb(0, 100, 190);
-	}
 `;
 
 export default Navigation;
