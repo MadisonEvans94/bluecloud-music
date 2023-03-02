@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import "./Navigation.css";
 const Navigation = () => {
 	return (
 		<>
 			<div style={{ top: "0", left: "0", width: "100%" }} className="nav">
-				<NavContainer>
+				<div className="nav-container">
 					<Link to="/home/store">Store</Link>
 					<Link to="/home/music">Music</Link>
 					<Link to="/home/contact">Contact</Link>
-				</NavContainer>
+				</div>
 				<hr
 					style={{
 						color: "white",
@@ -28,16 +28,7 @@ const Navigation = () => {
 /**
  * Styled component for the navigation container
  */
-const NavContainer = styled.nav`
-	top: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 6rem;
-	color: #fff;
-`;
+const NavContainer = styled.nav``;
 
 /**
  * Styled component for the navigation links
