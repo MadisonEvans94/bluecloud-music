@@ -41,7 +41,7 @@ const ContactForm = () => {
 			//[x] clear the form after submission
 			setSuccessMessage("submission successful");
 		} catch (error) {
-			setSuccessMessage("Form Failed");
+			setSuccessMessage("submission failed (server is not currently running)");
 			console.log(successMessage);
 		}
 	};
