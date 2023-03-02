@@ -27,7 +27,7 @@
 	border-bottom: 1px solid white;
 	background-color: black;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	height: 100%;
 	padding: 2rem;
@@ -169,7 +169,10 @@
 	border-radius: 10px;
 	margin-bottom: 2rem;
 }
-
+.icon-container {
+	width: 30%;
+	height: 30%;
+}
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
 	.music-page-container {
@@ -247,6 +250,10 @@
 		border: 1px solid white;
 		border-radius: 10px;
 		margin-bottom: 2rem;
+	}
+	.icon-container {
+		width: 4rem;
+		height: 4rem;
 	}
 }
 
