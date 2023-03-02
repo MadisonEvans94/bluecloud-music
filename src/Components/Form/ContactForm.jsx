@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
-		name: "",
+		full_name: "",
 		email: "",
-		messageType: "",
-		message: "",
 	});
 
 	const handleInputChange = (event) => {
@@ -17,60 +16,77 @@ const ContactForm = () => {
 
 	const resetFormData = () => {
 		setFormData({
-			name: "",
+			full_name: "",
 			email: "",
-			messageType: "",
-			message: "",
 		});
 	};
 
-	const handleSubmit = (event) => {
+	const handleSubmit = async (event) => {
 		event.preventDefault();
-		console.log("Form Data:", formData);
-		resetFormData();
+		try {
+			const response = await fetch("http://localhost:8000", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+			const data = await response.json();
+			console.log(data);
+			resetFormData();
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
 	return (
 		<motion.div
 			className="form-container"
-			onSubmit={handleSubmit}
 			initial={{ y: 200, opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
 			transition={{ type: "spring", damper: 10 }}>
-			<div className="form-subsection">
-				<div>
-					<input
-						placeholder="Name"
-						type="text"
-						id="name"
-						name="name"
-						value={formData.name}
-						onChange={handleInputChange}
-						required
-						className="name-input"
-					/>
-				</div>
-				<hr className="divider" />
+			<form onSubmit={handleSubmit}>
+				<div className="form-subsection">
+					<div>
+						<input
+							placeholder="Name"
+							type="text"
+							id="name"
+							name="full_name"
+							value={formData.name}
+							onChange={handleInputChange}
+							required
+							className="name-input"
+						/>
+					</div>
+					<hr className="divider" />
 
-				<div>
-					<input
-						placeholder="Email"
-						type="email"
-						id="email"
-						name="email"
-						value={formData.email}
-						onChange={handleInputChange}
-						required
-						className="email-input"
-					/>
-				</div>
-				<hr className="divider" />
+					<div>
+						<input
+							placeholder="Email"
+							type="email"
+							id="email"
+							name="email"
+							value={formData.email}
+							onChange={handleInputChange}
+							required
+							className="email-input"
+						/>
+					</div>
+					<hr className="divider" />
 
-				<input className="feedback-section" type="text-area" rows={5} />
-				<button className="submit-button" type="submit">
-					Submit
-				</button>
-			</div>
+					<textarea
+						className="feedback-section"
+						rows={5}
+						name="message"
+						value={formData.message}
+						onChange={handleInputChange}
+					/>
+					<button className="submit-button" type="submit">
+						Submit
+					</button>
+				</div>
+			</form>
 			<div className="contact-info">
 				<h2>For All Other Inquiries: </h2>
 				<p>bluecloudbeats@gmail.com</p>
