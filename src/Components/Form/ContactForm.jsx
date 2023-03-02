@@ -46,7 +46,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		//[ ] clean up the positioning of the stylign
+		//[x] clean up the positioning of the stylign
 		<motion.div
 			className="form-container"
 			initial={{ y: 200, opacity: 0 }}
