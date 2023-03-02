@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+const endpoint = "http://localhost:8000";
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const ContactForm = () => {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		try {
-			const response = await fetch("http://localhost:8000", {
+			const response = await fetch(endpoint, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -34,12 +35,15 @@ const ContactForm = () => {
 			const data = await response.json();
 			console.log(data);
 			resetFormData();
+			//[ ] add a visual queue for comfirming successfull post
+			//[ ] clear the form after submission
 		} catch (error) {
 			console.error(error);
 		}
 	};
 
 	return (
+		//[ ] clean up the positioning of the stylign
 		<motion.div
 			className="form-container"
 			initial={{ y: 200, opacity: 0 }}
@@ -74,14 +78,6 @@ const ContactForm = () => {
 						/>
 					</div>
 					<hr className="divider" />
-
-					<textarea
-						className="feedback-section"
-						rows={5}
-						name="message"
-						value={formData.message}
-						onChange={handleInputChange}
-					/>
 					<button className="submit-button" type="submit">
 						Submit
 					</button>
