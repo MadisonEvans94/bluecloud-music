@@ -170,8 +170,8 @@
 	margin-bottom: 2rem;
 }
 .icon-container {
-	width: 30%;
-	height: 30%;
+	width: 100%;
+	height: 10rem;
 }
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
