@@ -7,6 +7,7 @@ const ContactForm = () => {
 		full_name: "",
 		email: "",
 	});
+	const [successMessage, setSuccessMessage] = useState("");
 
 	const handleInputChange = (event) => {
 		setFormData({
@@ -16,10 +17,11 @@ const ContactForm = () => {
 	};
 
 	const resetFormData = () => {
-		setFormData({
+		setFormData((prevState) => ({
+			...prevState,
 			full_name: "",
 			email: "",
-		});
+		}));
 	};
 
 	const handleSubmit = async (event) => {
@@ -32,13 +34,14 @@ const ContactForm = () => {
 				},
 				body: JSON.stringify(formData),
 			});
-			const data = await response.json();
-			console.log(data);
 			resetFormData();
+			console.log(formData);
+			console.log(response);
 			//[ ] add a visual queue for comfirming successfull post
-			//[ ] clear the form after submission
+			//[x] clear the form after submission
 		} catch (error) {
-			console.error(error);
+			setSuccessMessage("Form Failed");
+			console.log(successMessage);
 		}
 	};
 
@@ -57,7 +60,7 @@ const ContactForm = () => {
 							type="text"
 							id="name"
 							name="full_name"
-							value={formData.name}
+							value={formData.full_name}
 							onChange={handleInputChange}
 							required
 							className="name-input"
