@@ -37,8 +37,9 @@ const ContactForm = () => {
 			resetFormData();
 			console.log(formData);
 			console.log(response);
-			//[ ] add a visual queue for comfirming successfull post
+			//[x] add a visual queue for comfirming successfull post
 			//[x] clear the form after submission
+			setSuccessMessage("submission successful");
 		} catch (error) {
 			setSuccessMessage("Form Failed");
 			console.log(successMessage);
@@ -84,6 +85,7 @@ const ContactForm = () => {
 					<button className="submit-button" type="submit">
 						Submit
 					</button>
+					<p className="submission-success">{successMessage}</p>
 				</div>
 			</form>
 			<div className="contact-info">
