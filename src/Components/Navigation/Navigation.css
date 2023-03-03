@@ -10,6 +10,9 @@
 .hamburger {
 	display: none;
 }
+.hidden {
+	color: pink;
+}
 
 .nav-container {
 	top: 0;
