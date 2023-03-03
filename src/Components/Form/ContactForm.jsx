@@ -47,52 +47,60 @@ const ContactForm = () => {
 	};
 
 	return (
-		//[x] clean up the positioning of the stylign
-		<motion.div
-			className="form-container"
-			initial={{ y: 200, opacity: 0 }}
-			animate={{ y: 0, opacity: 1 }}
-			transition={{ type: "spring", damper: 10 }}>
-			<form onSubmit={handleSubmit}>
-				<div className="form-subsection">
-					<div>
-						<input
-							placeholder="Name"
-							type="text"
-							id="name"
-							name="full_name"
-							value={formData.full_name}
-							onChange={handleInputChange}
-							required
-							className="name-input"
-						/>
-					</div>
-					<hr className="divider" />
+		<div style={{ display: "flex", flexDirection: "column" }}>
+			{/* [ ] make it so that the h1 fades in after the animation of the card */}
+			<motion.h1
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				style={{ marginBottom: "2rem", marginInline: "auto" }}>
+				Get Added to the Email List
+			</motion.h1>
+			<motion.div
+				className="form-container"
+				initial={{ y: 200, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ type: "spring", damper: 10 }}>
+				<form onSubmit={handleSubmit}>
+					<div className="form-subsection">
+						<div>
+							<input
+								placeholder="Name"
+								type="text"
+								id="name"
+								name="full_name"
+								value={formData.full_name}
+								onChange={handleInputChange}
+								required
+								className="name-input"
+							/>
+						</div>
+						<hr className="divider" />
 
-					<div>
-						<input
-							placeholder="Email"
-							type="email"
-							id="email"
-							name="email"
-							value={formData.email}
-							onChange={handleInputChange}
-							required
-							className="email-input"
-						/>
+						<div>
+							<input
+								placeholder="Email"
+								type="email"
+								id="email"
+								name="email"
+								value={formData.email}
+								onChange={handleInputChange}
+								required
+								className="email-input"
+							/>
+						</div>
+						<hr className="divider" />
+						<button className="submit-button" type="submit">
+							Submit
+						</button>
+						<p className="submission-success">{successMessage}</p>
 					</div>
-					<hr className="divider" />
-					<button className="submit-button" type="submit">
-						Submit
-					</button>
-					<p className="submission-success">{successMessage}</p>
+				</form>
+				<div className="contact-info">
+					<h2>For All Other Inquiries: </h2>
+					<p>bluecloudbeats@gmail.com</p>
 				</div>
-			</form>
-			<div className="contact-info">
-				<h2>For All Other Inquiries: </h2>
-				<p>bluecloudbeats@gmail.com</p>
-			</div>
-		</motion.div>
+			</motion.div>
+		</div>
 	);
 };
 
