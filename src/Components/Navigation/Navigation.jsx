@@ -22,15 +22,6 @@ const Navigation = () => {
 						</Link>
 					</div>
 				</div>
-				<hr
-					style={{
-						color: "white",
-						border: "none",
-						backgroundColor: "white",
-						width: "100%",
-						height: "1px",
-					}}
-				/>
 			</div>
 		</>
 	);

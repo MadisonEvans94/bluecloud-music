@@ -3,6 +3,9 @@
 	left: 0;
 	width: 100%;
 	background-color: var(--primary);
+	min-height: 5rem;
+	border-bottom: #fff 1px solid;
+	display: flex;
 }
 
 .nav-container {
