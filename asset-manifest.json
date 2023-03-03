@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/MadisonEvans94.github.io/static/css/main.f263b498.css",
-    "main.js": "/MadisonEvans94.github.io/static/js/main.8bc5218f.js",
-    "static/media/test-image.png": "/MadisonEvans94.github.io/static/media/test-image.6c8c256d14adeb303b72.png",
-    "static/media/badsnacks-reference-img.png": "/MadisonEvans94.github.io/static/media/badsnacks-reference-img.63bc92014b90682aec2d.png",
-    "static/media/product-image.png": "/MadisonEvans94.github.io/static/media/product-image.ec81379488c6c6dfbbe2.png",
-    "static/media/Branch.ttf": "/MadisonEvans94.github.io/static/media/Branch.efa1d76ea3e38068a040.ttf",
-    "static/media/Lafonsa.ttf": "/MadisonEvans94.github.io/static/media/Lafonsa.06d4d4600cda59d3918f.ttf",
-    "static/media/aqua.ttf": "/MadisonEvans94.github.io/static/media/aqua.ab628adeb50daa6d86a3.ttf",
-    "static/media/long-cloud-2.svg": "/MadisonEvans94.github.io/static/media/long-cloud-2.818ee9b160161d4c1f84.svg",
-    "static/media/long-cloud-3.svg": "/MadisonEvans94.github.io/static/media/long-cloud-3.fe23322773c74b4dcb4c.svg",
-    "static/media/long-cloud-4.svg": "/MadisonEvans94.github.io/static/media/long-cloud-4.6fb025232b34ca8d7ee0.svg",
-    "static/media/long-cloud-1.svg": "/MadisonEvans94.github.io/static/media/long-cloud-1.7e81dd0bca4c03f73939.svg",
-    "static/media/spotify-icon.svg": "/MadisonEvans94.github.io/static/media/spotify-icon.d63d4424eee1fe6b6f68754442bb83b0.svg",
-    "index.html": "/MadisonEvans94.github.io/index.html",
-    "main.f263b498.css.map": "/MadisonEvans94.github.io/static/css/main.f263b498.css.map",
-    "main.8bc5218f.js.map": "/MadisonEvans94.github.io/static/js/main.8bc5218f.js.map"
+    "main.css": "/MadisonEvans94.github.io/bluecloudstore/static/css/main.008d72f2.css",
+    "main.js": "/MadisonEvans94.github.io/bluecloudstore/static/js/main.26381c5c.js",
+    "static/media/test-image.png": "/MadisonEvans94.github.io/bluecloudstore/static/media/test-image.6c8c256d14adeb303b72.png",
+    "static/media/badsnacks-reference-img.png": "/MadisonEvans94.github.io/bluecloudstore/static/media/badsnacks-reference-img.63bc92014b90682aec2d.png",
+    "static/media/product-image.png": "/MadisonEvans94.github.io/bluecloudstore/static/media/product-image.ec81379488c6c6dfbbe2.png",
+    "static/media/Branch.ttf": "/MadisonEvans94.github.io/bluecloudstore/static/media/Branch.efa1d76ea3e38068a040.ttf",
+    "static/media/Lafonsa.ttf": "/MadisonEvans94.github.io/bluecloudstore/static/media/Lafonsa.06d4d4600cda59d3918f.ttf",
+    "static/media/aqua.ttf": "/MadisonEvans94.github.io/bluecloudstore/static/media/aqua.ab628adeb50daa6d86a3.ttf",
+    "static/media/long-cloud-2.svg": "/MadisonEvans94.github.io/bluecloudstore/static/media/long-cloud-2.818ee9b160161d4c1f84.svg",
+    "static/media/long-cloud-3.svg": "/MadisonEvans94.github.io/bluecloudstore/static/media/long-cloud-3.fe23322773c74b4dcb4c.svg",
+    "static/media/long-cloud-4.svg": "/MadisonEvans94.github.io/bluecloudstore/static/media/long-cloud-4.6fb025232b34ca8d7ee0.svg",
+    "static/media/long-cloud-1.svg": "/MadisonEvans94.github.io/bluecloudstore/static/media/long-cloud-1.7e81dd0bca4c03f73939.svg",
+    "static/media/spotify-icon.svg": "/MadisonEvans94.github.io/bluecloudstore/static/media/spotify-icon.d63d4424eee1fe6b6f68754442bb83b0.svg",
+    "index.html": "/MadisonEvans94.github.io/bluecloudstore/index.html",
+    "main.008d72f2.css.map": "/MadisonEvans94.github.io/bluecloudstore/static/css/main.008d72f2.css.map",
+    "main.26381c5c.js.map": "/MadisonEvans94.github.io/bluecloudstore/static/js/main.26381c5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f263b498.css",
-    "static/js/main.8bc5218f.js"
+    "static/css/main.008d72f2.css",
+    "static/js/main.26381c5c.js"
   ]
 }
