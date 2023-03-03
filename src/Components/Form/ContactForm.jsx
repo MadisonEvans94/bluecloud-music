@@ -47,8 +47,8 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div style={{ display: "flex", flexDirection: "column" }}>
-			{/* [ ] make it so that the h1 fades in after the animation of the card */}
+		<div className="contact-content">
+			{/* [x] make it so that the h1 fades in after the animation of the card */}
 			<motion.h1
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}

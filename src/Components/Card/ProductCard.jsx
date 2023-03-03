@@ -18,20 +18,20 @@ const ImageContainer = styled.div`
 	margin: 20px;
 `;
 
-const Title = styled.h2`
-	font-family: "Title Font", sans-serif;
+// const Title = styled.h2`
+// 	font-family: "Title Font", sans-serif;
 
-	@font-face {
-		font-family: "Title Font";
-		src: url(${titleFont}) format("truetype");
-		font-weight: normal;
-		font-style: normal;
-	}
-	color: white;
-	font-size: 60px;
-	font-weight: bold;
-	margin-bottom: 10px;
-`;
+// 	@font-face {
+// 		font-family: "Title Font";
+// 		src: url(${titleFont}) format("truetype");
+// 		font-weight: normal;
+// 		font-style: normal;
+// 	}
+// 	color: white;
+// 	font-size: 60px;
+// 	font-weight: bold;
+// 	margin-bottom: 10px;
+// `;
 
 const MemoizedImageContainer = React.memo(ImageContainer);
 
@@ -48,7 +48,7 @@ const ProductCard = ({ backgroundImg, title, description }) => {
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ type: "spring", stiffness: 40, damping: 10 }}>
 				<div className="product-card-text">
-					<Title>{title}</Title>
+					<h className="product-card-title">{title}</h>
 					<p className="description">{description}</p>
 				</div>
 				{memoizedImageContainer}
