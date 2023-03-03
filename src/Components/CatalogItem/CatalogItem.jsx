@@ -1,5 +1,5 @@
 import React from "react";
-import "./CatalogItem.css";
+import "../../Pages/Music/Music.css";
 import ReactPlayer from "react-player";
 
 const CatalogItem = ({ url }) => {
