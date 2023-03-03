@@ -21,12 +21,12 @@ const Navigation = () => {
 		<>
 			<div className="nav">
 				<div className="nav-container">
-					<Hamburger
+					{/* <Hamburger
 						className="hamburger"
 						style={{ display: dropdownVisibility }}
 						size="100%"
 						onClick={handleClick}
-					/>
+					/> */}
 					<div>
 						<Link className="navlink" to="/home/store">
 							Store
