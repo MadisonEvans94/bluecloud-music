@@ -16,10 +16,10 @@ const Music = () => {
 
 				<motion.div
 					className="div4"
-					initial={{ y: 600, opacity: 0 }}
-					animate={{ y: 0, opacity: 1 }}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
 					transition={{ type: "spring", stiffness: 40, damping: 10 }}>
-					<h2 className="music-page-header">Other</h2>
+					<h2 className="music-page-header alt-header">Other</h2>
 					<div className="div4-container">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odio
 						tempore iste, est, quas dicta et eos provident aut saepe inventore

@@ -57,8 +57,8 @@ const ContactForm = () => {
 			</motion.h1>
 			<motion.div
 				className="form-container"
-				initial={{ y: 200, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
 				transition={{ type: "spring", damper: 10 }}>
 				<form onSubmit={handleSubmit}>
 					<div className="form-subsection">

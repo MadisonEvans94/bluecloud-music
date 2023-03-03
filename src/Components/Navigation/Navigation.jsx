@@ -28,17 +28,17 @@ const Navigation = () => {
 						onClick={handleClick}
 					/> */}
 					<div>
-						<Link className="navlink" to="/home/store">
+						<Link className="navlink alt-header" to="/home/store">
 							Store
 						</Link>
 					</div>
 					<div>
-						<Link className="navlink" to="/home/music">
+						<Link className="navlink alt-header" to="/home/music">
 							Music
 						</Link>
 					</div>
 					<div>
-						<Link className="navlink" to="/home/contact">
+						<Link className="navlink alt-header" to="/home/contact">
 							Contact
 						</Link>
 					</div>

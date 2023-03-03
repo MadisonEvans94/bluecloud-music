@@ -5,6 +5,17 @@
 	/* --primary: #0052be; */
 	--primary: #0e2743;
 }
+@font-face {
+	font-family: "alt-header";
+	src: url("./assets/Branch\ -\ Elegant\ Ligature\ Font/Branch.ttf")
+		format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.alt-header {
+	/* font-family: "alt-header"; */
+}
 .home-container {
 	top: 0;
 	position: fixed;

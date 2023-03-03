@@ -5,10 +5,10 @@ const Featured = ({ featuredImg }) => {
 	return (
 		<motion.div
 			className="featured-container"
-			initial={{ x: -300, opacity: 0 }}
-			animate={{ x: 0, opacity: 1 }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
 			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
-			<h1 className="music-page-header">Featured</h1>
+			<h1 className="music-page-header alt-header">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">
 					<CatalogItem

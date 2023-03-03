@@ -8,6 +8,7 @@ const pageVariants = {
 	initial: {
 		opacity: 0,
 		scale: 0.8,
+		color: "white",
 	},
 	animate: {
 		opacity: 1,
@@ -28,6 +29,7 @@ const pageVariants = {
 	transition: { type: "spring", stiffness: 100 },
 	hover: {
 		scale: 1.1,
+
 		transition: {
 			duration: 1,
 		},
