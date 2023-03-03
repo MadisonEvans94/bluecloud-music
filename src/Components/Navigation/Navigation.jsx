@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaBars as Hamburger } from "react-icons/fa";
 import "./Navigation.css";
 const Navigation = () => {
 	return (
 		<>
-			<div style={{ top: "0", left: "0", width: "100%" }} className="nav">
+			<div className="nav">
 				<div className="nav-container">
+					<Hamburger
+						className="hamburger"
+						size="100%"
+						style={{ strokeWidth: 1 }}
+					/>
 					<div>
 						<Link className="navlink" to="/home/store">
 							Store

@@ -7,6 +7,9 @@
 	border-bottom: #fff 1px solid;
 	display: flex;
 }
+.hamburger {
+	display: none;
+}
 
 .nav-container {
 	top: 0;
@@ -19,7 +22,19 @@
 	color: #fff;
 }
 @media only screen and (max-width: 767px) {
+	.nav-container {
+		align-items: flex-end;
+		padding: 1rem 2rem;
+		justify-content: flex-end;
+		color: #fff;
+	}
 	.navlink {
 		display: none;
+	}
+	.hamburger {
+		display: block;
+		width: 6rem;
+		padding: 0.5rem;
+		stroke-width: 1;
 	}
 }
