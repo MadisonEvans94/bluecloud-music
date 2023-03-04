@@ -33,13 +33,7 @@ const ImageContainer = styled.div`
 // 	margin-bottom: 10px;
 // `;
 
-const MemoizedImageContainer = React.memo(ImageContainer);
-
 const ProductCard = ({ backgroundImg, title, description }) => {
-	const memoizedImageContainer = useMemo(() => {
-		return <MemoizedImageContainer backgroundImg={backgroundImg} />;
-	}, [backgroundImg]);
-
 	return (
 		<>
 			<motion.div
@@ -51,7 +45,10 @@ const ProductCard = ({ backgroundImg, title, description }) => {
 					<h className="product-card-title">{title}</h>
 					<p className="description">{description}</p>
 				</div>
-				{memoizedImageContainer}
+				<div
+					className="product-img"
+					style={{ backgroundImage: `url(${backgroundImg})` }}
+				/>
 			</motion.div>
 		</>
 	);
