@@ -20,17 +20,16 @@
 .hamburger-button {
 	color: white;
 	width: fit-content;
-	height: 3rem;
-	margin-right: 1rem;
-	margin-top: 0.25rem;
-	position: absolute;
+	height: 3em;
+	width: 3em;
+	margin: 1em;
 	right: 0;
 	top: 0;
 	display: none;
 }
 @media only screen and (max-width: 767px) {
 	.navbar {
-		padding-bottom: 2rem;
+		justify-content: flex-end;
 	}
 	.links-container {
 		display: none;
@@ -44,8 +43,9 @@
 	#dropdown-visible {
 		display: flex;
 		flex-direction: column;
-		top: 10rem;
+
 		margin-top: 4.5rem;
+		padding-bottom: 2em;
 	}
 	.hamburger-button {
 		display: flex;
