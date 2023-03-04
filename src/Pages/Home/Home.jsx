@@ -1,6 +1,5 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navigation from "../../Components/Navigation/Navigation";
 import Navbar from "../../Components/Navigation/Navbar";
 // const backgroundColor = "rgb(175,220,255)";
 

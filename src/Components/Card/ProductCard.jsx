@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
+// import titleFont from "../../assets/Lafonsa Font/Lafonsa.ttf";
 import styled from "styled-components";
 import "./ProductCard.css";
 import { motion } from "framer-motion";
