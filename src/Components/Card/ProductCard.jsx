@@ -3,20 +3,10 @@ import React, { useMemo } from "react";
 import styled from "styled-components";
 import "./ProductCard.css";
 import { motion } from "framer-motion";
-
-const ImageContainer = styled.div`
-	background-image: url(${(props) => props.backgroundImg});
-	background-size: cover;
-	background-position: center;
-	min-width: 20rem;
-	min-height: 20rem;
-	max-height: 30rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 20px;
-`;
+import ImageContainer from "./ImageContainer";
+// const ImageContainer = styled.div`
+// 	background-image: url(${(props) => props.backgroundImg});
+// `;
 
 // const Title = styled.h2`
 // 	font-family: "Title Font", sans-serif;
@@ -45,10 +35,7 @@ const ProductCard = ({ backgroundImg, title, description }) => {
 					<h className="product-card-title">{title}</h>
 					<p className="description">{description}</p>
 				</div>
-				<div
-					className="product-img"
-					style={{ backgroundImage: `url(${backgroundImg})` }}
-				/>
+				<ImageContainer>{backgroundImg}</ImageContainer>
 			</motion.div>
 		</>
 	);

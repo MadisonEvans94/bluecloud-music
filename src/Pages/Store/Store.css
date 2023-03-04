@@ -8,13 +8,8 @@
 	padding-top: 5em;
 }
 
-.product-img {
-	height: 10em;
-
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: local;
-	background-position: center;
+.image-container {
+	max-width: 20em;
 }
 
 .product-card-text {
@@ -25,6 +20,9 @@
 	align-items: space-between;
 	width: fit-content;
 	max-width: 40rem;
+}
+.product-card-title {
+	color: #fff;
 }
 
 .product-card {
