@@ -18,7 +18,7 @@ const ResponsiveNav = () => {
 								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
 									<Link
 										to="/home/store"
-										className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+										className="text-white px-3 py-2 rounded-md text-sm font-medium">
 										Store
 									</Link>
 								</motion.div>
@@ -26,7 +26,7 @@ const ResponsiveNav = () => {
 								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
 									<Link
 										to="/home/music"
-										className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+										className="text-white px-3 py-2 rounded-md text-sm font-medium">
 										Music
 									</Link>
 								</motion.div>
@@ -34,7 +34,7 @@ const ResponsiveNav = () => {
 								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
 									<Link
 										to="/home/contact"
-										className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+										className="text-white px-3 py-2 rounded-md text-sm font-medium">
 										Contact
 									</Link>
 								</motion.div>
