@@ -9,6 +9,7 @@ const Home = () => {
 			<div className="home-container">
 				<ResponsiveNav />
 				<MusicHero />
+
 				<Outlet />
 			</div>
 		</>

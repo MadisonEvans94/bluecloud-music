@@ -7,7 +7,9 @@ const ResponsiveNav = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	return (
-		<nav
+		<motion.nav
+			initial={{ y: -200 }}
+			animate={{ y: 0 }}
 			className="w-full"
 			style={{ backgroundColor: "#0e2743", borderBottom: "solid #ddd 1px" }}>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,7 +110,7 @@ const ResponsiveNav = () => {
 					</Link>
 				</div>
 			</div>
-		</nav>
+		</motion.nav>
 	);
 };
 
