@@ -8,7 +8,7 @@ const MusicHero = () => {
 	return (
 		<motion.div
 			style={{ borderBottom: "solid 1px white" }}
-			className="hero-section w-full h-40 flex justify-center items-center">
+			className="hero-section w-full md:h-60 h-40 flex justify-center items-center">
 			<motion.div className="mx-16">
 				<div>
 					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
