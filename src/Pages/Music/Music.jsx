@@ -10,8 +10,23 @@ const Music = () => {
 			<div className="music-page-container">
 				<Featured featuredImg={featuredImg} />
 				<MyMusic />
-
-				<motion.div className="news">
+				<motion.div
+					initial={{ x: "-20vw", opacity: 0 }}
+					animate={{
+						x: 0,
+						opacity: 1,
+						transition: { type: "spring", stiffness: 40, damping: 10 },
+					}}
+					exit={{
+						x: "-50vw",
+						opacity: 0,
+						transition: {
+							type: "tween",
+							ease: "easeInOut",
+							duration: 0.8,
+						},
+					}}
+					className="news">
 					<h2 className="music-page-header alt-header">News</h2>
 					<div className="news-container">
 						Hey everyone! You might have noticed that I've been a bit quiet on

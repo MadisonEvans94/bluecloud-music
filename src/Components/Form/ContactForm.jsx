@@ -37,8 +37,6 @@ const ContactForm = () => {
 			resetFormData();
 			console.log(formData);
 			console.log(response);
-			//[x] add a visual queue for comfirming successfull post
-			//[x] clear the form after submission
 			setSuccessMessage("submission successful");
 		} catch (error) {
 			setSuccessMessage("submission failed (server is not currently running)");
@@ -48,18 +46,34 @@ const ContactForm = () => {
 
 	return (
 		<div className="contact-content">
-			{/* [x] make it so that the h1 fades in after the animation of the card */}
 			<motion.h1
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
+				initial={{ y: 300, opacity: 0 }}
+				animate={{
+					y: 0,
+					opacity: 1,
+					transition: { type: "spring", stiffness: 40, damping: 10 },
+				}}
+				exit={{
+					y: 300,
+					opacity: 0,
+					transition: { type: "tween", ease: "easeInOut", duration: 0.8 },
+				}}
 				style={{ marginBottom: "2rem", marginInline: "auto" }}>
 				Get Added to the Email List
 			</motion.h1>
 			<motion.div
 				className="form-container"
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ type: "spring", damper: 10 }}>
+				initial={{ y: 300, opacity: 0 }}
+				animate={{
+					y: 0,
+					opacity: 1,
+					transition: { type: "spring", stiffness: 40, damping: 10 },
+				}}
+				exit={{
+					y: 300,
+					opacity: 0,
+					transition: { type: "tween", ease: "easeInOut", duration: 0.8 },
+				}}>
 				<form onSubmit={handleSubmit}>
 					<div className="form-subsection">
 						<div>

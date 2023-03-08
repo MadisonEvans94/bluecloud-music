@@ -39,8 +39,16 @@ const ProductCard = ({ backgroundImg, title, description }) => {
 			<motion.div
 				className="product-card"
 				initial={{ y: 300, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ type: "spring", stiffness: 40, damping: 10 }}>
+				animate={{
+					y: 0,
+					opacity: 1,
+					transition: { type: "spring", stiffness: 40, damping: 10 },
+				}}
+				exit={{
+					y: 300,
+					opacity: 0,
+					transition: { type: "tween", ease: "easeInOut", duration: 0.8 },
+				}}>
 				<div className="product-card-text">
 					<h className="product-card-title">{title}</h>
 					<p className="description">{description}</p>
