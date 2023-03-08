@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const ResponsiveNav = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,23 +15,29 @@ const ResponsiveNav = () => {
 					<div className="flex items-center justify-between w-full">
 						<div className="hidden md:block w-full">
 							<div className="ml-10 flex items-baseline space-x-4 justify-around">
-								<Link
-									to="/home/store"
-									className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-									Store
-								</Link>
+								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
+									<Link
+										to="/home/store"
+										className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+										Store
+									</Link>
+								</motion.div>
 
-								<Link
-									to="/home/music"
-									className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-									Music
-								</Link>
+								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
+									<Link
+										to="/home/music"
+										className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+										Music
+									</Link>
+								</motion.div>
 
-								<Link
-									to="/home/contact"
-									className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-									Contact
-								</Link>
+								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
+									<Link
+										to="/home/contact"
+										className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+										Contact
+									</Link>
+								</motion.div>
 							</div>
 						</div>
 					</div>
