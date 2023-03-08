@@ -140,14 +140,14 @@
 .catalog-container div {
 	margin-bottom: 0.5rem;
 }
-.div4 {
+.news {
 	position: relative;
 	grid-area: 2 / 1 / 3 / 3;
 	color: white;
 	margin-left: 4rem;
 	height: 100%;
 }
-.div4-container {
+.news-container {
 	background-color: var(--primary);
 	width: 100%;
 	padding: 1rem;
@@ -224,7 +224,7 @@
 		padding-inline: 0.5rem;
 		width: 100%;
 	}
-	.div4 {
+	.news {
 		position: relative;
 
 		color: white;
@@ -232,7 +232,7 @@
 		padding-inline: 2.5rem;
 		padding-top: 0;
 	}
-	.div4-container {
+	.news-container {
 		background-color: var(--primary);
 		width: 100%;
 		padding: 1rem;
@@ -305,7 +305,7 @@
 		padding-inline: 1rem;
 		font-size: 1.75rem;
 	}
-	.div4 {
+	.news {
 		font-size: 1.75rem;
 	}
 }

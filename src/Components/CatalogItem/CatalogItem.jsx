@@ -1,6 +1,7 @@
 import React from "react";
 import "../../Pages/Music/Music.css";
 import ReactPlayer from "react-player";
+// [ ] get the image automatically from url and pass as prop
 
 const CatalogItem = ({ url }) => {
 	const urlColorWrapper = `${url}?color=0064BE`;

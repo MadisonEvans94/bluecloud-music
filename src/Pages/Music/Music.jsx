@@ -11,9 +11,9 @@ const Music = () => {
 				<Featured featuredImg={featuredImg} />
 				<MyMusic />
 
-				<motion.div className="div4">
+				<motion.div className="news">
 					<h2 className="music-page-header alt-header">News</h2>
-					<div className="div4-container">
+					<div className="news-container">
 						Hey everyone! You might have noticed that I've been a bit quiet on
 						the music front lately, but that's because I've been hard at work
 						behind the scenes. I've been taking some time away from creating to
