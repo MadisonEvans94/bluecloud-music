@@ -19,15 +19,18 @@ const Music = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ type: "spring", stiffness: 40, damping: 10 }}>
-					<h2 className="music-page-header alt-header">Other</h2>
+					<h2 className="music-page-header alt-header">News</h2>
 					<div className="div4-container">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odio
-						tempore iste, est, quas dicta et eos provident aut saepe inventore
-						molestias dignissimos animi architecto itaque. Ad veritatis
-						laboriosam molestiae at soluta nesciunt voluptas quidem porro.
-						Dolorum pariatur dolorem, sit cumque suscipit perferendis
-						asperiores? Consectetur suscipit ducimus minus culpa corrupti
-						ratione quis doloribus, non, eos odio rem, numquam impedit repellat.
+						Hey everyone! You might have noticed that I've been a bit quiet on
+						the music front lately, but that's because I've been hard at work
+						behind the scenes. I've been taking some time away from creating to
+						really hone my technical skills and perfect my craft. In addition to
+						music production, I've been expanding my knowledge into different
+						tech-related spaces like web design and programming virtual sound
+						instruments. I've also been working on creating a line of
+						downloadable products for music producers, including sample packs
+						and plugins that I'm excited to release soon on my site. Thanks for
+						your patience and support, and stay tuned for more updates!
 					</div>
 				</motion.div>
 			</div>
