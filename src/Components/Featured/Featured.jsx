@@ -7,7 +7,8 @@ const Featured = ({ featuredImg }) => {
 			className="featured-container"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
+			exit={{ opacity: 0 }}
+			transition={{ duration: 1 }}>
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">
@@ -17,11 +18,11 @@ const Featured = ({ featuredImg }) => {
 						}
 					/>
 					<p className="featured-description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt
-						voluptatum veniam eligendi magni quaerat voluptas illo blanditiis
-						earum omnis, soluta ipsam, eveniet est. Recusandae ut rum dolor aut!
-						Delectus nulla in corrupti eum iure rerum maiores voluptatibus sint
-						iste quidem, beatae sunt.
+						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
+						really enjoyed having the opportunity to bring some of my unique
+						sound palette to this track in particular. And I couldn't be more
+						proud of the result. Don't miss out - click on the link and give it
+						a listen!
 					</p>
 				</div>
 			</div>

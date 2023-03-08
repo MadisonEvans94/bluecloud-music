@@ -18,7 +18,8 @@ const Music = () => {
 					className="div4"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ type: "spring", stiffness: 40, damping: 10 }}>
+					exit={{ opacity: 0 }}
+					transition={{ duration: 1 }}>
 					<h2 className="music-page-header alt-header">News</h2>
 					<div className="div4-container">
 						Hey everyone! You might have noticed that I've been a bit quiet on
