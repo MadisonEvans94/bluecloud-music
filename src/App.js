@@ -15,7 +15,7 @@ function App() {
 
 	return (
 		<>
-			<AnimatePresence>
+			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />}>

@@ -10,26 +10,10 @@ const CloudFooter = ({ isClicked }) => {
 
 	return (
 		<>
-			<motion.div
-				className="cloud1"
-				animate={isClicked ? "hidden" : "visible"}
-				variants={variants}
-			/>
-			<motion.div
-				className="cloud2"
-				animate={isClicked ? "hidden" : "visible"}
-				variants={variants}
-			/>
-			<motion.div
-				className="cloud3"
-				animate={isClicked ? "hidden" : "visible"}
-				variants={variants}
-			/>
-			<motion.div
-				className="cloud4"
-				animate={isClicked ? "hidden" : "visible"}
-				variants={variants}
-			/>
+			<motion.div className="cloud1" />
+			<motion.div className="cloud2" />
+			<motion.div className="cloud3" />
+			<motion.div className="cloud4" />
 		</>
 	);
 };

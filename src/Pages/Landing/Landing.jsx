@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 const pageVariants = {
 	initial: {
 		opacity: 0,
@@ -46,12 +46,10 @@ const Landing = () => {
 					<motion.h1
 						className="landing-title"
 						onClick={() => setIsClicked((prev) => !prev)}
-						variants={pageVariants}
-						initial="initial"
-						animate="animate"
-						exit="exit"
-						whileHover="hover"
-						transition="transition">
+						initial={{ opacity: 1 }}
+						whileHover={{ scale: 1.05 }}
+						exit={{ opacity: 0 }}
+						transition={{ duration: 1 }}>
 						blue cloud
 					</motion.h1>
 				</Link>
