@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CatalogItem from "../CatalogItem/CatalogItem";
+import { useState } from "react";
 const Featured = ({ featuredImg }) => {
+	const [animationComplete, setAnimationComplete] = useState(false);
+	const handleAnimationComplete = () => {
+		setAnimationComplete(true);
+	};
 	return (
 		<motion.div
 			initial={{ x: "-20vw", opacity: 0 }}
@@ -19,6 +24,7 @@ const Featured = ({ featuredImg }) => {
 					duration: 0.8,
 				},
 			}}
+			onAnimationComplete={handleAnimationComplete}
 			className="featured-container">
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div className="featured-card">
@@ -27,6 +33,7 @@ const Featured = ({ featuredImg }) => {
 						url={
 							"https://soundcloud.com/bad-snacks/lucky-blue-cloud-remix?si=1b847eac94c248b7a9771941ed9c1ecf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
 						}
+						animationComplete={animationComplete}
 					/>
 					<p className="featured-description">
 						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
