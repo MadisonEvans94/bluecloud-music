@@ -1,7 +1,7 @@
 import React from "react";
 import Featured from "../../Components/Featured/Featured";
 import MyMusic from "../../Components/MyMusic/MyMusic";
-import "./Music.css";
+
 import featuredImg from "../../assets/images/badsnacks-reference-img.png";
 import { motion } from "framer-motion";
 const Music = () => {

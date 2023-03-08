@@ -14,11 +14,11 @@ const ResponsiveNav = () => {
 				<div className="flex items-center h-16">
 					<div className="flex items-center justify-between w-full">
 						<div className="hidden md:block w-full">
-							<div className="ml-10 flex items-baseline space-x-4 justify-around">
+							<div className="ml-10 flex items-baseline space-x-4 justify-around cursor-pointer">
 								<motion.div initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
 									<Link
 										to="/home/store"
-										className="text-white px-3 py-2 rounded-md text-sm font-medium">
+										className="text-white px-3 py-2 rounded-md text-sm font-medium ">
 										Store
 									</Link>
 								</motion.div>
