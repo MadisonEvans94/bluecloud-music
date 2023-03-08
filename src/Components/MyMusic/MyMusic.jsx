@@ -1,9 +1,14 @@
 import React from "react";
 import CatalogItem from "../CatalogItem/CatalogItem";
-
+import { useState } from "react";
 import CatalogContainer from "../CatalogContainer/CatalogContainer";
 import { motion } from "framer-motion";
 const MyMusic = () => {
+	const [animationComplete, setAnimationComplete] = useState(false);
+
+	const handleAnimationComplete = () => {
+		setAnimationComplete(true);
+	};
 	return (
 		<motion.div
 			initial={{ x: "20vw", opacity: 0 }}
@@ -21,18 +26,30 @@ const MyMusic = () => {
 					duration: 0.8,
 				},
 			}}
+			onAnimationComplete={handleAnimationComplete}
 			className="my-music-container">
 			<h2 className="music-page-header alt-header">My Music</h2>
 			<CatalogContainer>
-				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
+				<CatalogItem
+					url={"https://soundcloud.com/bluecloudmusic/presence"}
+					animationComplete={animationComplete}
+				/>
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/more-than-enough-1"}
+					animationComplete={animationComplete}
 				/>
-				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/faded-2"} />
+				<CatalogItem
+					url={"https://soundcloud.com/bluecloudmusic/faded-2"}
+					animationComplete={animationComplete}
+				/>
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/i-think-were-lost-2"}
+					animationComplete={animationComplete}
 				/>
-				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/jelly"} />
+				<CatalogItem
+					url={"https://soundcloud.com/bluecloudmusic/jelly"}
+					animationComplete={animationComplete}
+				/>
 			</CatalogContainer>
 		</motion.div>
 	);
