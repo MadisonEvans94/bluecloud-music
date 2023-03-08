@@ -1,40 +1,36 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const ResponsiveNav = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	return (
-		<nav className="bg-gray-800 w-full">
+		<nav
+			className="w-full"
+			style={{ backgroundColor: "#0e2743", borderBottom: "solid #ddd 1px" }}>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between h-16">
-					<div className="flex items-center">
-						<div className="flex-shrink-0">
-							<a href="/" className="text-white">
-								My Logo
-							</a>
-						</div>
-
-						<div className="hidden md:block">
-							<div className="ml-10 flex items-baseline space-x-4">
-								<a
-									href="/"
+				<div className="flex items-center h-16">
+					<div className="flex items-center justify-between w-full">
+						<div className="hidden md:block w-full">
+							<div className="ml-10 flex items-baseline space-x-4 justify-around">
+								<Link
+									to="/home/store"
 									className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-									Link 1
-								</a>
+									Store
+								</Link>
 
-								<a
-									href="/"
+								<Link
+									to="/home/music"
 									className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-									Link 2
-								</a>
+									Music
+								</Link>
 
-								<a
-									href="/"
+								<Link
+									to="/home/contact"
 									className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-									Link 3
-								</a>
+									Contact
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -86,23 +82,23 @@ const ResponsiveNav = () => {
 				className={`${isMobileMenuOpen ? "block" : "hidden"} md:hidden`}
 				id="mobile-menu">
 				<div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-					<a
-						href="/"
+					<Link
+						to="/home/store/"
 						className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-						Link 1
-					</a>
+						Store
+					</Link>
 
-					<a
-						href="/"
+					<Link
+						to="/home/music"
 						className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-						Link 2
-					</a>
+						Music
+					</Link>
 
-					<a
-						href="/"
+					<Link
+						to="/home/contact"
 						className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-						Link 3
-					</a>
+						Contact
+					</Link>
 				</div>
 			</div>
 		</nav>
