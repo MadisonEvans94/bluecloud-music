@@ -115,19 +115,15 @@
 .catalog-item {
 	position: relative;
 	width: 100%;
-	height: 14rem;
+	height: 100%;
 	min-width: 14rem;
+	max-height: 16em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-/* Styles for the catalog item image */
-.catalog-item img {
-	width: 100%;
-	border-radius: inherit;
-}
 .catalog-container {
 	width: 100%;
 	height: 100%;
@@ -154,12 +150,12 @@
 .div4-container {
 	background-color: var(--primary);
 	width: 100%;
-
 	padding: 1rem;
 	margin-inline: auto;
 	border: 1px solid white;
 	border-radius: 10px;
 	margin-bottom: 2rem;
+	min-height: 17em;
 }
 .icon-container {
 	width: 100%;
@@ -223,14 +219,10 @@
 		padding-inline: 0.5rem;
 	}
 	.catalog-item {
-		height: 14rem;
+		height: 50%;
 		margin-bottom: 1rem;
 		padding-inline: 0.5rem;
 		width: 100%;
-	}
-	.catalog-item img {
-		width: 100%;
-		border-radius: inherit;
 	}
 	.div4 {
 		position: relative;
@@ -293,8 +285,9 @@
 	.catalog-item {
 		position: relative;
 		width: 30rem;
-		height: 22rem;
-		min-width: 14rem;
+		height: 100%;
+		min-width: unset;
+		max-width: 24em;
 	}
 	.featured-card {
 		display: flex;
