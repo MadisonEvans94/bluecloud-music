@@ -13,7 +13,6 @@ const CatalogItem = ({ url, animationComplete }) => {
 					playing={false}
 					controls={true}
 					width="100%"
-					height="20em"
 				/>
 			</div>
 		);
