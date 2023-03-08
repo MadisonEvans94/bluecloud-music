@@ -3,12 +3,7 @@ import { motion } from "framer-motion";
 import CatalogItem from "../CatalogItem/CatalogItem";
 const Featured = ({ featuredImg }) => {
 	return (
-		<motion.div
-			className="featured-container"
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-			transition={{ duration: 1 }}>
+		<motion.div className="featured-container">
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div className="featured-card">
 				<div className="featured-content">

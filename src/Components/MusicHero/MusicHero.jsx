@@ -6,44 +6,31 @@ import { FaSoundcloud } from "react-icons/fa";
 
 const MusicHero = () => {
 	return (
-		<div className="hero-section">
-			<motion.div
-				className="music-link-icon"
-				initial={{ y: 50, opacity: 0 }}
-				animate={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.1 }}
-				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
-				<div className="icon-container">
+		<motion.div
+			style={{ borderBottom: "solid 1px white" }}
+			className="hero-section w-full h-40 flex justify-center items-center">
+			<motion.div className="mx-16">
+				<div>
 					<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
-						<BsSpotify size="100%" style={{ cursor: "pointer" }} />
+						<BsSpotify size="4em" style={{ cursor: "pointer" }} />
 					</a>
 				</div>
 			</motion.div>
-			<motion.div
-				className="music-link-icon"
-				initial={{ y: 50, opacity: 0 }}
-				animate={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.1 }}
-				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
-				<div className="icon-container">
+			<motion.div>
+				<div className="">
 					<a href="https://music.apple.com/us/artist/blue-cloud/1510449426">
-						<FaApple size="100%" style={{ cursor: "pointer" }} />
+						<FaApple size="4em" style={{ cursor: "pointer" }} />
 					</a>
 				</div>
 			</motion.div>
-			<motion.div
-				className="music-link-icon"
-				initial={{ y: 50, opacity: 0 }}
-				animate={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.1 }}
-				transition={{ type: "spring", damping: 8, stiffness: 50 }}>
-				<div className="icon-container">
+			<motion.div>
+				<div className="mx-16">
 					<a href="https://soundcloud.com/bluecloudmusic">
-						<FaSoundcloud size="100%" style={{ cursor: "pointer" }} />
+						<FaSoundcloud size="4em" style={{ cursor: "pointer" }} />
 					</a>
 				</div>
 			</motion.div>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -1,7 +1,5 @@
 import React from "react";
 import Featured from "../../Components/Featured/Featured";
-import MusicHero from "../../Components/MusicHero/MusicHero";
-import spotifyIcon from "../../assets/svg/iOS/spotify-icon.svg";
 import MyMusic from "../../Components/MyMusic/MyMusic";
 import "./Music.css";
 import featuredImg from "../../assets/images/badsnacks-reference-img.png";
@@ -10,16 +8,10 @@ const Music = () => {
 	return (
 		<>
 			<div className="music-page-container">
-				<MusicHero icon={spotifyIcon} />
 				<Featured featuredImg={featuredImg} />
 				<MyMusic />
 
-				<motion.div
-					className="div4"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ duration: 1 }}>
+				<motion.div className="div4">
 					<h2 className="music-page-header alt-header">News</h2>
 					<div className="div4-container">
 						Hey everyone! You might have noticed that I've been a bit quiet on

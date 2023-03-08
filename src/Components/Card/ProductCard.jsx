@@ -33,25 +33,18 @@ const ImageContainer = styled.div`
 // 	margin-bottom: 10px;
 // `;
 
-const MemoizedImageContainer = React.memo(ImageContainer);
-
 const ProductCard = ({ backgroundImg, title, description }) => {
-	const memoizedImageContainer = useMemo(() => {
-		return <MemoizedImageContainer backgroundImg={backgroundImg} />;
-	}, [backgroundImg]);
-
 	return (
 		<>
 			<motion.div
 				className="product-card"
-				initial={{ y: 600, opacity: 0 }}
+				initial={{ y: 300, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ type: "spring", stiffness: 40, damping: 10 }}>
 				<div className="product-card-text">
 					<h className="product-card-title">{title}</h>
 					<p className="description">{description}</p>
 				</div>
-				{memoizedImageContainer}
 			</motion.div>
 		</>
 	);

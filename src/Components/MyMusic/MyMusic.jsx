@@ -5,11 +5,7 @@ import CatalogContainer from "../CatalogContainer/CatalogContainer";
 import { motion } from "framer-motion";
 const MyMusic = () => {
 	return (
-		<motion.div
-			className="my-music-container"
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ type: "spring", stiffness: 40, damping: 10 }}>
+		<motion.div className="my-music-container">
 			<h2 className="music-page-header alt-header">My Music</h2>
 			<CatalogContainer>
 				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
