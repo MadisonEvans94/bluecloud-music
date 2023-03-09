@@ -46,10 +46,14 @@ const Landing = () => {
 					<motion.h1
 						className="landing-title"
 						onClick={() => setIsClicked((prev) => !prev)}
-						initial={{ opacity: 1 }}
-						whileHover={{ scale: 1.05 }}
-						exit={{ opacity: 0, scale: 1.4, y: -50 }}
-						transition={{ duration: 2 }}>
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1, transition: { duration: 1.2 } }}
+						whileHover={{ scale: 1.05, transition: { duration: 1.2 } }}
+						exit={{
+							opacity: 0,
+							y: -140,
+							transition: { type: "tween", duration: 1.2 },
+						}}>
 						blue cloud
 					</motion.h1>
 				</Link>

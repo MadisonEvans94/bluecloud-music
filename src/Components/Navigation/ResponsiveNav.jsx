@@ -8,8 +8,9 @@ const ResponsiveNav = () => {
 
 	return (
 		<motion.nav
-			// initial={{ y: -200 }}
-			// animate={{ y: 0 }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ type: "spring", duration: 1.5 }}
 			className="w-full bg-transparent">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center h-16">

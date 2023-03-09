@@ -22,9 +22,8 @@
 	height: 20rem;
 	max-width: 50em;
 	color: white;
-	border: 1px white solid;
+
 	border-radius: 10px;
-	background-color: var(--primary);
 }
 .form-container form {
 	width: 100%;
