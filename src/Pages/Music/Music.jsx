@@ -28,7 +28,7 @@ const Music = () => {
 					}}
 					className="news">
 					<h2 className="music-page-header alt-header">News</h2>
-					<div className="news-container">
+					<div className="news-container card">
 						Hey everyone! You might have noticed that I've been a bit quiet on
 						the music front lately, but that's because I've been hard at work
 						behind the scenes. I've been taking some time away from creating to

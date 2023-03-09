@@ -49,7 +49,6 @@
 	align-items: center;
 	width: 100%;
 	height: fit-content;
-	border: white 1px solid;
 	background-color: var(--primary);
 	border-radius: 10px;
 }
@@ -127,11 +126,10 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	border: white 1px solid;
 	border-radius: 10px;
 	padding: 1rem 1rem 0 1rem;
 	overflow-y: auto;
-	background-color: var(--primary);
+	/* background-color: var(--primary); */
 }
 .catalog-container div {
 	margin-bottom: 0.5rem;
@@ -144,11 +142,11 @@
 	height: 100%;
 }
 .news-container {
-	background-color: var(--primary);
+	/* background-color: var(--primary); */
 	width: 100%;
 	padding: 1rem;
 	margin-inline: auto;
-	border: 1px solid white;
+
 	border-radius: 10px;
 	margin-bottom: 2rem;
 	min-height: 17em;
@@ -225,7 +223,7 @@
 		width: 100%;
 		padding: 1rem;
 		margin-inline: auto;
-		border: 1px solid white;
+
 		border-radius: 10px;
 		margin-bottom: 2rem;
 	}

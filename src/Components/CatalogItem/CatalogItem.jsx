@@ -8,8 +8,7 @@ const CatalogItem = ({ url, animationComplete }) => {
 	if (animationComplete) {
 		return (
 			<div
-				className="
-				
+				className=" 
 				w-60 h-60 
 				md:w-72 md:h-72
 				lg:w-80 lg:h-80
