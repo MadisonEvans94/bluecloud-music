@@ -31,8 +31,8 @@ const Featured = ({ featuredImg }) => {
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div
 				className="
-				mx-auto p-6 w-fit h-fit flex flex-col justify-center items-center border border-white bg-primary rounded-lg
-				
+				mx-auto p-6 w-fit h-fit flex flex-col justify-center items-center  rounded-lg
+				border
 				">
 				<div
 					className="
@@ -46,18 +46,25 @@ const Featured = ({ featuredImg }) => {
 						}
 						animationComplete={animationComplete}
 					/>
-					<p
+					<div
 						className="
 					w-60 my-4
 					md:w-72 
-					lg:w-80 lg:my-auto lg:ml-4
+					lg:w-80 lg:my-auto 
+					xl:ml-4
+					flex flex-col 
 					">
-						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
-						really enjoyed having the opportunity to bring some of my unique
-						sound palette to this track in particular. And I couldn't be more
-						proud of the result. Don't miss out - click on the link and give it
-						a listen!
-					</p>
+						<h3 className="text-md md:text-xl mb-3 lg:mt-4">
+							Lucky - Blue Cloud Remix
+						</h3>
+						<p>
+							Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
+							really enjoyed having the opportunity to bring some of my unique
+							sound palette to this track in particular. And I couldn't be more
+							proud of the result. Don't miss out - click on the link and give
+							it a listen!
+						</p>
+					</div>
 				</div>
 			</div>
 		</motion.div>

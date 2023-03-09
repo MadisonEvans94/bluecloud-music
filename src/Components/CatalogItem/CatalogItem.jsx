@@ -9,10 +9,11 @@ const CatalogItem = ({ url, animationComplete }) => {
 		return (
 			<div
 				className="
-			w-60 h-60 
-			md:w-72 md:h-72
-			lg:w-80 lg:h-80
-			xl:w-96 xl:h-96
+				
+				w-60 h-60 
+				md:w-72 md:h-72
+				lg:w-80 lg:h-80
+				xl:w-96 xl:h-96
 			">
 				<ReactPlayer
 					url={`${urlColorWrapper}`}
