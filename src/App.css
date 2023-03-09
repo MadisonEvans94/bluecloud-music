@@ -20,8 +20,9 @@ a {
 	font-style: normal;
 }
 .card {
-	background: var(--primary);
-	/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+	/* background: rgba(14, 39, 67, 0.2); */
+	/* box-shadow: 2px 2px 4px 0 rgba(17, 19, 35, 0.37); */
+	/* border: 1px solid white; */
 	backdrop-filter: blur(6px);
 	-webkit-backdrop-filter: blur(6px);
 }
