@@ -26,7 +26,7 @@ const Featured = ({ featuredImg }) => {
 			}}
 			onAnimationComplete={handleAnimationComplete}
 			className="featured-container 
-			
+			flex flex-col justify-center items-center px-2
 			">
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div
@@ -48,9 +48,10 @@ const Featured = ({ featuredImg }) => {
 					/>
 					<p
 						className="
-					w-60
+					w-60 my-4
 					md:w-72 
-					lg:w-80">
+					lg:w-80 lg:my-auto lg:ml-4
+					">
 						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
 						really enjoyed having the opportunity to bring some of my unique
 						sound palette to this track in particular. And I couldn't be more
