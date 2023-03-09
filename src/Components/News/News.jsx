@@ -18,15 +18,18 @@ const News = () => {
 					duration: 0.8,
 				},
 			}}
-			className="news">
-			<h2 className="music-page-header alt-header">News</h2>
+			className="news 
+            flex flex-col items-center">
+			<h2 className="w-full text-center text-5xl my-6 text-white">News</h2>
 			<div
-				className="
-                mx-auto p-6 
-                rounded-2xl mb-8 min-h-68 card bg-green-400
-                w-60
-                md:w-72 
-				lg:w-80
+				className="w-120
+                mx-4 p-6 text-white 
+                rounded-2xl mb-8 min-h-68 card
+                text-md
+                md:text-lg
+                lg:text-lg
+                xl:text-xl
+                
                 ">
 				Hey everyone! You might have noticed that I've been a bit quiet on the
 				music front lately, but that's because I've been hard at work behind the
