@@ -28,7 +28,7 @@ const MyMusic = () => {
 			}}
 			onAnimationComplete={handleAnimationComplete}
 			className="my-music
-			mx-auto h-4/5">
+			mx-auto h-full overflow-scroll">
 			<h2 className="music-page-header alt-header">My Music</h2>
 			<CatalogContainer>
 				<CatalogItem
