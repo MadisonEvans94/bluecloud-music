@@ -30,7 +30,7 @@ const Featured = ({ featuredImg }) => {
 			">
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div
-				className="card bg-green-400
+				className="card 
 				mx-auto p-6 w-fit h-fit flex flex-col justify-center items-center  rounded-lg
 			
 				">
