@@ -26,7 +26,7 @@ const Featured = ({ featuredImg }) => {
 			}}
 			onAnimationComplete={handleAnimationComplete}
 			className="featured-container 
-			flex flex-col justify-center items-center px-2
+			flex flex-col items-center px-2
 			">
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div
@@ -35,7 +35,7 @@ const Featured = ({ featuredImg }) => {
 			
 				">
 				<div
-					className=" 
+					className=" featured
 					w-60
 					md:w-72 
 					lg:w-80
