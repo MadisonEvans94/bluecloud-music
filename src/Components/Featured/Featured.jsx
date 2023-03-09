@@ -27,7 +27,9 @@ const Featured = ({ featuredImg }) => {
 			onAnimationComplete={handleAnimationComplete}
 			className="featured-container">
 			<h1 className="music-page-header alt-header">Featured</h1>
-			<div className="featured-card">
+			<div
+				className="
+				flex flex-col justify-center items-center w-full h-auto border border-white bg-primary rounded-lg">
 				<div className="featured-content">
 					<CatalogItem
 						url={

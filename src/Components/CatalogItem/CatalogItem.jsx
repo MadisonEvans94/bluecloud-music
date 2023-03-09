@@ -7,19 +7,23 @@ const CatalogItem = ({ url, animationComplete }) => {
 
 	if (animationComplete) {
 		return (
-			<div className="catalog-item w-10 h-10">
+			<div
+				className="
+			w-60 h-60 
+			md:w-72 md:h-72">
 				<ReactPlayer
-					url={`${url}?color=0064BE`}
+					url={`${urlColorWrapper}`}
 					playing={false}
 					controls={true}
 					width="100%"
+					height="100%"
 				/>
 			</div>
 		);
 	} else {
 		return (
 			<>
-				<div className="catalog-item w-full h-full bg-white">loading</div>
+				<div className=" bg-white">loading</div>
 			</>
 		);
 	}
