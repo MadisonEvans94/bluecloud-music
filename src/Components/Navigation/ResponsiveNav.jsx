@@ -10,8 +10,7 @@ const ResponsiveNav = () => {
 		<motion.nav
 			// initial={{ y: -200 }}
 			// animate={{ y: 0 }}
-			className="w-full"
-			style={{ backgroundColor: "#0e2743", borderBottom: "solid #ddd 1px" }}>
+			className="w-full">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center h-16">
 					<div className="flex items-center justify-between w-full">
