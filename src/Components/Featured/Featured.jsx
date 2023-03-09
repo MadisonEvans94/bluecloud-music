@@ -25,19 +25,32 @@ const Featured = ({ featuredImg }) => {
 				},
 			}}
 			onAnimationComplete={handleAnimationComplete}
-			className="featured-container">
+			className="featured-container 
+			
+			">
 			<h1 className="music-page-header alt-header">Featured</h1>
 			<div
 				className="
-				flex flex-col justify-center items-center w-full h-auto border border-white bg-primary rounded-lg">
-				<div className="featured-content">
+				mx-auto p-6 w-fit h-fit flex flex-col justify-center items-center border border-white bg-primary rounded-lg
+				
+				">
+				<div
+					className="
+					w-60
+					md:w-72 
+					lg:w-80
+					xl:w-fit xl:flex xl:flex-row ">
 					<CatalogItem
 						url={
 							"https://soundcloud.com/bad-snacks/lucky-blue-cloud-remix?si=1b847eac94c248b7a9771941ed9c1ecf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
 						}
 						animationComplete={animationComplete}
 					/>
-					<p className="featured-description">
+					<p
+						className="
+					w-60
+					md:w-72 
+					lg:w-80">
 						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
 						really enjoyed having the opportunity to bring some of my unique
 						sound palette to this track in particular. And I couldn't be more
