@@ -7,6 +7,9 @@ const asdf = "hamburger";
 const Navigation = () => {
 	const [dropdownVisibility, setDropdownVisibility] = useState("block");
 
+	useEffect(() => {
+		setHasMounted(true);
+	}, []);
 	function handleClick() {
 		setDropdownVisibility((prev) => {
 			if (prev === "none") {

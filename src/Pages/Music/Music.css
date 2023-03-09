@@ -133,9 +133,9 @@
 .news {
 	position: relative;
 	grid-area: 2 / 1 / 3 / 3;
-	color: white;
-	margin-left: 4rem;
+
 	height: 100%;
+	width: 100%;
 }
 .news-container {
 	/* background-color: var(--primary); */

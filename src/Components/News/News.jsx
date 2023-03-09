@@ -20,7 +20,14 @@ const News = () => {
 			}}
 			className="news">
 			<h2 className="music-page-header alt-header">News</h2>
-			<div className="news-container card">
+			<div
+				className="
+                mx-auto p-6 
+                rounded-2xl mb-8 min-h-68 card bg-green-400
+                w-60
+                md:w-72 
+				lg:w-80
+                ">
 				Hey everyone! You might have noticed that I've been a bit quiet on the
 				music front lately, but that's because I've been hard at work behind the
 				scenes. I've been taking some time away from creating to really hone my
