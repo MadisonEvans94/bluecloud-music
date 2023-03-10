@@ -3,6 +3,12 @@ import CatalogItem from "../CatalogItem/CatalogItem";
 import { useState } from "react";
 import CatalogContainer from "../CatalogContainer/CatalogContainer";
 import { motion } from "framer-motion";
+
+import sample1 from "../../assets/im1.png";
+import sample2 from "../../assets/im2.png";
+import sample3 from "../../assets/im3.png";
+import sample4 from "../../assets/im4.png";
+import sampleImg from "../../assets/images/FACEPLANT.png";
 const MyMusic = () => {
 	const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -34,23 +40,27 @@ const MyMusic = () => {
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/presence"}
 					animationComplete={animationComplete}
+					testImage={sample1}
 				/>
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/more-than-enough-1"}
 					animationComplete={animationComplete}
+					testImage={sample2}
 				/>
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/faded-2"}
 					animationComplete={animationComplete}
+					testImage={sample3}
 				/>
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/i-think-were-lost-2"}
 					animationComplete={animationComplete}
+					testImage={sample4}
 				/>
-				<CatalogItem
+				{/* <CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/jelly"}
 					animationComplete={animationComplete}
-				/>
+				/> */}
 			</CatalogContainer>
 		</motion.div>
 	);

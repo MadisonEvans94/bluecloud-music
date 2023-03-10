@@ -19,7 +19,7 @@ const News = () => {
 				},
 			}}
 			className="
-            flex flex-col items-center w-full news-and-links ">
+            flex flex-col items-center w-full">
 			<h2 className="w-full text-center text-5xl my-6 text-white">News</h2>
 			<div
 				className="w-120
@@ -28,7 +28,7 @@ const News = () => {
                 text-md
                 md:text-md
                 lg:text-md
-                xl:text-lg
+                xl:text-md
                 
                 ">
 				Hey everyone! You might have noticed that I've been a bit quiet on the
