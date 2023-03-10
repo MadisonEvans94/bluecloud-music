@@ -1,6 +1,7 @@
 import React from "react";
 import Featured from "../../Components/Featured/Featured";
 import MyMusic from "../../Components/MyMusic/MyMusic";
+import sampleImg from "../../assets/images/FACEPLANT.png";
 import ExternalLinks from "../../Components/ExternalLinks/ExternalLinks";
 import featuredImg from "../../assets/images/badsnacks-reference-img.png";
 import News from "../../Components/News/News";
@@ -10,7 +11,6 @@ const Music = () => {
 			<div className="music-page-container">
 				<Featured featuredImg={featuredImg} />
 				<MyMusic />
-				<ExternalLinks />
 				<News />
 			</div>
 		</>

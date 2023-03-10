@@ -2,26 +2,28 @@
 .music-page-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+
 	width: 100%;
 	overflow-y: auto;
 }
-.music-page-container > * {
-	border: 1px solid #fff;
+.faceplant {
+	background-image: url("../../assets/images/FACEPLANT.png");
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 100%;
 }
 .featured {
 	grid-area: 1 / 1 / 2 / 3;
 }
-.external-links {
+.news-and-links {
 	grid-area: 2 / 1 / 3 / 3;
 }
-.news {
-	grid-area: 3 / 1 / 4 / 3;
-}
 .my-music {
-	grid-area: 1 / 3 / 4 / 4;
+	grid-area: 1 / 3 / 3 / 4;
 }
 
 /* Remove bullets from list items */
