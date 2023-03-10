@@ -1,9 +1,8 @@
 import React from "react";
 import "../../Pages/Music/Music.css";
-import ReactPlayer from "react-player";
-import ref from "../../assets/ref.png";
+import { Spotify } from "react-spotify-embed";
+
 const CatalogItem = ({ url, testImage }) => {
-	const urlColorWrapper = `${url}?color=0064BE`;
 	return (
 		<>
 			<div
@@ -11,7 +10,13 @@ const CatalogItem = ({ url, testImage }) => {
 			w-60 h-60
 			md:w-60 md:h-60 
 			lg:w-60 lg:h-60">
-				<img className="w-full h-full object-cover" src={testImage} alt="pi" />
+				{/* <img className="w-full h-full object-cover" src={testImage} alt="pi" /> */}
+				<Spotify
+					link="https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb"
+					width="100%"
+					height="100%"
+					theme="white"
+				/>
 			</div>
 		</>
 	);
