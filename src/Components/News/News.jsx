@@ -18,7 +18,7 @@ const News = () => {
 					duration: 0.8,
 				},
 			}}
-			className="
+			className="news border
             flex flex-col items-center w-full">
 			<h2 className="w-full text-center text-5xl my-6 text-white">News</h2>
 			<div

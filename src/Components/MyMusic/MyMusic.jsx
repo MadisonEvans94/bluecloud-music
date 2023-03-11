@@ -33,34 +33,22 @@ const MyMusic = () => {
 				},
 			}}
 			onAnimationComplete={handleAnimationComplete}
-			className="my-music
-			mx-auto h-4/5">
-			<h2 className="music-page-header alt-header">My Music</h2>
+			className="my-music h-full 
+			mx-auto overflow-hidden">
+			<h2
+				className="section-title
+				">
+				My Music
+			</h2>
 			<CatalogContainer>
-				<CatalogItem
-					url={"https://soundcloud.com/bluecloudmusic/presence"}
-					animationComplete={animationComplete}
-					testImage={sample1}
-				/>
+				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/more-than-enough-1"}
-					animationComplete={animationComplete}
-					testImage={sample2}
 				/>
-				<CatalogItem
-					url={"https://soundcloud.com/bluecloudmusic/faded-2"}
-					animationComplete={animationComplete}
-					testImage={sample3}
-				/>
+				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/faded-2"} />
 				<CatalogItem
 					url={"https://soundcloud.com/bluecloudmusic/i-think-were-lost-2"}
-					animationComplete={animationComplete}
-					testImage={sample4}
 				/>
-				{/* <CatalogItem
-					url={"https://soundcloud.com/bluecloudmusic/jelly"}
-					animationComplete={animationComplete}
-				/> */}
 			</CatalogContainer>
 		</motion.div>
 	);
