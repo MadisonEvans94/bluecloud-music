@@ -36,27 +36,17 @@ const MyMusic = () => {
 				/>
 				<CatalogItem
 					url={
-						"https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb?si=b823ba81c788482e"
+						"https://open.spotify.com/track/5cMIqFsmiqe6aqfS22O97N?si=a6b309838ab74fe1"
 					}
 				/>
 				<CatalogItem
 					url={
-						"https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb?si=b823ba81c788482e"
+						"https://open.spotify.com/track/7CMlAr5XhOio8SZ3tWsUGz?si=34a2531b0e454c3f"
 					}
 				/>
 				<CatalogItem
 					url={
-						"https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb?si=b823ba81c788482e"
-					}
-				/>
-				<CatalogItem
-					url={
-						"https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb?si=b823ba81c788482e"
-					}
-				/>
-				<CatalogItem
-					url={
-						"https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb?si=b823ba81c788482e"
+						"https://open.spotify.com/track/1n3Aj9dSfpd5omHpyRsRon?si=e94a1f3d3af544a6"
 					}
 				/>
 			</CatalogContainer>
