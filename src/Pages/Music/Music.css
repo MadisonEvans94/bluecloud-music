@@ -48,6 +48,9 @@
 		overscroll-behavior-y: auto;
 		width: 100%;
 	}
+	.catalog-container {
+		height: 100%;
+	}
 }
 
 /* Tablet styles */
