@@ -11,7 +11,7 @@ const Music = () => {
 		<>
 			<div
 				className="music-page-container
-			p-3">
+			p-10">
 				<Featured featuredImg={featuredImg} />
 				<MyMusic />
 				<Streaming />

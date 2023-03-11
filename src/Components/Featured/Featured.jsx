@@ -25,35 +25,22 @@ const Featured = ({ featuredImg }) => {
 				},
 			}}
 			onAnimationComplete={handleAnimationComplete}
-			className="featured-container border
+			className="featured
 			flex flex-col items-center px-2 h-full w-full
 			">
 			<h1 className="section-title">Featured</h1>
 			<div
-				className="card 
-				mx-auto p-6 w-full h-fit flex flex-row  items-center  rounded-lg justify-between
-			
+				className="
+				mx-auto p-6 w-full h-fit flex flex-row  items-center justify-center 
 				">
+				<CatalogItem />
 				<div
-					className=" featured mx-auto 
-					w-60
-					md:w-full 
-					
-					flex flex-row justify-center">
-					{/* <CatalogItem
-						url={
-							"https://soundcloud.com/bad-snacks/lucky-blue-cloud-remix?si=1b847eac94c248b7a9771941ed9c1ecf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-						}
-						animationComplete={animationComplete}
-					/> */}
+					className=" 
+					mx-auto flex flex-row justify-center w-1/2 text-white">
 					<div
 						className="
-					w-60 my-4
-					md:w-80 
-					lg:w-1/2 lg:my-auto 
-					xl:ml-4
-					flex flex-col 
-					">
+						
+						">
 						<h3 className="text-md md:text-xl mb-3 lg:mt-4">
 							Lucky - Blue Cloud Remix
 						</h3>

@@ -6,10 +6,9 @@ const CatalogItem = ({ url, testImage }) => {
 	return (
 		<>
 			<div
-				className=" mx-auto mt-8
-			w-60 h-60
-			md:w-60 md:h-60 
-			lg:w-60 lg:h-60">
+				className=" 
+				mx-auto mt-8 w-72 h-72
+				">
 				{/* <img className="w-full h-full object-cover" src={testImage} alt="pi" /> */}
 				<Spotify
 					link="https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb"
@@ -28,7 +27,7 @@ const CatalogItem = ({ url, testImage }) => {
 // 		return (
 // 			<div
 // 				className="
-// 				w-60 h-60
+// 				w-72 h-72
 // 				md:w-72 md:h-72
 // 				lg:w-80 lg:h-80
 // 				xl:w-96 xl:h-96
