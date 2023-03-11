@@ -21,17 +21,17 @@ const Streaming = () => {
 					duration: 0.8,
 				},
 			}}
-			className="streaming
-            h-full flex flex-row justify-around items-center
+			className="streaming border
+            w-full my-6 px-auto flex flex-row justify-around items-center
     		">
-			<div className="w-full h-full flex flex-row items-center justify-center">
-				<BsSpotify size="10em" color="white" />
+			<div className="h-full flex flex-row">
+				<BsSpotify size="6em" color="white" />
 			</div>
-			<div className="w-full h-full flex flex-row items-center justify-center">
-				<FaApple size="10em" color="white" />
+			<div className="h-full flex flex-row ">
+				<FaApple size="6em" color="white" />
 			</div>
-			<div className="w-full h-full flex flex-row items-center justify-center">
-				<FaSoundcloud size="10em" color="white" />
+			<div className="h-full flex flex-row ">
+				<FaSoundcloud size="6em" color="white" />
 			</div>
 		</motion.div>
 	);

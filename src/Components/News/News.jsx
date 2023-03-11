@@ -18,17 +18,11 @@ const News = () => {
 					duration: 0.8,
 				},
 			}}
-			className="news 
-            flex flex-col items-center w-full">
+			className="news border
+			w-full my-6 flex flex-col mx-auto text-white ">
 			<h2 className="section-title">News</h2>
 			<div
-				className="w-120
-                mx-4 p-6 text-white 
-                rounded-2xl mb-8 min-h-68 card
-                text-md
-                md:text-md
-                lg:text-md
-                xl:text-md
+				className=" w-80 mx-auto
                 
                 ">
 				Hey everyone! You might have noticed that I've been a bit quiet on the

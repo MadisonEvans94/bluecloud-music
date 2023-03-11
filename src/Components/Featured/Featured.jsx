@@ -21,36 +21,35 @@ const Featured = () => {
 				},
 			}}
 			className="featured
-			flex flex-col items-center px-2 h-full w-full
+			flex flex-col items-center h-full w-full my-6 border
 			">
 			<h1 className="section-title">Featured</h1>
+
 			<div
 				className="
-				mx-auto p-6 w-full h-fit flex flex-row  items-center justify-center 
+				flex flex-col w-full mx-auto text-white
+				md:flex-row  md:items-center md:justify-center 
+				
+				
 				">
 				<CatalogItem
 					url={
 						"https://open.spotify.com/track/0KBH6hsf0J8s0PfBfANwcS?si=79556ff2d8974232"
 					}
 				/>
+				{/*  */}
+
 				<div
-					className=" 
-					mx-auto flex flex-row justify-center w-1/2 text-white">
-					<div
-						className="
-						
+					className=" w-80 flex flex-col items-center mx-auto
 						">
-						<h3 className="text-md md:text-xl mb-3 lg:mt-4">
-							Lucky - Blue Cloud Remix
-						</h3>
-						<p>
-							Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
-							really enjoyed having the opportunity to bring some of my unique
-							sound palette to this track in particular. And I couldn't be more
-							proud of the result. Don't miss out - click on the link and give
-							it a listen!
-						</p>
-					</div>
+					<h3 className="my-3 text-xl">Lucky - Blue Cloud Remix</h3>
+					<p className="w-full">
+						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
+						really enjoyed having the opportunity to bring some of my unique
+						sound palette to this track in particular. And I couldn't be more
+						proud of the result. Don't miss out - click on the link and give it
+						a listen!
+					</p>
 				</div>
 			</div>
 		</motion.div>

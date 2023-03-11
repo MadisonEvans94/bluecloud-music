@@ -14,6 +14,7 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	overflow: hidden;
+	overscroll-behavior-y: auto;
 }
 
 .featured {
@@ -112,7 +113,8 @@
 	.music-page-container {
 		display: flex;
 		flex-direction: column;
-
+		border: 2px solid red;
+		overflow-y: auto;
 		width: 100%;
 	}
 
@@ -145,14 +147,6 @@
 		margin-bottom: 1rem;
 		padding-inline: 0.5rem;
 		width: 100%;
-	}
-	.news {
-		position: relative;
-
-		color: white;
-		margin: 0;
-		padding-inline: 2.5rem;
-		padding-top: 0;
 	}
 
 	.icon-container {

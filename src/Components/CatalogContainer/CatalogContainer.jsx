@@ -5,7 +5,7 @@ const CatalogContainer = ({ children }) => {
 	return (
 		<div
 			className="
-			mx-8 card pb-8 overflow-scroll h-full">
+			mx-8 card overflow-scroll h-full">
 			{children}
 		</div>
 	);

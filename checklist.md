@@ -3,4 +3,6 @@
 [x] Addition of Link Section
 [x] Featured Section update
 [x] update the mymusic section so that it's not taking dummy data anymore
+[ ] make music page mobile friendly
 [ ] Store Section: Add a filler image back and reformat spacing
+[ ] update mobile navbar
