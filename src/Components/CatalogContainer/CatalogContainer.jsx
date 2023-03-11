@@ -4,8 +4,8 @@ import React from "react";
 const CatalogContainer = ({ children }) => {
 	return (
 		<div
-			className="
-			mx-8 border flex-1 overflow-y-auto
+			className=" catalog-container
+			mx-8 border overflow-auto
 			">
 			{children}
 		</div>

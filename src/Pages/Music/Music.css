@@ -36,7 +36,9 @@
 	font-size: 3rem;
 	color: white;
 }
-
+.catalog-container {
+	height: 90%;
+}
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
 	.music-page-container {
@@ -63,10 +65,14 @@
 	.music-page-container {
 		overflow-y: auto;
 		border: 2px solid red;
-		padding-inline: 1em;
+		padding-inline: 4em;
 	}
 }
 
 /* Large desktop styles */
 @media only screen and (min-width: 1680px) {
+	.music-page-container {
+		overflow-y: auto;
+		padding-inline: 4em;
+	}
 }
