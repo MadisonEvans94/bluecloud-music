@@ -3,38 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Clouds from "../../Components/Clouds/Clouds";
 import "./Landing.css";
-import { motion, AnimatePresence } from "framer-motion";
-const pageVariants = {
-	initial: {
-		opacity: 0,
-		scale: 0.8,
-		color: "white",
-	},
-	animate: {
-		opacity: 1,
-		scale: 1.05,
-		transition: {
-			type: "spring",
-			damper: 20,
-			duration: 1,
-		},
-	},
-	exit: {
-		opacity: 0,
-		x: "-100",
-		transition: {
-			duration: 1,
-		},
-	},
-	transition: { type: "spring", stiffness: 100 },
-	hover: {
-		scale: 1.1,
-
-		transition: {
-			duration: 1,
-		},
-	},
-};
+import { motion } from "framer-motion";
 
 const Landing = () => {
 	const [isClicked, setIsClicked] = useState(false);
@@ -52,7 +21,7 @@ const Landing = () => {
 						exit={{
 							opacity: 0,
 							y: -140,
-							transition: { type: "tween", duration: 1.2 },
+							transition: { type: "linear", duration: 1.2 },
 						}}>
 						blue cloud
 					</motion.h1>

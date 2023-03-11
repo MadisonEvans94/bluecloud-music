@@ -54,6 +54,7 @@ const ResponsiveNav = () => {
 							</div>
 						</div>
 
+						{/* hamburger icon */}
 						<div className="-mr-2 flex md:hidden">
 							<button
 								onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -64,7 +65,9 @@ const ResponsiveNav = () => {
 								<span className="sr-only">Open main menu</span>
 
 								<svg
-									className={`${isMobileMenuOpen ? "hidden" : "block"} h-6 w-6`}
+									className={`${
+										isMobileMenuOpen ? "hidden" : "block"
+									} h-6 w-6 `}
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -96,26 +99,26 @@ const ResponsiveNav = () => {
 						</div>
 					</div>
 				</div>
-
+				{/* open nav on mobile */}
 				<div
 					className={`${isMobileMenuOpen ? "block" : "hidden"} md:hidden`}
 					id="mobile-menu">
 					<div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
 						<Link
 							to="/home/store/"
-							className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+							className="text-white block px-3 py-2 rounded-md text-base font-medium">
 							Store
 						</Link>
 
 						<Link
 							to="/home/music"
-							className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+							className="text-white block px-3 py-2 rounded-md text-base font-medium">
 							Music
 						</Link>
 
 						<Link
 							to="/home/contact"
-							className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+							className="text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 							Contact
 						</Link>
 					</div>

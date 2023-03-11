@@ -6,4 +6,5 @@
 [x] make music page mobile friendly
 [ ] Store Section: Add a filler image back and reformat spacing
 [ ] update mobile navbar
-[ ] change the my-music section to a carousel
+[ ] update the padding-block for mobiile
+[ ] add link functionality to the streaming icons

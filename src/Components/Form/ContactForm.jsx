@@ -39,7 +39,7 @@ const ContactForm = () => {
 			console.log(response);
 			setSuccessMessage("submission successful");
 		} catch (error) {
-			setSuccessMessage("submission failed (server is not currently running)");
+			setSuccessMessage("server down: currently under development");
 			console.log(successMessage);
 		}
 	};

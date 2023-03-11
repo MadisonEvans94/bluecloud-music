@@ -56,6 +56,7 @@
 		overflow-y: auto;
 
 		padding-inline: 1em;
+		padding-block: 3em;
 	}
 }
 
@@ -63,7 +64,7 @@
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
 	.music-page-container {
 		overflow-y: auto;
-
+		padding-block: 3em;
 		padding-inline: 4em;
 	}
 }
@@ -73,5 +74,6 @@
 	.music-page-container {
 		overflow-y: auto;
 		padding-inline: 4em;
+		padding-block: 3em;
 	}
 }
