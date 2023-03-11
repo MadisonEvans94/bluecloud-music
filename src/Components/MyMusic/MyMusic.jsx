@@ -21,7 +21,7 @@ const MyMusic = () => {
 					duration: 0.8,
 				},
 			}}
-			className="my-music border my-6
+			className="my-music my-6
 			md:my-0">
 			<h2
 				className="section-title

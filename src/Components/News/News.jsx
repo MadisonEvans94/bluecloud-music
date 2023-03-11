@@ -18,7 +18,7 @@ const News = () => {
 					duration: 0.8,
 				},
 			}}
-			className="news border
+			className="news
 			w-full py-6 flex flex-col mx-auto text-white justify-center
 			">
 			<h2 className="section-title w-full">News</h2>

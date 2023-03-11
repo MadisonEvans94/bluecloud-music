@@ -5,7 +5,7 @@ const CatalogContainer = ({ children }) => {
 	return (
 		<div
 			className=" catalog-container
-			mx-8 border overflow-auto
+			mx-8 overflow-auto
 			">
 			{children}
 		</div>

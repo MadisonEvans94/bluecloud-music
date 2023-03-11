@@ -21,7 +21,7 @@ const Streaming = () => {
 					duration: 0.8,
 				},
 			}}
-			className="streaming border
+			className="streaming 
             w-full py-6 px-auto flex flex-row justify-around items-center
     		">
 			<div className="h-full flex flex-row justify-center items-center">

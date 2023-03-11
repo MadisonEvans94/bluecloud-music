@@ -21,7 +21,7 @@ const Featured = () => {
 				},
 			}}
 			className="featured
-			flex flex-col items-center h-full w-full my-6 border
+			flex flex-col items-center h-full w-full my-6
 			md:my-0
 			">
 			<h1 className="section-title">Featured</h1>
@@ -30,8 +30,7 @@ const Featured = () => {
 				className=" 
 				flex flex-col w-full mx-auto text-white
 				md:items-center md:justify-center md:px-8	
-				lg:text-red-500			
-				xl:text-blue-700
+		
 				">
 				<CatalogItem
 					url={
