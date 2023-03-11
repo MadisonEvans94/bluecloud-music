@@ -1,20 +1,9 @@
 import React from "react";
 import CatalogItem from "../CatalogItem/CatalogItem";
-import { useState } from "react";
 import CatalogContainer from "../CatalogContainer/CatalogContainer";
 import { motion } from "framer-motion";
 
-import sample1 from "../../assets/im1.png";
-import sample2 from "../../assets/im2.png";
-import sample3 from "../../assets/im3.png";
-import sample4 from "../../assets/im4.png";
-import sampleImg from "../../assets/images/FACEPLANT.png";
 const MyMusic = () => {
-	const [animationComplete, setAnimationComplete] = useState(false);
-
-	const handleAnimationComplete = () => {
-		setAnimationComplete(true);
-	};
 	return (
 		<motion.div
 			initial={{ x: "20vw", opacity: 0 }}
@@ -32,7 +21,6 @@ const MyMusic = () => {
 					duration: 0.8,
 				},
 			}}
-			onAnimationComplete={handleAnimationComplete}
 			className="my-music h-full 
 			mx-auto overflow-hidden">
 			<h2
@@ -41,13 +29,25 @@ const MyMusic = () => {
 				My Music
 			</h2>
 			<CatalogContainer>
-				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/presence"} />
 				<CatalogItem
-					url={"https://soundcloud.com/bluecloudmusic/more-than-enough-1"}
+					url={
+						"https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb?si=b823ba81c788482e"
+					}
 				/>
-				<CatalogItem url={"https://soundcloud.com/bluecloudmusic/faded-2"} />
 				<CatalogItem
-					url={"https://soundcloud.com/bluecloudmusic/i-think-were-lost-2"}
+					url={
+						"https://open.spotify.com/track/5cMIqFsmiqe6aqfS22O97N?si=c7c4a101cf584082"
+					}
+				/>
+				<CatalogItem
+					url={
+						"https://open.spotify.com/track/7CMlAr5XhOio8SZ3tWsUGz?si=8a3a4a6dd3bd480e"
+					}
+				/>
+				<CatalogItem
+					url={
+						"https://open.spotify.com/track/1n3Aj9dSfpd5omHpyRsRon?si=b4a51e1de50c49da"
+					}
 				/>
 			</CatalogContainer>
 		</motion.div>

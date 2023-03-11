@@ -2,7 +2,7 @@ import React from "react";
 import "../../Pages/Music/Music.css";
 import { Spotify } from "react-spotify-embed";
 
-const CatalogItem = ({ url, testImage }) => {
+const CatalogItem = ({ url }) => {
 	return (
 		<>
 			<div
@@ -10,12 +10,7 @@ const CatalogItem = ({ url, testImage }) => {
 				mx-auto mt-8 w-72 h-72
 				">
 				{/* <img className="w-full h-full object-cover" src={testImage} alt="pi" /> */}
-				<Spotify
-					link="https://open.spotify.com/track/79g4tEvmrLXDMiJqUwcbWb"
-					width="100%"
-					height="100%"
-					theme="white"
-				/>
+				<Spotify link={url} width="100%" height="100%" theme="white" />
 			</div>
 		</>
 	);

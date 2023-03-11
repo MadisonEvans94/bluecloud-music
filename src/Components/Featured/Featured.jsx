@@ -1,12 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CatalogItem from "../CatalogItem/CatalogItem";
-import { useState } from "react";
-const Featured = ({ featuredImg }) => {
-	const [animationComplete, setAnimationComplete] = useState(false);
-	const handleAnimationComplete = () => {
-		setAnimationComplete(true);
-	};
+
+const Featured = () => {
 	return (
 		<motion.div
 			initial={{ x: "-20vw", opacity: 0 }}
@@ -24,7 +20,6 @@ const Featured = ({ featuredImg }) => {
 					duration: 0.8,
 				},
 			}}
-			onAnimationComplete={handleAnimationComplete}
 			className="featured
 			flex flex-col items-center px-2 h-full w-full
 			">
@@ -33,7 +28,11 @@ const Featured = ({ featuredImg }) => {
 				className="
 				mx-auto p-6 w-full h-fit flex flex-row  items-center justify-center 
 				">
-				<CatalogItem />
+				<CatalogItem
+					url={
+						"https://open.spotify.com/track/0KBH6hsf0J8s0PfBfANwcS?si=79556ff2d8974232"
+					}
+				/>
 				<div
 					className=" 
 					mx-auto flex flex-row justify-center w-1/2 text-white">

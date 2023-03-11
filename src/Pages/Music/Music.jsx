@@ -3,7 +3,7 @@ import Featured from "../../Components/Featured/Featured";
 import MyMusic from "../../Components/MyMusic/MyMusic";
 
 import Streaming from "../../Components/Streaming/Streaming";
-import featuredImg from "../../assets/images/badsnacks-reference-img.png";
+
 import News from "../../Components/News/News";
 
 const Music = () => {
@@ -12,7 +12,7 @@ const Music = () => {
 			<div
 				className="music-page-container
 			p-10">
-				<Featured featuredImg={featuredImg} />
+				<Featured />
 				<MyMusic />
 				<Streaming />
 				<News />
