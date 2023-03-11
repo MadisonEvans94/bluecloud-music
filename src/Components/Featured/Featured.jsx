@@ -28,7 +28,7 @@ const Featured = ({ featuredImg }) => {
 			className="featured-container border
 			flex flex-col items-center px-2 h-full w-full
 			">
-			<h1 className="music-page-header alt-header">Featured</h1>
+			<h1 className="section-title">Featured</h1>
 			<div
 				className="card 
 				mx-auto p-6 w-full h-fit flex flex-row  items-center  rounded-lg justify-between
