@@ -10,12 +10,12 @@ const Music = () => {
 	return (
 		<>
 			<div
-				className="music-page-container overscroll-auto
+				className="music-page-container
 			">
 				<Featured />
-				<MyMusic />
 				<Streaming />
 				<News />
+				<MyMusic />
 			</div>
 		</>
 	);

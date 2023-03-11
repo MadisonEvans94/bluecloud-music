@@ -21,8 +21,9 @@ const MyMusic = () => {
 					duration: 0.8,
 				},
 			}}
-			className="my-music h-full 
-			mx-auto overflow-hidden">
+			className="my-music border
+			
+			md:my-6 ">
 			<h2
 				className="section-title
 				">

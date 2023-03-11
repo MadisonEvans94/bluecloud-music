@@ -22,14 +22,14 @@ const Featured = () => {
 			}}
 			className="featured
 			flex flex-col items-center h-full w-full my-6 border
-			
+		
 			">
 			<h1 className="section-title">Featured</h1>
 
 			<div
-				className="
+				className=" 
 				flex flex-col w-full mx-auto text-white
-				md:flex-row  md:items-center md:justify-center 
+				md:items-center md:justify-center md:px-8
 				
 				
 				">
@@ -41,9 +41,16 @@ const Featured = () => {
 				{/*  */}
 
 				<div
-					className=" w-80 flex flex-col items-center mx-auto
-						">
-					<h3 className="my-3 text-xl">Lucky - Blue Cloud Remix</h3>
+					className=" 
+					w-80 flex flex-col items-center mx-auto
+					md:w-full 
+					">
+					<h3
+						className="
+						my-3 text-xl
+						md:text-2xl">
+						Lucky - Blue Cloud Remix
+					</h3>
 					<p className="w-full">
 						Introducing my latest remix of Bad Snacks' hit track 'Lucky'! I
 						really enjoyed having the opportunity to bring some of my unique

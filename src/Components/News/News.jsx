@@ -22,8 +22,9 @@ const News = () => {
 			w-full my-6 flex flex-col mx-auto text-white ">
 			<h2 className="section-title">News</h2>
 			<div
-				className=" w-80 mx-auto
-                
+				className=" 
+				w-80 mx-auto
+                md:w-full md:px-8 md:max-h-60 md:overflow-scroll
                 ">
 				Hey everyone! You might have noticed that I've been a bit quiet on the
 				music front lately, but that's because I've been hard at work behind the
