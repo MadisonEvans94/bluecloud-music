@@ -19,8 +19,9 @@ const News = () => {
 				},
 			}}
 			className="news border
-			w-full my-6 flex flex-col mx-auto text-white ">
-			<h2 className="section-title">News</h2>
+			w-full py-6 flex flex-col mx-auto text-white justify-center
+			">
+			<h2 className="section-title w-full">News</h2>
 			<div
 				className=" 
 				w-80 mx-auto

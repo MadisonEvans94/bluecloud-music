@@ -22,15 +22,15 @@ const Streaming = () => {
 				},
 			}}
 			className="streaming border
-            w-full my-6 px-auto flex flex-row justify-around items-center
+            w-full py-6 px-auto flex flex-row justify-around items-center
     		">
-			<div className="h-full flex flex-row">
+			<div className="h-full flex flex-row justify-center items-center">
 				<BsSpotify size="6em" color="white" />
 			</div>
-			<div className="h-full flex flex-row ">
+			<div className="h-full flex flex-row justify-center items-center">
 				<FaApple size="6em" color="white" />
 			</div>
-			<div className="h-full flex flex-row ">
+			<div className="h-full flex flex-row justify-center items-center">
 				<FaSoundcloud size="6em" color="white" />
 			</div>
 		</motion.div>

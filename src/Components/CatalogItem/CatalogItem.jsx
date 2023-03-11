@@ -7,7 +7,8 @@ const CatalogItem = ({ url }) => {
 		<>
 			<div
 				className=" 
-				w-80 h-60 mx-auto
+				w-80 h-60 mx-auto border 
+			
 				">
 				<Spotify link={url} width="100%" height="100%" theme="white" />
 			</div>
