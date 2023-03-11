@@ -44,7 +44,6 @@
 	.music-page-container {
 		display: flex;
 		flex-direction: column;
-		border: 2px solid red;
 		overflow-y: auto;
 		overscroll-behavior-y: auto;
 		width: 100%;
@@ -55,7 +54,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 	.music-page-container {
 		overflow-y: auto;
-		border: 2px solid red;
+
 		padding-inline: 1em;
 	}
 }
@@ -64,7 +63,7 @@
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
 	.music-page-container {
 		overflow-y: auto;
-		border: 2px solid red;
+
 		padding-inline: 4em;
 	}
 }
