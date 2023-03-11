@@ -22,6 +22,7 @@ const Featured = () => {
 			}}
 			className="featured
 			flex flex-col items-center h-full w-full my-6 border
+			
 			">
 			<h1 className="section-title">Featured</h1>
 
