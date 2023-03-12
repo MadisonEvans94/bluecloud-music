@@ -1,7 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+	/* --secondary: #afdcff; */
+	/* --primary: #0052be; */
+	--secondary: #2a6db8;
+	/* --primary: #0052be; */
+	--primary: #0e2743;
+}
 *::before,
 *::after,
 * {
@@ -55,4 +61,5 @@ body {
 	padding-top: constant(safe-area-inset-top); /* For iOS devices */
 	padding-bottom: constant(safe-area-inset-bottom); /* For iOS devices */
 	viewport-fit: cover;
+	background-color: var(--secondary);
 }
