@@ -52,4 +52,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	padding-top: constant(safe-area-inset-top); /* For iOS devices */
+	padding-bottom: constant(safe-area-inset-bottom); /* For iOS devices */
+	viewport-fit: cover;
 }
