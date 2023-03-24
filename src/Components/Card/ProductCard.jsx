@@ -37,7 +37,7 @@ const ProductCard = ({ backgroundImg, title, description }) => {
 	return (
 		<>
 			<motion.div
-				className="product-card"
+				className="product-card asdf"
 				initial={{ y: 300, opacity: 0 }}
 				animate={{
 					y: 0,
