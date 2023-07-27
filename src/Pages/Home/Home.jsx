@@ -8,7 +8,8 @@ const Home = () => {
 		<>
 			<div
 				className="
-				fixed top-0 w-full h-screen bg-secondary flex flex-col justify-start items-center overscroll-auto">
+				fixed top-0 w-full h-screen bg-secondary flex flex-col justify-start items-center overscroll-auto"
+			>
 				<ResponsiveNav />
 
 				<Outlet />
