@@ -1,12 +1,12 @@
 import React from "react";
-import playButton from "../../assets/Figma/icons/playButton.svg";
+import AudioPlayer from "../../Components/Figma/AudioPlayer";
 
 const Home = () => {
 	return (
 		<>
 			<Header text="Header" />
 			<SubHeader text="Subheader" />
-			<AudioPlayer />
+			<AudioPlayer size="small" />
 			<LinkContainer />
 			<BlogCard />
 		</>
@@ -16,19 +16,11 @@ const Home = () => {
 export default Home;
 
 function Header({ text }) {
-	return <h1 className="text-info ">{text}</h1>;
+	return <h1 className="bg-green-300 text-heading1 text-info">{text}</h1>;
 }
 
 function SubHeader({ text }) {
-	return <h2>{text}r</h2>;
-}
-
-function AudioPlayer() {
-	return (
-		<div className="border border-info">
-			<img src={playButton} alt="playButton" />
-		</div>
-	);
+	return <h2 className="text-heading2 text-info">{text}</h2>;
 }
 
 function LinkContainer() {

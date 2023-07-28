@@ -11,7 +11,8 @@ const Music = () => {
 		<>
 			<div
 				className="music-page-container
-			">
+			"
+			>
 				<Featured />
 				<Streaming />
 				<News />

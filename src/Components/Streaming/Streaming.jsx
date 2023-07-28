@@ -23,12 +23,14 @@ const Streaming = () => {
 			}}
 			className="streaming 
             w-full py-6 px-auto flex flex-row justify-around items-center
-    		">
+    		"
+		>
 			<motion.div
 				initial={{ scale: 1 }}
 				whileHover={{ scale: 1.1 }}
 				className="
-				h-full flex flex-row justify-center items-center">
+				h-full flex flex-row justify-center items-center"
+			>
 				<a href="https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11">
 					<BsSpotify size="6em" color="white" />
 				</a>
@@ -37,7 +39,8 @@ const Streaming = () => {
 				initial={{ scale: 1 }}
 				whileHover={{ scale: 1.1 }}
 				className="
-				h-full flex flex-row justify-center items-center">
+				h-full flex flex-row justify-center items-center"
+			>
 				<a href="https://music.apple.com/us/artist/blue-cloud/1510449426">
 					<FaApple size="6em" color="white" />
 				</a>
@@ -46,7 +49,8 @@ const Streaming = () => {
 				initial={{ scale: 1 }}
 				whileHover={{ scale: 1.1 }}
 				className="
-				h-full flex flex-row justify-center items-center">
+				h-full flex flex-row justify-center items-center"
+			>
 				<a href="https://soundcloud.com/bluecloudmusic">
 					<FaSoundcloud size="6em" color="white" />
 				</a>
