@@ -16,7 +16,7 @@ const Home = () => {
 export default Home;
 
 function Header({ text }) {
-	return <h1 className="bg-green-300 text-heading1 text-info">{text}</h1>;
+	return <h1 className="text-heading1 text-info">{text}</h1>;
 }
 
 function SubHeader({ text }) {
