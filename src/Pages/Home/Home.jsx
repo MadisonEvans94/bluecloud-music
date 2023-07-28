@@ -6,7 +6,12 @@ import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 const Home = () => {
-	const icons = [appleMusic, spotify, soundcloud, bandcamp];
+	const icons = [
+		{ icon: appleMusic, link: "https://google.com" },
+		{ icon: spotify, link: "https://google.com" },
+		{ icon: soundcloud, link: "https://google.com" },
+		{ icon: bandcamp, link: "https://google.com" },
+	];
 	return (
 		<>
 			<Header text="Header" />
