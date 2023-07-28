@@ -11,7 +11,7 @@ const Landing = () => {
 	return (
 		<>
 			<div className="landing-page">
-				<Link to="/home/music">
+				<Link to="/home">
 					<motion.h1
 						className="landing-title"
 						onClick={() => setIsClicked((prev) => !prev)}
@@ -22,7 +22,8 @@ const Landing = () => {
 							opacity: 0,
 							y: -140,
 							transition: { type: "linear", duration: 1.2 },
-						}}>
+						}}
+					>
 						blue cloud
 					</motion.h1>
 				</Link>

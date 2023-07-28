@@ -1,21 +1,27 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import ResponsiveNav from "../../Components/Navigation/ResponsiveNav";
-// const backgroundColor = "rgb(175,220,255)";
-import MusicHero from "../../Components/MusicHero/MusicHero";
+// TODO:
+// [ ] header component
+// [ ] subheader component
+// [ ] audio player component
+// [ ] link container component
+// [ ] blog card component
 const Home = () => {
 	return (
 		<>
-			<div
-				className="
-				fixed top-0 w-full h-screen bg-secondary flex flex-col justify-start items-center overscroll-auto"
-			>
-				<ResponsiveNav />
-
-				<Outlet />
-			</div>
+			<h1>Header</h1>
+			<h2>subheader</h2>
+			<div>audio player</div>
+			{LinkContainer()}
+			{BlogCard()}
 		</>
 	);
 };
 
 export default Home;
+function LinkContainer() {
+	return <div>link container</div>;
+}
+
+function BlogCard() {
+	return <div>blog card</div>;
+}
