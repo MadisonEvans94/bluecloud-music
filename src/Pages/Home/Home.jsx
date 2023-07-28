@@ -1,4 +1,5 @@
 import React from "react";
+import playButton from "../../assets/Figma/icons/playButton.svg";
 // TODO:
 // [ ] header component
 // [ ] subheader component
@@ -8,16 +9,32 @@ import React from "react";
 const Home = () => {
 	return (
 		<>
-			<h1>Header</h1>
-			<h2>subheader</h2>
-			<div>audio player</div>
-			{LinkContainer()}
-			{BlogCard()}
+			<Header text="Header" />
+			<SubHeader text="Subheader" />
+			<AudioPlayer />
+			<LinkContainer />
+			<BlogCard />
 		</>
 	);
 };
 
 export default Home;
+function Header({ text }) {
+	return <h1>{text}</h1>;
+}
+
+function SubHeader({ text }) {
+	return <h2>{text}r</h2>;
+}
+
+function AudioPlayer() {
+	return (
+		<div>
+			<img src={playButton} alt="playButton" />
+		</div>
+	);
+}
+
 function LinkContainer() {
 	return <div>link container</div>;
 }
