@@ -1,11 +1,6 @@
 import React from "react";
 import playButton from "../../assets/Figma/icons/playButton.svg";
-// TODO:
-// [ ] header component
-// [ ] subheader component
-// [ ] audio player component
-// [ ] link container component
-// [ ] blog card component
+
 const Home = () => {
 	return (
 		<>
@@ -19,8 +14,9 @@ const Home = () => {
 };
 
 export default Home;
+
 function Header({ text }) {
-	return <h1>{text}</h1>;
+	return <h1 className="text-info ">{text}</h1>;
 }
 
 function SubHeader({ text }) {
@@ -29,7 +25,7 @@ function SubHeader({ text }) {
 
 function AudioPlayer() {
 	return (
-		<div>
+		<div className="border border-info">
 			<img src={playButton} alt="playButton" />
 		</div>
 	);
