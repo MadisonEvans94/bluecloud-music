@@ -16,14 +16,21 @@ const Home = () => {
 		{ icon: soundcloud, link: "https://google.com" },
 		{ icon: bandcamp, link: "https://google.com" },
 	];
+	const testBlogArray = ["blog1", "blog2", "blog3"];
 	return (
 		<>
 			<Header text="Header" />
 			<Subheader text="Subheader" />
+			<div>new release</div>
 			<AudioPlayer size="small" />
+			<Header text="Header" />
+			<Subheader text="Subheader" />
 			<LinkContainer icons={icons} />
-			<BlogCard />
-			<Display text="Display" />
+			<Subheader text="Subheader" />
+			<LinkContainer icons={icons} />
+			{testBlogArray.map((blog) => (
+				<BlogCard />
+			))}
 		</>
 	);
 };
