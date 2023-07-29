@@ -31,7 +31,7 @@ const Home = () => {
 	return (
 		<div className="px-5 pb-5">
 			<Header text="New Releases" />
-			<Subheader text="Take Your Time" />
+
 			<FeaturedContentCard description={description} />
 			<AudioPlayer size="small" />
 			<Header text="Connect" />
