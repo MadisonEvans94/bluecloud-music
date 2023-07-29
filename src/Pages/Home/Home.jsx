@@ -21,7 +21,6 @@ const Home = () => {
 	// TODO:
 	// [x] create the New Release Card component
 	// [x] build a paragraph component and update tailwind config typography
-	// [ ] create Layout Templating Page
 	// [ ] add nav component to the Templating Page
 	// [ ] create the blog component
 	// [ ] fix the tailwind config typography
@@ -30,9 +29,8 @@ const Home = () => {
 		"This song is a really good song. This sentence is a descriptor of the song and should talk about how awesome the song is. I really hope yall enjoy it. I worked pretty hard on it. Here's another sentence just for good measure.And here's another sentence again to make the box more filled out lol. ";
 
 	return (
-		<div className="px-5 pb-5">
+		<>
 			<Header text="New Releases" />
-
 			<FeaturedContentCard description={description} />
 			<AudioPlayer size="small" />
 			<Header text="Connect" />
@@ -44,7 +42,7 @@ const Home = () => {
 			{testBlogArray.map((blog) => (
 				<BlogCard />
 			))}
-		</div>
+		</>
 	);
 };
 

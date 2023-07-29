@@ -4,11 +4,10 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import { AnimatePresence } from "framer-motion";
 import Home from "./Pages/Home/Home";
+import Layout from "./Components/Figma/Layout";
 
-// import Store from "./Pages/Store/Store";
-// import Music from "./Pages/Music/Music";
-// import Contact from "./Pages/Contact/Contact";
-// import PageNotFound from "./Pages/PageNotFound/PageNotFound";
+// TODO:
+// [ ] create Layout Templating Page
 
 function App() {
 	const location = useLocation();
@@ -18,7 +17,14 @@ function App() {
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
-					<Route path="/home" element={<Home />} />
+					<Route
+						path="/home"
+						element={
+							<Layout>
+								<Home />
+							</Layout>
+						}
+					/>
 				</Routes>
 			</AnimatePresence>
 		</>
