@@ -17,17 +17,22 @@ const Home = () => {
 		{ icon: bandcamp, link: "https://google.com" },
 	];
 	const testBlogArray = ["blog1", "blog2", "blog3"];
+
+	// TODO:
+	// [ ] create the New Release Card component
+	// [ ] create the blog component
 	return (
 		<>
-			<Header text="Header" />
-			<Subheader text="Subheader" />
-			<div>new release</div>
+			<Header text="New Releases" />
+			<Subheader text="Take Your Time" />
+			<div>new release card</div>
 			<AudioPlayer size="small" />
-			<Header text="Header" />
-			<Subheader text="Subheader" />
+			<Header text="Connect" />
+			<Subheader text="My Music" />
 			<LinkContainer icons={icons} />
-			<Subheader text="Subheader" />
+			<Subheader text="Follow Me" />
 			<LinkContainer icons={icons} />
+			<Header text="Blogs" />
 			{testBlogArray.map((blog) => (
 				<BlogCard />
 			))}
