@@ -20,11 +20,11 @@ const Home = () => {
 
 	// TODO:
 	// [x] create the New Release Card component
-	// [ ] create the blog component
+	// [x] build a paragraph component and update tailwind config typography
 	// [ ] create Layout Templating Page
 	// [ ] add nav component to the Templating Page
+	// [ ] create the blog component
 	// [ ] fix the tailwind config typography
-	// [x] build a paragraph component and update tailwind config typography
 
 	const description =
 		"This song is a really good song. This sentence is a descriptor of the song and should talk about how awesome the song is. I really hope yall enjoy it. I worked pretty hard on it. Here's another sentence just for good measure.And here's another sentence again to make the box more filled out lol. ";
