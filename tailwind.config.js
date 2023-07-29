@@ -18,8 +18,9 @@ module.exports = {
 				subHeadingDesktop: ["36px", "auto"],
 				subHeadingTablet: ["32px", "auto"],
 				subHeadingMobile: ["24px", "auto"],
-				paragraph1: ["16px", "auto"],
-				paragraph2: ["14px", "auto"],
+				paragraphMobile: ["16px", "auto"],
+				paragraphTablet: ["20px", "auto"],
+				paragraphDesktop: ["24px", "auto"],
 				caption: ["12px", "auto"],
 			},
 			dropShadow: {
