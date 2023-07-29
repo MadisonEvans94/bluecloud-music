@@ -8,7 +8,7 @@ import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import Header from "../../Components/Figma/Header";
-import Display from "../../Components/Figma/Display";
+import FeaturedContentCard from "../../Components/Figma/FeaturedContentCard";
 const Home = () => {
 	const icons = [
 		{ icon: appleMusic, link: "https://google.com" },
@@ -21,11 +21,15 @@ const Home = () => {
 	// TODO:
 	// [ ] create the New Release Card component
 	// [ ] create the blog component
+
+	const description =
+		"This song is a really good song. This sentence is a descriptor of the song and should talk about how awesome the song is. I really hope yall enjoy it. I worked pretty hard on it. Here's another sentence just for good measure.And here's another sentence again to make the box more filled out lol. ";
+
 	return (
 		<>
 			<Header text="New Releases" />
 			<Subheader text="Take Your Time" />
-			<div>new release card</div>
+			<FeaturedContentCard description={description} />
 			<AudioPlayer size="small" />
 			<Header text="Connect" />
 			<Subheader text="My Music" />
