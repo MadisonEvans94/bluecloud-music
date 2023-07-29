@@ -1,10 +1,14 @@
 import React from "react";
+import Subheader from "../../Components/Figma/Subheader";
+import BlogCard from "../../Components/Figma/BlogCard";
 import AudioPlayer from "../../Components/Figma/AudioPlayer";
 import LinkContainer from "../../Components/Figma/LinkContainer";
 import appleMusic from "../../assets/Figma/icons/appleMusic.svg";
 import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
+import Header from "../../Components/Figma/Header";
+import Display from "../../Components/Figma/Display";
 const Home = () => {
 	const icons = [
 		{ icon: appleMusic, link: "https://google.com" },
@@ -15,24 +19,13 @@ const Home = () => {
 	return (
 		<>
 			<Header text="Header" />
-			<SubHeader text="Subheader" />
+			<Subheader text="Subheader" />
 			<AudioPlayer size="small" />
 			<LinkContainer icons={icons} />
 			<BlogCard />
+			<Display text="Display" />
 		</>
 	);
 };
 
 export default Home;
-
-function Header({ text }) {
-	return <h1 className="text-heading1 text-info">{text}</h1>;
-}
-
-function SubHeader({ text }) {
-	return <h2 className="text-heading2 text-info">{text}</h2>;
-}
-
-function BlogCard() {
-	return <div>blog card</div>;
-}

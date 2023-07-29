@@ -12,8 +12,9 @@ module.exports = {
 				info: "#FCFCFC",
 			},
 			fontSize: {
-				display1: ["48px", "auto"],
-				display2: ["40px", "auto"],
+				displayDesktop: ["64px", "auto"],
+				displayTablet: ["64px", "auto"],
+				displayMobile: ["64px", "auto"],
 				heading1: ["36px", "auto"],
 				heading2: ["32px", "auto"],
 				heading3: ["24px", "auto"],
