@@ -1,19 +1,30 @@
 import React from "react";
 import Subheader from "./Subheader";
 import coverImage from "../../assets/im3.png";
+import Paragraph from "./Paragraph";
 const FeaturedContentCard = ({ description = "description" }) => {
 	return (
 		<div className="border">
-			<Subheader text="Take Your Time" />
-			<div className="border m-5">
-				<div>
-					<img src={coverImage} alt="img" />
-				</div>
-				<div>
-					<p>{description}</p>
-				</div>
-			</div>
+			<Layout>
+				<Subheader text="Take Your Time" />
+				<img src={coverImage} alt="img" />
+				<Paragraph>{description}</Paragraph>
+			</Layout>
 		</div>
+	);
+};
+
+const Layout = ({ children }) => {
+	return (
+		<>
+			<div>
+				{children[0]}
+				<div className="rounded-xl overflow-hidden my-5">
+					{children[1]}
+				</div>
+				<div className="pb-5">{children[2]}</div>
+			</div>
+		</>
 	);
 };
 

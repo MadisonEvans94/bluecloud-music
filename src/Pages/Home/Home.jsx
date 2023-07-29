@@ -24,6 +24,7 @@ const Home = () => {
 	// [ ] create Layout Templating Page
 	// [ ] add nav component to the Templating Page
 	// [ ] fix the tailwind config typography
+	// [ ] build a paragraph component and update tailwind config typography
 
 	const description =
 		"This song is a really good song. This sentence is a descriptor of the song and should talk about how awesome the song is. I really hope yall enjoy it. I worked pretty hard on it. Here's another sentence just for good measure.And here's another sentence again to make the box more filled out lol. ";
