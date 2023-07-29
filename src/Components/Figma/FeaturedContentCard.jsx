@@ -2,7 +2,7 @@ import React from "react";
 
 const FeaturedContentCard = ({ description = "description" }) => {
 	return (
-		<div>
+		<div className="border">
 			<div>
 				<img src="" alt="img" />
 			</div>
