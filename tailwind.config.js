@@ -24,9 +24,9 @@ module.exports = {
 				caption: ["12px", "auto"],
 			},
 			dropShadow: {
-				default: "8px 8px 1px rgba(0, 0, 0, 0.35)",
-				hover: "6px 6px .5px rgba(0, 0, 0, 0.45)",
-				active: "1px 2px .1px rgba(0, 0, 0, 0.55)",
+				default: "0px 0px 1px rgba(0, 0, 0, 0.35)",
+				hover: "8px 8px 1px rgba(0, 0, 0, 0.35)",
+				active: "3px 3px .1px rgba(0, 0, 0, 0.55)",
 			},
 			// [8px_8px_1.5px_rgba(0,0,0,0.35)]
 			boxShadow: {
