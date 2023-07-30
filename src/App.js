@@ -5,6 +5,7 @@ import Landing from "./Pages/Landing/Landing";
 import { AnimatePresence } from "framer-motion";
 import Home from "./Pages/Home/Home";
 import Layout from "./Components/Figma/Layout";
+import Blog from "./Components/Figma/Blog";
 
 // TODO:
 // [ ] create Layout Templating Page
@@ -22,6 +23,14 @@ function App() {
 						element={
 							<Layout>
 								<Home />
+							</Layout>
+						}
+					/>
+					<Route
+						path="/blog"
+						element={
+							<Layout>
+								<Blog />
 							</Layout>
 						}
 					/>
