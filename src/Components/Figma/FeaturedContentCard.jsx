@@ -28,7 +28,8 @@ const Layout = ({ children }) => {
 				</div>
 				<div className="my-5 h-full border">
 					{children[2]}
-					<AudioPlayer />
+
+					<AudioPlayer className="bg-red-400" />
 				</div>
 			</div>
 		</>
