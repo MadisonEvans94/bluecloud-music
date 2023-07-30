@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./Pages/Home/Home";
 import Layout from "./Components/Figma/Layout";
 import Blog from "./Components/Figma/Blog";
+import Store from "./Components/Figma/Store";
 
 // TODO:
 // [ ] create Layout Templating Page
@@ -31,6 +32,14 @@ function App() {
 						element={
 							<Layout>
 								<Blog />
+							</Layout>
+						}
+					/>
+					<Route
+						path="/store"
+						element={
+							<Layout>
+								<Store />
 							</Layout>
 						}
 					/>
