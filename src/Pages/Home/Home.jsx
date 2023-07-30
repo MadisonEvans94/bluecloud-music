@@ -8,7 +8,7 @@ import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import Header from "../../Components/Figma/Header";
 import FeaturedContentCard from "../../Components/Figma/FeaturedContentCard";
-
+import coverImage from "../../assets/im3.png";
 const Layout = ({ children }) => {
 	return (
 		<div className="grid grid-cols-1">
@@ -64,7 +64,10 @@ const Home = () => {
 	return (
 		<>
 			<Layout>
-				<FeaturedContentCard description={description} />
+				<FeaturedContentCard
+					description={description}
+					coverImage={coverImage}
+				/>
 
 				<Subheader text="My Music" />
 				<LinkContainer icons={icons} />
