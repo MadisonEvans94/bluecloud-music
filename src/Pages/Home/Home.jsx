@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
 			{/* Blogs */}
 			<div>
 				<Header text="Blogs" />
-				{children[6]}
+				{children[5]}
 			</div>
 		</div>
 	);
@@ -67,6 +67,7 @@ const Home = () => {
 				<FeaturedContentCard
 					description={description}
 					coverImage={coverImage}
+					title="Distance"
 				/>
 
 				<Subheader text="My Music" />
