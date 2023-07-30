@@ -68,7 +68,7 @@ const ResponsiveNav = () => {
 									setIsMobileMenuOpen(!isMobileMenuOpen)
 								}
 								type="button"
-								className="inline-flex items-center justify-center p-2 rounded-md text-info focus:outline-none focus:ring-1 focus:ring-info"
+								className="inline-flex items-center justify-center p-2 rounded-md text-info focus:outline-none"
 								aria-controls="mobile-menu"
 								aria-expanded="false"
 							>
