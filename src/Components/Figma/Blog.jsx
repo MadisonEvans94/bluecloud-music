@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Subheader from "./Subheader";
 import Paragraph from "./Paragraph";
+import ImageContainer from "./ImageContainer";
 
 const Blog = ({
 	title = "title",
@@ -10,6 +11,7 @@ const Blog = ({
 		<Paragraph>asdfasdf</Paragraph>,
 		<Paragraph>asdfasdf</Paragraph>,
 		<Paragraph>asdfasdf</Paragraph>,
+		<ImageContainer src="https://images.unsplash.com/photo-1689947768186-d078ee2db0b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" />,
 	],
 }) => {
 	return (
