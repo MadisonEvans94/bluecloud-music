@@ -1,9 +1,11 @@
 import React from "react";
 
-const Header = ({ text }) => {
+const Header = ({ text, children, className }) => {
 	return (
-		<h1 className="text-headingMobile my-12 text-info md:text-headingTablet lg:text-headingDesktop">
-			{text}
+		<h1
+			className={`text-headingMobile text-info md:text-headingTablet lg:text-headingDesktop ${className}`}
+		>
+			{text} {children}
 		</h1>
 	);
 };
