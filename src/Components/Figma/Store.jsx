@@ -1,41 +1,40 @@
 import React from "react";
-import StoreItem from "./StoreItem";
+import PrimaryLayout from "./PrimaryLayout";
 import Header from "./Header";
+import Paragraph from "./Paragraph";
 
-const storeItems = [
-	{
-		itemName: "foo",
-		itemDescription: "bar",
-		imageSrc:
-			"https://plus.unsplash.com/premium_photo-1681433368405-70c0d1205831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=700&q=60",
-	},
-	{
-		itemName: "foo",
-		itemDescription: "bar",
-		imageSrc:
-			"https://plus.unsplash.com/premium_photo-1671211326876-82fc00e80590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-	},
-	{
-		itemName: "foo",
-		itemDescription: "bar",
-		imageSrc:
-			"https://images.unsplash.com/photo-1689850969062-f7e0a6c45a4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80",
-	},
-];
+const Left = () => {
+	return (
+		<>
+			<div className="h-full flex">
+				<div className="my-auto px-5">
+					<Header>Store</Header>
+					<Paragraph>Sample Packs, Plugins, and much more</Paragraph>
+				</div>
+			</div>
+		</>
+	);
+};
+
+const Right = () => {
+	return (
+		<>
+			<div className="pl-10 pr-24 flex flex-col justify-center my-auto relative h-full bg-cover bg-center">
+				<Header>Sample Pack</Header>
+				<Paragraph>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Accusantium eius totam amet soluta sequi possimus libero
+					neque sapiente repudiandae voluptatem?
+				</Paragraph>
+			</div>
+		</>
+	);
+};
+
 const Store = () => {
 	return (
 		<div>
-			<Header text="Store" />
-			{storeItems.map((storeItem, i) => {
-				return (
-					<StoreItem
-						key={i}
-						itemName={storeItem.itemName}
-						itemDescription={storeItem.itemDescription}
-						imageSrc={storeItem.imageSrc}
-					/>
-				);
-			})}
+			<PrimaryLayout infoSection={<Left />} contentSection={<Right />} />
 		</div>
 	);
 };

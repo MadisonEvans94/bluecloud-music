@@ -4,7 +4,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import { AnimatePresence } from "framer-motion";
 import Home from "./Pages/Home/Home";
-import Layout from "./Components/Figma/Layout";
 import Blog from "./Components/Figma/Blog";
 import Store from "./Components/Figma/Store";
 import Music from "./Components/Figma/Music";
@@ -20,30 +19,9 @@ function App() {
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
-					<Route
-						path="/home"
-						element={
-							<Layout>
-								<Home />
-							</Layout>
-						}
-					/>
-					<Route
-						path="/blog"
-						element={
-							<Layout>
-								<Blog />
-							</Layout>
-						}
-					/>
-					<Route
-						path="/store"
-						element={
-							<Layout>
-								<Store />
-							</Layout>
-						}
-					/>
+					<Route path="/home" element={<Home />} />
+					<Route path="/blog" element={<Blog />} />
+					<Route path="/store" element={<Store />} />
 					<Route path="/music" element={<Music />} />
 				</Routes>
 			</AnimatePresence>
