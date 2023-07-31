@@ -6,6 +6,7 @@ import appleMusic from "../../assets/Figma/icons/appleMusic.svg";
 import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
+import AudioPlayer from "./AudioPlayer";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
@@ -40,7 +41,7 @@ const Left = () => {
 						tracks, and get directed to streaming platforms for an
 						immersive auditory journey
 					</Paragraph>
-					<LinkContainer icons={icons} />
+					<LinkContainer icons={icons} className="my-5" />
 				</div>
 			</div>
 		</>
@@ -51,12 +52,18 @@ const Right = () => {
 	return (
 		<>
 			<div
-				className="px-5 relative h-full bg-cover bg-center"
+				className="px-10 flex flex-col justify-center my-auto relative h-full bg-cover bg-center"
 				style={{
 					backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
 				}}
 			>
 				<Header>Song</Header>
+				<Paragraph>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Accusantium eius totam amet soluta sequi possimus libero
+					neque sapiente repudiandae voluptatem?
+				</Paragraph>
+				<AudioPlayer className="my-5" />
 			</div>
 		</>
 	);
