@@ -15,7 +15,7 @@ const ResponsiveNav = () => {
 				initial={{ opacity: 1 }}
 				animate={{ opacity: 1 }}
 				transition={{ type: "spring", duration: 1.5 }}
-				className="w-full bg-transparent border-b border-info"
+				className="w-full lg:absolute bg-transparent border-b border-info"
 			>
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
 					<div className="flex items-center h-16">

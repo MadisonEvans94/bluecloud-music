@@ -7,6 +7,7 @@ import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import AudioPlayer from "./AudioPlayer";
+import ResponsiveNav from "../Navigation/ResponsiveNav";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
@@ -17,12 +18,15 @@ const icons = [
 
 const PageLayout = ({ infoSection, contentSection }) => {
 	return (
-		<div className="mx-auto h-screen sm:grid sm:grid-cols-3">
-			<div className="h-2/3 sm:h-auto sm:col-span-2 sm:order-2 order-1">
-				{contentSection}
-			</div>
-			<div className="h-1/3 sm:h-auto sm:col-span-1 sm:order-1 order-2">
-				{infoSection}
+		<div className="flex flex-col h-screen">
+			<ResponsiveNav />
+			<div className="mx-auto h-full sm:grid sm:grid-cols-3">
+				<div className="h-3/4 sm:h-auto sm:col-span-2 sm:order-2 order-1">
+					{contentSection}
+				</div>
+				<div className="h-1/4 sm:h-auto sm:col-span-1 sm:order-1 order-2">
+					{infoSection}
+				</div>
 			</div>
 		</div>
 	);
@@ -37,11 +41,9 @@ const Left = () => {
 					<Paragraph>
 						Explore 'My Music', the creative corner of an
 						independent alternative electronic music producer.
-						Discover enchanting soundscapes, listen to unique
-						tracks, and get directed to streaming platforms for an
-						immersive auditory journey
+						Discover enchanting soundscapes
 					</Paragraph>
-					<LinkContainer icons={icons} className="my-5" />
+					<LinkContainer icons={icons} className="" />
 				</div>
 			</div>
 		</>
@@ -70,7 +72,11 @@ const Right = () => {
 };
 
 const Music = () => {
-	return <PageLayout infoSection={<Left />} contentSection={<Right />} />;
+	return (
+		<>
+			<PageLayout infoSection={<Left />} contentSection={<Right />} />
+		</>
+	);
 };
 
 export default Music;
