@@ -9,6 +9,7 @@ import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import Header from "../../Components/Figma/Header";
 import FeaturedContentCard from "../../Components/Figma/FeaturedContentCard";
 import coverImage from "../../assets/im3.png";
+import Carousel from "../../Components/Figma/Carousel";
 const Layout = ({ children }) => {
 	return (
 		<div className="grid grid-cols-1">
@@ -56,6 +57,31 @@ const Home = () => {
 			description:
 				"AI has started to make a big impact, and while it may seem like uncharted...",
 		},
+		{
+			title: "Using AI effectively in Production",
+			description:
+				"AI has started to make a big impact, and while it may seem like uncharted...",
+		},
+		{
+			title: "Using AI effectively in Production",
+			description:
+				"AI has started to make a big impact, and while it may seem like uncharted...",
+		},
+		{
+			title: "Using AI effectively in Production",
+			description:
+				"AI has started to make a big impact, and while it may seem like uncharted...",
+		},
+		{
+			title: "Using AI effectively in Production",
+			description:
+				"AI has started to make a big impact, and while it may seem like uncharted...",
+		},
+		{
+			title: "Using AI effectively in Production",
+			description:
+				"AI has started to make a big impact, and while it may seem like uncharted...",
+		},
 	];
 
 	const description =
@@ -74,9 +100,11 @@ const Home = () => {
 				<LinkContainer icons={icons} />
 				<Subheader text="Follow Me" />
 				<LinkContainer icons={icons} />
-				{testBlogArray.map((blog) => (
-					<BlogCard blog={blog} />
-				))}
+				<Carousel
+					items={testBlogArray.map((blog, index) => (
+						<BlogCard key={index} blog={blog} />
+					))}
+				/>
 			</Layout>
 		</>
 	);
