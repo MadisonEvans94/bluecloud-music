@@ -3,10 +3,10 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import { AnimatePresence } from "framer-motion";
-import Home from "./Pages/Home/Home";
+import Home from "./Components/Figma/Home";
 import Blog from "./Components/Figma/Blog";
 import Store from "./Components/Figma/Store";
-import Music from "./Components/Figma/Music";
+import Music from "./Components/Figma/Home";
 
 // TODO:
 // [ ] create Layout Templating Page
