@@ -7,7 +7,7 @@ const LinkContainer = ({ icons }) => {
 				return (
 					<a href={icon.link}>
 						<img
-							className="w-[48px] -translate-x-1/2 cursor-pointer h-[48px] ml-[35px] drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition "
+							className="w-[48px] -translate-x-1/2 cursor-pointer h-[48px] ml-[35px] drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition"
 							src={icon.icon}
 							key={i}
 							alt="link"
