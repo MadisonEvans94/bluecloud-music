@@ -7,7 +7,7 @@ import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import AudioPlayer from "./AudioPlayer";
-import ResponsiveNav from "../Navigation/ResponsiveNav";
+import PrimaryLayout from "./PrimaryLayout";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
@@ -15,22 +15,6 @@ const icons = [
 	{ icon: soundcloud, link: "https://google.com" },
 	{ icon: bandcamp, link: "https://google.com" },
 ];
-
-const PageLayout = ({ infoSection, contentSection }) => {
-	return (
-		<div className="flex flex-col h-screen">
-			<ResponsiveNav />
-			<div className="mx-auto h-full sm:grid sm:grid-cols-3">
-				<div className="h-3/4 sm:h-auto sm:col-span-2 sm:order-2 order-1">
-					{contentSection}
-				</div>
-				<div className="h-1/4 sm:h-auto sm:col-span-1 sm:order-1 order-2">
-					{infoSection}
-				</div>
-			</div>
-		</div>
-	);
-};
 
 const Left = () => {
 	return (
@@ -74,7 +58,7 @@ const Right = () => {
 const Music = () => {
 	return (
 		<>
-			<PageLayout infoSection={<Left />} contentSection={<Right />} />
+			<PrimaryLayout infoSection={<Left />} contentSection={<Right />} />
 		</>
 	);
 };
