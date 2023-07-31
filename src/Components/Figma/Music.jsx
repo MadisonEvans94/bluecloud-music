@@ -54,7 +54,7 @@ const Right = () => {
 	return (
 		<>
 			<div
-				className="px-10 flex flex-col justify-center my-auto relative h-full bg-cover bg-center"
+				className="pl-10 pr-24 flex flex-col justify-center my-auto relative h-full bg-cover bg-center"
 				style={{
 					backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
 				}}
