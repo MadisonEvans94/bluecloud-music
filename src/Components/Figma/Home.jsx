@@ -28,22 +28,6 @@ const icons = [
 // 		</>
 // 	);
 // };
-
-const StoreContent = () => {
-	return (
-		<>
-			<div className="h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative bg-cover bg-center">
-				<Header>Sample Pack</Header>
-				<Paragraph>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Accusantium eius totam amet soluta sequi possimus libero
-					neque sapiente repudiandae voluptatem?
-				</Paragraph>
-			</div>
-		</>
-	);
-};
-
 const MusicInfo = () => {
 	return (
 		<>
@@ -62,24 +46,73 @@ const MusicInfo = () => {
 	);
 };
 
-const MusicContent = () => {
+// Content Sections
+
+// TODO
+const StoreContent = ({ className }) => {
 	return (
-		<>
-			<div
-				className="pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center"
-				style={{
-					backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
-				}}
-			>
-				<Header>Song</Header>
-				<Paragraph>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Accusantium eius totam amet soluta sequi possimus libero
-					neque sapiente repudiandae voluptatem?
-				</Paragraph>
-				<AudioPlayer className="my-5" />
-			</div>
-		</>
+		<div
+			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative bg-cover bg-center snap-center ${className}`}
+		>
+			<Header>Sample Pack</Header>
+			<Paragraph>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Accusantium eius totam amet soluta sequi possimus libero neque
+				sapiente repudiandae voluptatem?
+			</Paragraph>
+		</div>
+	);
+};
+
+// TODO
+const MusicContent = ({ className }) => {
+	return (
+		<div
+			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
+			style={{
+				backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
+			}}
+		>
+			<Header>Song</Header>
+			<Paragraph>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Accusantium eius totam amet soluta sequi possimus libero neque
+				sapiente repudiandae voluptatem?
+			</Paragraph>
+			<AudioPlayer className="my-5" />
+		</div>
+	);
+};
+
+// TODO
+const ContactContent = ({ className }) => {
+	return (
+		<div
+			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
+		>
+			<Header>Get in Touch</Header>
+			<Paragraph>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Accusantium eius totam amet soluta sequi possimus libero neque
+				sapiente repudiandae voluptatem?
+			</Paragraph>
+		</div>
+	);
+};
+
+// TODO
+const BlogContent = ({ className }) => {
+	return (
+		<div
+			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
+		>
+			<Header>Blogs</Header>
+			<Paragraph>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Accusantium eius totam amet soluta sequi possimus libero neque
+				sapiente repudiandae voluptatem?
+			</Paragraph>
+		</div>
 	);
 };
 
@@ -89,10 +122,12 @@ const Home = () => {
 			<PrimaryLayout
 				infoSection={<MusicInfo />}
 				contentSection={
-					<div>
-						<MusicContent />
-						<StoreContent />
-					</div>
+					<>
+						<MusicContent className="shrink-0 border" />
+						<StoreContent className="shrink-0 border" />
+						<BlogContent className="shrink-0 border" />
+						<ContactContent className="shrink-0 border" />
+					</>
 				}
 			/>
 		</>
