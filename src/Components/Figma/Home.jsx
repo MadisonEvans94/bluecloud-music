@@ -12,54 +12,14 @@ import BlogContent from "./BlogContent";
 import ContactContent from "./ContactContent";
 import MusicContent from "./MusicContent";
 import StoreContent from "./StoreContent";
-
+import StoreInfo from "./StoreInfo";
+import MusicInfo from "./MusicInfo";
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
 	{ icon: spotify, link: "https://google.com" },
 	{ icon: soundcloud, link: "https://google.com" },
 	{ icon: bandcamp, link: "https://google.com" },
 ];
-
-const StoreInfo = () => {
-	return (
-		<AnimatePresence mode="wait">
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				className="h-full flex"
-			>
-				<div className="my-auto px-5">
-					<Header>Store</Header>
-					<Paragraph>Sample Packs, Plugins, and much more</Paragraph>
-				</div>
-			</motion.div>
-		</AnimatePresence>
-	);
-};
-
-const MusicInfo = () => {
-	return (
-		<AnimatePresence mode="wait">
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				className="h-full flex"
-			>
-				<div className="my-auto px-5">
-					<Header>My Music</Header>
-					<Paragraph>
-						Explore 'My Music', the creative corner of an
-						independent alternative electronic music producer.
-						Discover enchanting soundscapes
-					</Paragraph>
-					<LinkContainer icons={icons} className="" />
-				</div>
-			</motion.div>
-		</AnimatePresence>
-	);
-};
 
 const BlogInfo = () => {
 	return (
