@@ -8,6 +8,7 @@ import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import AudioPlayer from "./AudioPlayer";
 import PrimaryLayout from "./PrimaryLayout";
+import { motion, AnimatePresence } from "framer-motion";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
@@ -18,21 +19,31 @@ const icons = [
 
 const StoreInfo = () => {
 	return (
-		<>
-			<div className="h-full flex">
+		<AnimatePresence mode="wait">
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				className="h-full flex"
+			>
 				<div className="my-auto px-5">
 					<Header>Store</Header>
 					<Paragraph>Sample Packs, Plugins, and much more</Paragraph>
 				</div>
-			</div>
-		</>
+			</motion.div>
+		</AnimatePresence>
 	);
 };
 
 const MusicInfo = () => {
 	return (
-		<>
-			<div className="h-full flex">
+		<AnimatePresence mode="wait">
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				className="h-full flex"
+			>
 				<div className="my-auto px-5">
 					<Header>My Music</Header>
 					<Paragraph>
@@ -42,15 +53,20 @@ const MusicInfo = () => {
 					</Paragraph>
 					<LinkContainer icons={icons} className="" />
 				</div>
-			</div>
-		</>
+			</motion.div>
+		</AnimatePresence>
 	);
 };
 
 const BlogInfo = () => {
 	return (
-		<>
-			<div className="h-full flex">
+		<AnimatePresence mode="wait">
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				className="h-full flex"
+			>
 				<div className="my-auto px-5">
 					<Header>Blogs</Header>
 					<Paragraph>
@@ -60,15 +76,20 @@ const BlogInfo = () => {
 					</Paragraph>
 					<LinkContainer icons={icons} className="" />
 				</div>
-			</div>
-		</>
+			</motion.div>
+		</AnimatePresence>
 	);
 };
 
 const ContactInfo = () => {
 	return (
-		<>
-			<div className="h-full flex">
+		<AnimatePresence mode="wait">
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				className="h-full flex"
+			>
 				<div className="my-auto px-5">
 					<Header>Get In Touch</Header>
 					<Paragraph>
@@ -78,8 +99,8 @@ const ContactInfo = () => {
 					</Paragraph>
 					<LinkContainer icons={icons} className="" />
 				</div>
-			</div>
-		</>
+			</motion.div>
+		</AnimatePresence>
 	);
 };
 
@@ -91,13 +112,11 @@ const StoreContent = React.forwardRef(({ className }, ref) => {
 		<div
 			ref={ref}
 			id="store"
-			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative bg-cover bg-center snap-center ${className}`}
+			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative snap-center ${className}`}
 		>
 			<Header>Sample Pack</Header>
 			<Paragraph>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Accusantium eius totam amet soluta sequi possimus libero neque
-				sapiente repudiandae voluptatem?
 			</Paragraph>
 		</div>
 	);
