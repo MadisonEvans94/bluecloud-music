@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import LinkContainer from "./LinkContainer";
@@ -49,9 +49,10 @@ const MusicInfo = () => {
 // Content Sections
 
 // TODO
-const StoreContent = ({ className }) => {
+const StoreContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
+			ref={ref}
 			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Sample Pack</Header>
@@ -62,12 +63,13 @@ const StoreContent = ({ className }) => {
 			</Paragraph>
 		</div>
 	);
-};
+});
 
 // TODO
-const MusicContent = ({ className }) => {
+const MusicContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
+			ref={ref}
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 			style={{
 				backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
@@ -82,12 +84,13 @@ const MusicContent = ({ className }) => {
 			<AudioPlayer className="my-5" />
 		</div>
 	);
-};
+});
 
 // TODO
-const ContactContent = ({ className }) => {
+const ContactContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
+			ref={ref}
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Get in Touch</Header>
@@ -98,12 +101,13 @@ const ContactContent = ({ className }) => {
 			</Paragraph>
 		</div>
 	);
-};
+});
 
 // TODO
-const BlogContent = ({ className }) => {
+const BlogContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
+			ref={ref}
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Blogs</Header>
@@ -114,19 +118,26 @@ const BlogContent = ({ className }) => {
 			</Paragraph>
 		</div>
 	);
-};
+});
 
 const Home = () => {
+	const musicRef = useRef();
+	const storeRef = useRef();
+	const blogRef = useRef();
+	const contactRef = useRef();
+	useEffect(() => {
+		console.log(musicRef.current, "MUSIC REF");
+	}, []);
 	return (
 		<>
 			<PrimaryLayout
 				infoSection={<MusicInfo />}
 				contentSection={
 					<>
-						<MusicContent className="shrink-0 border" />
-						<StoreContent className="shrink-0 border" />
-						<BlogContent className="shrink-0 border" />
-						<ContactContent className="shrink-0 border" />
+						<MusicContent ref={musicRef} />
+						<StoreContent ref={storeRef} />
+						<BlogContent ref={blogRef} />
+						<ContactContent ref={contactRef} />
 					</>
 				}
 			/>
