@@ -24,16 +24,17 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
 	}, [autoSlide, autoSlideInterval, currentIndex]);
 
 	return (
-		<div className="relative flex overflow-hidden">
+		<div className="relative flex items-center overflow-hidden">
 			<div
-				className="absolute text-info top-1/2 left-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
+				className="drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition absolute text-info top-1/2 left-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
 				onClick={prevSlide}
 			>
 				<Left size="5em" />
 			</div>
 
-			<motion.div
-				className="flex w-full h-full"
+			{/* TODO: Implement framer motion transition here... */}
+			<div
+				className="flex w-full h-3/4 mx-24"
 				style={{ transform: `translateX(-${currentIndex * 100}%)` }}
 				transition={{ duration: 0.5 }}
 			>
@@ -42,10 +43,10 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
 						{item}
 					</div>
 				))}
-			</motion.div>
+			</div>
 
 			<div
-				className="text-info absolute top-1/2 right-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
+				className="drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition text-info absolute top-1/2 right-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
 				onClick={nextSlide}
 			>
 				<Right size="5em" />

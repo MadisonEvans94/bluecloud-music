@@ -2,9 +2,16 @@ import React from "react";
 
 import shoppingCart from "../../assets/Figma/icons/shoppingCart.svg";
 
-const StoreItem = ({ itemName = "item", imageSrc = "", itemDescription }) => {
+const StoreItem = ({
+	itemName = "item",
+	imageSrc = "",
+	itemDescription,
+	className,
+}) => {
 	return (
-		<div className="my-auto w-full max-w-5xl border relative border-info h-full mx-auto rounded-[32px] overflow-hidden">
+		<div
+			className={`my-auto w-full max-w-5xl border relative border-info h-full mx-auto rounded-[32px] overflow-hidden ${className}`}
+		>
 			<div className="bg-primary flex flex-row items-center z-40 w-full h-32 absolute bottom-0 px-3">
 				<div>
 					<h2 className=" text-info text-subHeadingMobile">
