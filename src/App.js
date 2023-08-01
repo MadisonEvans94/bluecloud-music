@@ -7,9 +7,7 @@ import Home from "./Components/Figma/Home";
 import Blog from "./Components/Figma/Blog";
 import Store from "./Components/Figma/Store";
 import Music from "./Components/Figma/Home";
-
-// TODO:
-// [ ] create Layout Templating Page
+import ItemDetails from "./Components/Figma/ItemDetails";
 
 function App() {
 	const location = useLocation();
@@ -23,6 +21,7 @@ function App() {
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/store" element={<Store />} />
 					<Route path="/music" element={<Music />} />
+					<Route path="/itemDetails" element={<ItemDetails />} />
 				</Routes>
 			</AnimatePresence>
 		</>

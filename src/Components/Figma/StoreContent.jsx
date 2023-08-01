@@ -12,7 +12,8 @@ import StoreItem from "./StoreItem";
 // [ ] disable buttons when end of list is reached
 // [ ] add framer motion transition
 // [ ] make it pretty
-// [ ] make the shopping cart button functional
+// [ ] make the itemsDetail navigation functional
+// [ ] create a global state for the item details
 
 const TestDiv = ({ text }) => {
 	return (

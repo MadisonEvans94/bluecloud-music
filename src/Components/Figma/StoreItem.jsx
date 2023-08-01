@@ -1,6 +1,6 @@
 import React from "react";
-
 import shoppingCart from "../../assets/Figma/icons/shoppingCart.svg";
+import { useNavigate } from "react-router-dom";
 
 const StoreItem = ({
 	itemName = "item",
@@ -8,6 +8,10 @@ const StoreItem = ({
 	itemDescription,
 	className,
 }) => {
+	const navigate = useNavigate();
+	const showItemDetails = () => {
+		navigate("/itemDetails");
+	};
 	return (
 		<div
 			className={`my-auto w-full max-w-5xl border relative border-info h-full mx-auto rounded-[32px] overflow-hidden ${className}`}
@@ -23,13 +27,14 @@ const StoreItem = ({
 				<img
 					className="absolute bottom-4 right-4 cursor-pointer drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition"
 					src={shoppingCart}
-					alt=""
+					alt="checkout"
 				/>
 			</div>
 			<img
-				className="object-cover h-full w-full object-center "
+				className="cursor-pointer object-cover h-full w-full object-center "
 				src={imageSrc}
 				alt="item-img"
+				onClick={showItemDetails}
 			/>
 		</div>
 	);
