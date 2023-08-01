@@ -26,7 +26,7 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
 	return (
 		<div className="relative flex overflow-hidden">
 			<div
-				className="absolute top-1/2 left-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
+				className="absolute text-info top-1/2 left-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
 				onClick={prevSlide}
 			>
 				<Left size="5em" />
@@ -45,7 +45,7 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
 			</motion.div>
 
 			<div
-				className="absolute top-1/2 right-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
+				className="text-info absolute top-1/2 right-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
 				onClick={nextSlide}
 			>
 				<Right size="5em" />
