@@ -6,10 +6,12 @@ import appleMusic from "../../assets/Figma/icons/appleMusic.svg";
 import spotify from "../../assets/Figma/icons/spotify.svg";
 import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
-import AudioPlayer from "./AudioPlayer";
 import PrimaryLayout from "./PrimaryLayout";
 import { motion, AnimatePresence } from "framer-motion";
 import BlogContent from "./BlogContent";
+import ContactContent from "./ContactContent";
+import MusicContent from "./MusicContent";
+import StoreContent from "./StoreContent";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
@@ -104,64 +106,6 @@ const ContactInfo = () => {
 		</AnimatePresence>
 	);
 };
-
-// Content Sections
-
-// TODO
-const StoreContent = React.forwardRef(({ className }, ref) => {
-	return (
-		<div
-			ref={ref}
-			id="store"
-			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative snap-center ${className}`}
-		>
-			<Header>Sample Pack</Header>
-			<Paragraph>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			</Paragraph>
-		</div>
-	);
-});
-
-// TODO
-const MusicContent = React.forwardRef(({ className }, ref) => {
-	return (
-		<div
-			ref={ref}
-			id="music"
-			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
-			style={{
-				backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
-			}}
-		>
-			<Header>Song</Header>
-			<Paragraph>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Accusantium eius totam amet soluta sequi possimus libero neque
-				sapiente repudiandae voluptatem?
-			</Paragraph>
-			<AudioPlayer className="my-5" />
-		</div>
-	);
-});
-
-// TODO
-const ContactContent = React.forwardRef(({ className }, ref) => {
-	return (
-		<div
-			ref={ref}
-			id="contact"
-			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
-		>
-			<Header>Get in Touch</Header>
-			<Paragraph>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Accusantium eius totam amet soluta sequi possimus libero neque
-				sapiente repudiandae voluptatem?
-			</Paragraph>
-		</div>
-	);
-});
 
 const Home = () => {
 	const [infoSection, setInfoSection] = useState(<MusicInfo />); // setting initial state to MusicInfo
