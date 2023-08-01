@@ -1,25 +1,67 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
 	AiFillCaretLeft as Left,
 	AiFillCaretRight as Right,
 } from "react-icons/ai";
 
-const Carousel = ({ items }) => {
+const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
+	const [currentIndex, setCurrentIndex] = useState(0);
+
+	const nextSlide = () => {
+		setCurrentIndex((currentIndex + 1) % items.length);
+	};
+
+	const prevSlide = () => {
+		setCurrentIndex((currentIndex - 1 + items.length) % items.length);
+	};
+
+	useEffect(() => {
+		if (autoSlide) {
+			const interval = setInterval(nextSlide, autoSlideInterval);
+			return () => clearInterval(interval);
+		}
+	}, [autoSlide, autoSlideInterval, currentIndex]);
+
 	return (
-		<div className="flex flex-row border relative justify-start">
-			<div className="left-0 top-1/2 -translate-y-1/2 z-50 absolute text-info flex flex-row items-center drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition cursor-pointer">
+		<div className="relative flex overflow-hidden">
+			<div
+				className="absolute top-1/2 left-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
+				onClick={prevSlide}
+			>
 				<Left size="5em" />
 			</div>
-			<motion.div className="no-scrollbar flex flex-row overflow-auto scrollbar-hide w-full">
+
+			<motion.div
+				className="flex w-full h-full"
+				style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+				transition={{ duration: 0.5 }}
+			>
 				{items.map((item, i) => (
-					<div key={i} className="object-cover mx-24 w-full">
+					<div key={i} className="w-full flex-none">
 						{item}
 					</div>
 				))}
 			</motion.div>
-			<div className="right-0 top-1/2 -translate-y-1/2 z-50 absolute text-info flex flex-row items-center drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition cursor-pointer">
+
+			<div
+				className="absolute top-1/2 right-0 transform -translate-y-1/2 z-50 flex items-center cursor-pointer"
+				onClick={nextSlide}
+			>
 				<Right size="5em" />
+			</div>
+
+			<div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 p-4">
+				{items.map((_, i) => (
+					<div
+						key={i}
+						className={`w-2 h-2 rounded-full transition ${
+							i === currentIndex
+								? "bg-white"
+								: "bg-white opacity-50"
+						}`}
+					></div>
+				))}
 			</div>
 		</div>
 	);
