@@ -6,8 +6,11 @@ import StoreItem from "./StoreItem";
 // [x] import store item
 // [x] create fake list of store items
 // [x] import carousel
+// [ ] fix the width of the store item to be full of parent container
 // [ ] integrate carousel with store items
+// [ ] make carousel buttons functional
 // [ ] make it pretty
+// [ ] make the shopping cart button functional
 
 const storeItems = [
 	<StoreItem
