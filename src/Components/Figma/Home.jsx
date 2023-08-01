@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import LinkContainer from "./LinkContainer";
@@ -16,24 +16,61 @@ const icons = [
 	{ icon: bandcamp, link: "https://google.com" },
 ];
 
-// const StoreInfo = () => {
-// 	return (
-// 		<>
-// 			<div className="h-full flex">
-// 				<div className="my-auto px-5">
-// 					<Header>Store</Header>
-// 					<Paragraph>Sample Packs, Plugins, and much more</Paragraph>
-// 				</div>
-// 			</div>
-// 		</>
-// 	);
-// };
+const StoreInfo = () => {
+	return (
+		<>
+			<div className="h-full flex">
+				<div className="my-auto px-5">
+					<Header>Store</Header>
+					<Paragraph>Sample Packs, Plugins, and much more</Paragraph>
+				</div>
+			</div>
+		</>
+	);
+};
+
 const MusicInfo = () => {
 	return (
 		<>
 			<div className="h-full flex">
 				<div className="my-auto px-5">
 					<Header>My Music</Header>
+					<Paragraph>
+						Explore 'My Music', the creative corner of an
+						independent alternative electronic music producer.
+						Discover enchanting soundscapes
+					</Paragraph>
+					<LinkContainer icons={icons} className="" />
+				</div>
+			</div>
+		</>
+	);
+};
+
+const BlogInfo = () => {
+	return (
+		<>
+			<div className="h-full flex">
+				<div className="my-auto px-5">
+					<Header>Blogs</Header>
+					<Paragraph>
+						Explore 'My Music', the creative corner of an
+						independent alternative electronic music producer.
+						Discover enchanting soundscapes
+					</Paragraph>
+					<LinkContainer icons={icons} className="" />
+				</div>
+			</div>
+		</>
+	);
+};
+
+const ContactInfo = () => {
+	return (
+		<>
+			<div className="h-full flex">
+				<div className="my-auto px-5">
+					<Header>Get In Touch</Header>
 					<Paragraph>
 						Explore 'My Music', the creative corner of an
 						independent alternative electronic music producer.
@@ -53,6 +90,7 @@ const StoreContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
 			ref={ref}
+			id="store"
 			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Sample Pack</Header>
@@ -70,6 +108,7 @@ const MusicContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
 			ref={ref}
+			id="music"
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 			style={{
 				backgroundImage: `url('https://images.unsplash.com/photo-1589144669495-b5905b68ea9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80')`,
@@ -91,6 +130,7 @@ const ContactContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
 			ref={ref}
+			id="contact"
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Get in Touch</Header>
@@ -108,6 +148,7 @@ const BlogContent = React.forwardRef(({ className }, ref) => {
 	return (
 		<div
 			ref={ref}
+			id="blog"
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Blogs</Header>
@@ -121,17 +162,64 @@ const BlogContent = React.forwardRef(({ className }, ref) => {
 });
 
 const Home = () => {
+	const [infoSection, setInfoSection] = useState(<MusicInfo />); // setting initial state to MusicInfo
+
 	const musicRef = useRef();
 	const storeRef = useRef();
 	const blogRef = useRef();
 	const contactRef = useRef();
+
 	useEffect(() => {
-		console.log(musicRef.current, "MUSIC REF");
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						switch (entry.target.id) {
+							case "music":
+								setInfoSection(<MusicInfo />);
+								break;
+							case "store":
+								setInfoSection(<StoreInfo />);
+								break;
+							case "blog":
+								setInfoSection(<BlogInfo />);
+								break;
+							case "contact":
+								setInfoSection(<ContactInfo />);
+								break;
+
+							default:
+								setInfoSection(<MusicInfo />);
+								break;
+						}
+					}
+				});
+			},
+			{
+				threshold: 1, // trigger callback when at least 10% of the target is visible
+			}
+		);
+
+		if (musicRef.current) {
+			observer.observe(musicRef.current);
+		}
+
+		if (storeRef.current) {
+			observer.observe(storeRef.current);
+		}
+		if (blogRef.current) {
+			observer.observe(blogRef.current);
+		}
+
+		if (contactRef.current) {
+			observer.observe(contactRef.current);
+		}
 	}, []);
+
 	return (
 		<>
 			<PrimaryLayout
-				infoSection={<MusicInfo />}
+				infoSection={infoSection}
 				contentSection={
 					<>
 						<MusicContent ref={musicRef} />
