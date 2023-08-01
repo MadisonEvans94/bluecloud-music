@@ -9,6 +9,7 @@ import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
 import AudioPlayer from "./AudioPlayer";
 import PrimaryLayout from "./PrimaryLayout";
 import { motion, AnimatePresence } from "framer-motion";
+import BlogContent from "./BlogContent";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
@@ -153,24 +154,6 @@ const ContactContent = React.forwardRef(({ className }, ref) => {
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
 			<Header>Get in Touch</Header>
-			<Paragraph>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Accusantium eius totam amet soluta sequi possimus libero neque
-				sapiente repudiandae voluptatem?
-			</Paragraph>
-		</div>
-	);
-});
-
-// TODO
-const BlogContent = React.forwardRef(({ className }, ref) => {
-	return (
-		<div
-			ref={ref}
-			id="blog"
-			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
-		>
-			<Header>Blogs</Header>
 			<Paragraph>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				Accusantium eius totam amet soluta sequi possimus libero neque
