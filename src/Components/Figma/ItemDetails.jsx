@@ -6,7 +6,7 @@ import AudioPlayer from "./AudioPlayer";
 
 const ItemDetails = () => {
 	return (
-		<div>
+		<div className="px-5">
 			<Header>Alure</Header>
 			<ItemDetailsCard />
 			<SubHeader>Product Summary</SubHeader>

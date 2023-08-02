@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import { AnimatePresence } from "framer-motion";
@@ -8,12 +8,14 @@ import Blog from "./Components/Figma/Blog";
 import Store from "./Components/Figma/Store";
 import Music from "./Components/Figma/Home";
 import ItemDetails from "./Components/Figma/ItemDetails";
+import AppContext from "./Components/Figma/Context/AppContext";
 
 function App() {
 	const location = useLocation();
+	const [currentStoreItem, setCurrentStoreItem] = useState(null);
 
 	return (
-		<>
+		<AppContext.Provider value={{ currentStoreItem, setCurrentStoreItem }}>
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
@@ -24,7 +26,7 @@ function App() {
 					<Route path="/itemDetails" element={<ItemDetails />} />
 				</Routes>
 			</AnimatePresence>
-		</>
+		</AppContext.Provider>
 	);
 }
 
