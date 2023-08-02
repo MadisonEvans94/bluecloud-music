@@ -1,9 +1,9 @@
 import React from "react";
 
-const Subheader = ({ text }) => {
+const Subheader = ({ text, children }) => {
 	return (
 		<h2 className="text-heading2 my-4 text-info text-subHeadingMobile md:text-subHeadingTablet lg:text-subHeadingDesktop ">
-			{text}
+			{text} {children}
 		</h2>
 	);
 };

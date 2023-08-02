@@ -1,12 +1,69 @@
 import React from "react";
 import Header from "./Header";
 import SubHeader from "./Subheader";
+import Paragraph from "./Paragraph";
+import AudioPlayer from "./AudioPlayer";
 
 const ItemDetails = () => {
 	return (
 		<div>
 			<Header>Alure</Header>
 			<ItemDetailsCard />
+			<SubHeader>Product Summary</SubHeader>
+			<Paragraph>
+				This is the main description for my newest sample pack. But in
+				reality it's just a placeholder. I just need some text to fill
+				in the blank space so that I can get a good visual
+				representation of what my mobile application will look like
+				eventually.This is the main description for my newest sample
+				pack. But in reality it's just a placeholder. I just need some
+				text to fill in the blank space so that I can get a good visual
+				representation of what my mobile application will look like
+				eventually. This is the main description for my newest sample
+				pack. But in reality it's just a placeholder. I just need some
+				text to fill in the blank space so that I can get a good visual
+				representation of what my mobile application will look like
+				eventually.
+			</Paragraph>
+			<SubHeader>What's Included?</SubHeader>
+			<ul className="text-info">
+				<li>45 percussion loops</li>
+				<li>64 melodic samples</li>
+				<li>6 808 samples</li>
+				<li>34 kicks</li>
+				<li>12 snares </li>
+				<li>34 vocal effects</li>
+			</ul>
+			<SubHeader>Demo</SubHeader>
+			<AudioPlayer />
+			<SubHeader>Usage Details</SubHeader>
+			<ul className="text-info">
+				<li>
+					All sounds and loops are 100% royalty free - no clearance
+					required
+				</li>
+				<li>
+					All sounds are crafted, sculpted, specially designed to
+					KNOCK / punch through your mix
+				</li>
+				<li>
+					All sounds are 100% original and crafted from scratch (no
+					recycled sounds)
+				</li>
+				<li>
+					All loops are labeled with tempo, key, and ready to drop
+					right into your DAW with no editing required
+				</li>
+				<li>All sounds are in 24bit/44.1kHz format</li>
+				<li>
+					All sounds and loops are compatible with any DAW software or
+					beat machine (Ableton, FL Studio, Logic, Reason, MPC,
+					Maschine, Studio One, etc) kit ever
+				</li>
+				<li>
+					All 808s and One Shots are tuned to C for easy playability
+				</li>
+			</ul>
 		</div>
 	);
 };
