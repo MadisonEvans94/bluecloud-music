@@ -15,7 +15,7 @@ const StoreItem = ({
 
 	const showItemDetails = () => {
 		setCurrentStoreItem({
-			itemName: "Alure Pack",
+			itemName,
 			itemPrice: 45.5,
 			itemSummary:
 				"This is the main description for my newest sample pack. But in reality it's just a placeholder. I just need some text to fill in the blank space so that I can get a good visual representation of what my mobile application will look like eventually.",
@@ -25,6 +25,7 @@ const StoreItem = ({
 				"6 808 samples",
 			],
 			demoUrl: "https://google.com/",
+			imageSrc,
 		});
 		navigate("/itemDetails");
 	};
