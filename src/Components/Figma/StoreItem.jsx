@@ -1,6 +1,8 @@
 import React from "react";
 import shoppingCart from "../../assets/Figma/icons/shoppingCart.svg";
 import { useNavigate } from "react-router-dom";
+import AppContext from "./Context/AppContext";
+import { useContext } from "react";
 
 const StoreItem = ({
 	itemName = "item",
@@ -8,10 +10,25 @@ const StoreItem = ({
 	itemDescription,
 	className,
 }) => {
+	const { setCurrentStoreItem } = useContext(AppContext);
 	const navigate = useNavigate();
+
 	const showItemDetails = () => {
+		setCurrentStoreItem({
+			itemName: "Alure Pack",
+			itemPrice: 45.5,
+			itemSummary:
+				"This is the main description for my newest sample pack. But in reality it's just a placeholder. I just need some text to fill in the blank space so that I can get a good visual representation of what my mobile application will look like eventually.",
+			itemElements: [
+				"45 percussion loops",
+				"64 melodic samples",
+				"6 808 samples",
+			],
+			demoUrl: "https://google.com/",
+		});
 		navigate("/itemDetails");
 	};
+
 	return (
 		<div
 			className={`my-auto w-full max-w-5xl border relative border-info h-full mx-auto rounded-[32px] overflow-hidden ${className}`}

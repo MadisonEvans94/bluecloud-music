@@ -3,38 +3,25 @@ import Header from "./Header";
 import SubHeader from "./Subheader";
 import Paragraph from "./Paragraph";
 import AudioPlayer from "./AudioPlayer";
+import { useContext } from "react";
+import AppContext from "./Context/AppContext";
 
 const ItemDetails = () => {
+	const { currentStoreItem } = useContext(AppContext);
 	return (
 		<div className="px-5">
-			<Header>Alure</Header>
+			<Header>{currentStoreItem.itemName}</Header>
 			<ItemDetailsCard />
 			<SubHeader>Product Summary</SubHeader>
-			<Paragraph>
-				This is the main description for my newest sample pack. But in
-				reality it's just a placeholder. I just need some text to fill
-				in the blank space so that I can get a good visual
-				representation of what my mobile application will look like
-				eventually.This is the main description for my newest sample
-				pack. But in reality it's just a placeholder. I just need some
-				text to fill in the blank space so that I can get a good visual
-				representation of what my mobile application will look like
-				eventually. This is the main description for my newest sample
-				pack. But in reality it's just a placeholder. I just need some
-				text to fill in the blank space so that I can get a good visual
-				representation of what my mobile application will look like
-				eventually.
-			</Paragraph>
+			<Paragraph>{currentStoreItem.itemSummary}</Paragraph>
 			<SubHeader>What's Included?</SubHeader>
 			<ul className="text-info">
-				<li>45 percussion loops</li>
-				<li>64 melodic samples</li>
-				<li>6 808 samples</li>
-				<li>34 kicks</li>
-				<li>12 snares </li>
-				<li>34 vocal effects</li>
+				{currentStoreItem.itemElements.map((item, i) => {
+					return <li key={i}>{item}</li>;
+				})}
 			</ul>
 			<SubHeader>Demo</SubHeader>
+			{/* TODO: add url as prop to AudioPlayer */}
 			<AudioPlayer />
 			<SubHeader>Usage Details</SubHeader>
 			<ul className="text-info">
@@ -68,8 +55,6 @@ const ItemDetails = () => {
 	);
 };
 
-export default ItemDetails;
-
 function ItemDetailsCard() {
 	return (
 		<div className="w-full ">
@@ -101,3 +86,5 @@ function ItemDetailsCard() {
 		</div>
 	);
 }
+
+export default ItemDetails;
