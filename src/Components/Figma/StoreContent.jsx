@@ -9,19 +9,13 @@ import StoreItem from "./StoreItem";
 // [x] fix the width of the store item to be full of parent container
 // [x] integrate carousel with store items
 // [x] make carousel buttons functional
+// [x] make the itemsDetail navigation functional
 // [ ] disable buttons when end of list is reached
+// [ ] create a global state for the item details
+// [ ] create a context for the shopping cart items
+// [ ] make mvp for the item details page
 // [ ] add framer motion transition
 // [ ] make it pretty
-// [ ] make the itemsDetail navigation functional
-// [ ] create a global state for the item details
-
-const TestDiv = ({ text }) => {
-	return (
-		<>
-			<div className="border border-info w-full">{text}</div>
-		</>
-	);
-};
 
 const storeItems = [
 	<StoreItem
