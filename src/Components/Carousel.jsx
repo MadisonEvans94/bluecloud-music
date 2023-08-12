@@ -20,6 +20,7 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
 			const interval = setInterval(nextSlide, autoSlideInterval);
 			return () => clearInterval(interval);
 		}
+		// eslint-disable-next-line
 	}, [autoSlide, autoSlideInterval, currentIndex]);
 
 	return (

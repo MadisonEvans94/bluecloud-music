@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Clouds from "../../Components/Clouds/Clouds";
+import Clouds from "../Components/Clouds/Clouds";
 import "./Landing.css";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,10 @@ const Landing = () => {
 						onClick={() => setIsClicked((prev) => !prev)}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1, transition: { duration: 1.2 } }}
-						whileHover={{ scale: 1.05, transition: { duration: 1.2 } }}
+						whileHover={{
+							scale: 1.05,
+							transition: { duration: 1.2 },
+						}}
 						exit={{
 							opacity: 0,
 							y: -140,
