@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import PrimaryLayout from "../Components/PrimaryLayout";
+import PrimaryLayout from "../Components/layout/PrimaryLayout";
 import BlogContent from "../Components/BlogContent";
 import ContactContent from "../Components/ContactContent";
 import MusicContent from "../Components/MusicContent";

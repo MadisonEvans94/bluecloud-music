@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Header from "./Header";
-import Paragraph from "./Paragraph";
+import Header from "./utility/Header";
+import Paragraph from "./utility/Paragraph";
 const ContactInfo = () => {
 	return (
 		<AnimatePresence mode="wait">

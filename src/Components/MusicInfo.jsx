@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Header from "./Header";
-import Paragraph from "./Paragraph";
+import Header from "./utility/Header";
+import Paragraph from "./utility/Paragraph";
 import LinkContainer from "./LinkContainer";
 import appleMusic from "../assets/Figma/icons/appleMusic.svg";
 import spotify from "../assets/Figma/icons/spotify.svg";

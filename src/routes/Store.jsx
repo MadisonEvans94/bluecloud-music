@@ -1,6 +1,6 @@
 import React from "react";
 import PrimaryLayout from "../Components/PrimaryLayout";
-import Header from "../Components/Header";
+import Header from "../Components/utility/Header";
 import Paragraph from "../Components/Paragraph";
 
 const Left = () => {

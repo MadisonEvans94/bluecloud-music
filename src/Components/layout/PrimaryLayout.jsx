@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveNav from "./Navigation/ResponsiveNav";
+import ResponsiveNav from "../Navigation/ResponsiveNav";
 
 const PrimaryLayout = ({ infoSection, contentSection }) => {
 	return (

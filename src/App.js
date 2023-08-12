@@ -4,8 +4,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "./routes/Landing";
 import { AnimatePresence } from "framer-motion";
 import Home from "./routes/Home";
-import Blog from "./routes/Blog";
-import Store from "./routes/Store";
 import ItemDetails from "./Components/ItemDetails";
 import AppContext from "./Components/Context/AppContext";
 import useFetchData from "./CustomHooks/useFetchData";
@@ -21,9 +19,6 @@ function App() {
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />} />
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/store" element={<Store />} />
-
 					<Route path="/itemDetails" element={<ItemDetails />} />
 				</Routes>
 			</AnimatePresence>

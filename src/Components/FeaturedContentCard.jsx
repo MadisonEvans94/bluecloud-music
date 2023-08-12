@@ -1,6 +1,6 @@
 import React from "react";
 import Subheader from "./Subheader";
-import Paragraph from "./Paragraph";
+import Paragraph from "./utility/Paragraph";
 import AudioPlayer from "./AudioPlayer";
 
 const FeaturedContentCard = ({
