@@ -6,10 +6,13 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./routes/Home";
 import StoreItemDetail from "./Components/StoreItemDetail";
 import AppContext from "./Context/AppContext";
-import useFetchData from "./CustomHooks/useFetchData";
+// import useFetchData from "./CustomHooks/useFetchData";
 
 function App() {
-	const { dbData, loading, error } = useFetchData("/dummyDB/dynamodb.json");
+	// FIXME: fetch isn't working on dummy data
+	// const { dbData, loading, error } = useFetchData("/dummyDB/dynamodb.json");
+	// console.log("DATA:", dbData, "LOADING: ", loading, "ERROR: ", error);
+	const dbData = {};
 	const location = useLocation();
 	const [currentStoreItem, setCurrentStoreItem] = useState(null);
 
@@ -19,15 +22,13 @@ function App() {
 				currentStoreItem,
 				setCurrentStoreItem,
 				dbData,
-				loading,
-				error,
 			}}
 		>
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />} />
-					<Route path="/itemDetail" element={<StoreItemDetail />} />
+					<Route path="/itemDetails" element={<StoreItemDetail />} />
 				</Routes>
 			</AnimatePresence>
 		</AppContext.Provider>

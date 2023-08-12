@@ -8,12 +8,8 @@ import StoreInfo from "../Components/StoreInfo";
 import MusicInfo from "../Components/MusicInfo";
 import BlogInfo from "../Components/BlogInfo";
 import ContactInfo from "../Components/ContactInfo";
-import { useContext } from "react";
-import AppContext from "../Context/AppContext";
 
 const Home = () => {
-	const { dbData, loading, error } = useContext(AppContext);
-	console.log("DATA:", dbData, "LOADING: ", loading, "ERROR: ", error);
 	const [infoSection, setInfoSection] = useState(<MusicInfo />);
 	const musicRef = useRef();
 	const storeRef = useRef();
