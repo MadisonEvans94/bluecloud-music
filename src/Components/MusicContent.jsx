@@ -3,7 +3,7 @@ import Header from "./Utility/Header";
 import Paragraph from "./Utility/Paragraph";
 import AudioPlayer from "./Utility/AudioPlayer";
 // TODO
-const MusicContent = React.forwardRef(({ className }, ref) => {
+const MusicContent = React.forwardRef(({ className, featured }, ref) => {
 	return (
 		<div
 			ref={ref}
@@ -14,11 +14,7 @@ const MusicContent = React.forwardRef(({ className }, ref) => {
 			}}
 		>
 			<Header>Song</Header>
-			<Paragraph>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Accusantium eius totam amet soluta sequi possimus libero neque
-				sapiente repudiandae voluptatem?
-			</Paragraph>
+			<Paragraph>{featured.description}</Paragraph>
 			<AudioPlayer className="my-5" />
 		</div>
 	);
