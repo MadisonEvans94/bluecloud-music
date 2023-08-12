@@ -18,6 +18,7 @@
     "react-spotify-embed": "^2.0.3",
     "serve": "^14.2.0",
     "styled-components": "^5.3.6",
+    "wavesurfer.js": "^7.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

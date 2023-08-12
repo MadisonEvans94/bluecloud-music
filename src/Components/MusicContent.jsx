@@ -2,8 +2,11 @@ import React from "react";
 import Header from "./Utility/Header";
 import Paragraph from "./Utility/Paragraph";
 import AudioPlayer from "./Utility/AudioPlayer";
+import { useContext } from "react";
+import AppContext from "../Context/AppContext";
 
 const MusicContent = React.forwardRef(({ className, featured }, ref) => {
+	const { audioTest } = useContext(AppContext);
 	return (
 		<div
 			ref={ref}
@@ -26,7 +29,7 @@ const MusicContent = React.forwardRef(({ className, featured }, ref) => {
 			/>
 			<Header>{featured.title}</Header>
 			<Paragraph>{featured.description}</Paragraph>
-			<AudioPlayer className="my-5" />
+			<AudioPlayer className="my-5" url={audioTest} />
 		</div>
 	);
 });

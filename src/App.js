@@ -8,6 +8,7 @@ import StoreItemDetail from "./Components/StoreItemDetail";
 import AppContext from "./Context/AppContext";
 import dbData from "./dummyDB/dynamodb.json";
 import BlogDetail from "./Components/BlogDetail";
+import audioTest from "./assets/laxthing.mp3";
 // import useFetchData from "./CustomHooks/useFetchData";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 		<AppContext.Provider
 			value={{
 				dbData,
+				audioTest,
 			}}
 		>
 			<AnimatePresence mode="wait">
