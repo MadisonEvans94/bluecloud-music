@@ -8,6 +8,8 @@ import StoreInfo from "../Components/StoreInfo";
 import MusicInfo from "../Components/MusicInfo";
 import BlogInfo from "../Components/BlogInfo";
 import ContactInfo from "../Components/ContactInfo";
+import { useContext } from "react";
+import AppContext from "../Context/AppContext";
 
 const Home = () => {
 	const [infoSection, setInfoSection] = useState(<MusicInfo />);
@@ -15,6 +17,9 @@ const Home = () => {
 	const storeRef = useRef();
 	const blogRef = useRef();
 	const contactRef = useRef();
+
+	const { dbData } = useContext(AppContext);
+	console.log(dbData);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(

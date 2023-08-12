@@ -6,13 +6,14 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./routes/Home";
 import StoreItemDetail from "./Components/StoreItemDetail";
 import AppContext from "./Context/AppContext";
+import dbData from "./dummyDB/dynamodb.json";
 // import useFetchData from "./CustomHooks/useFetchData";
 
 function App() {
 	// FIXME: fetch isn't working on dummy data
 	// const { dbData, loading, error } = useFetchData("/dummyDB/dynamodb.json");
 	// console.log("DATA:", dbData, "LOADING: ", loading, "ERROR: ", error);
-	const dbData = {};
+
 	const location = useLocation();
 	const [currentStoreItem, setCurrentStoreItem] = useState(null);
 
