@@ -1,6 +1,6 @@
 import React from "react";
 import Subheader from "./Subheader";
-import Paragraph from "./utility/Paragraph";
+import Paragraph from "./Utility/Paragraph";
 
 // TODO:
 // [ ] add functionality for linking to new page

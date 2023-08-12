@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Header from "./utility/Header";
-import Paragraph from "./utility/Paragraph";
+import Header from "./Utility/Header";
+import Paragraph from "./Utility/Paragraph";
 
 const StoreInfo = () => {
 	return (

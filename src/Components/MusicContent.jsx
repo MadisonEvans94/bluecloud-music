@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./utility/Header";
-import Paragraph from "./utility/Paragraph";
+import Header from "./Utility/Header";
+import Paragraph from "./Utility/Paragraph";
 import AudioPlayer from "./AudioPlayer";
 // TODO
 const MusicContent = React.forwardRef(({ className }, ref) => {
