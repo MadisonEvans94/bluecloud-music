@@ -2,7 +2,7 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Header from "./Utility/Header";
 import Paragraph from "./Utility/Paragraph";
-import LinkContainer from "./LinkContainer";
+import LinkContainer from "./Utility/LinkContainer";
 import appleMusic from "../assets/Figma/icons/appleMusic.svg";
 import spotify from "../assets/Figma/icons/spotify.svg";
 import soundcloud from "../assets/Figma/icons/soundcloud.svg";

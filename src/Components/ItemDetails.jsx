@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Utility/Header";
-import SubHeader from "./Subheader";
+import SubHeader from "./Utility/Subheader";
 import Paragraph from "./Utility/Paragraph";
-import AudioPlayer from "./AudioPlayer";
+import AudioPlayer from "./Utility/AudioPlayer";
 import { useContext } from "react";
 import AppContext from "../Context/AppContext";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Subheader from "./Subheader";
+import Subheader from "./Utility/Subheader";
 import Paragraph from "./Utility/Paragraph";
-import AudioPlayer from "./AudioPlayer";
+import AudioPlayer from "./Utility/AudioPlayer";
 
 const FeaturedContentCard = ({
 	title = "",

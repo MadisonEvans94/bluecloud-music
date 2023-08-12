@@ -1,5 +1,5 @@
 import React from "react";
-import Subheader from "./Subheader";
+import Subheader from "./Utility/Subheader";
 import Paragraph from "./Utility/Paragraph";
 
 // TODO:

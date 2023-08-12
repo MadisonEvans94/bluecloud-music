@@ -1,5 +1,5 @@
 import React from "react";
-import playButton from "../assets/Figma/icons/playButton.svg";
+import playButton from "../../assets/Figma/icons/playButton.svg";
 
 function AudioPlayer({ className }) {
 	return (
