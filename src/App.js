@@ -12,9 +12,7 @@ import AppContext from "./Components/Figma/Context/AppContext";
 import useFetchData from "./CustomHooks/useFetchData";
 
 function App() {
-	const { data, loading, error } = useFetchData(
-		"https://github.com/MadisonEvans94/store-frontend/blob/d352fb54b19fed0cc04ab58f3a999e1cb3165b53/db.json"
-	);
+	const { data, loading, error } = useFetchData("/dummyDB/dynamodb.json");
 	const location = useLocation();
 	const [currentStoreItem, setCurrentStoreItem] = useState(null);
 	console.log(data, loading, error);
