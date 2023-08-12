@@ -7,6 +7,7 @@ import Home from "./routes/Home";
 import StoreItemDetail from "./Components/StoreItemDetail";
 import AppContext from "./Context/AppContext";
 import dbData from "./dummyDB/dynamodb.json";
+import BlogDetail from "./Components/BlogDetail";
 // import useFetchData from "./CustomHooks/useFetchData";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/itemDetails" element={<StoreItemDetail />} />
+					<Route path="/blogDetail" element={<BlogDetail />} />
 				</Routes>
 			</AnimatePresence>
 		</AppContext.Provider>
