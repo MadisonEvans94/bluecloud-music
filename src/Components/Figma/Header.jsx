@@ -5,7 +5,7 @@ const Header = ({ children, className }) => {
 		<h1
 			className={`text-headingMobile text-info md:text-headingTablet lg:text-headingDesktop ${className}`}
 		>
-			{text} {children}
+			{children}
 		</h1>
 	);
 };
