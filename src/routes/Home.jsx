@@ -19,6 +19,7 @@ const Home = () => {
 	const contactRef = useRef();
 
 	const { dbData } = useContext(AppContext);
+	console.log("dbData: ", dbData);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -74,7 +75,16 @@ const Home = () => {
 				contentSection={
 					<>
 						<MusicContent ref={musicRef} featured={dbData[0]} />
-						<StoreContent ref={storeRef} />
+						<StoreContent
+							ref={storeRef}
+							storeItems={[
+								dbData[4],
+								dbData[5],
+								dbData[6],
+								dbData[7],
+								dbData[8],
+							]}
+						/>
 						<BlogContent ref={blogRef} />
 						<ContactContent ref={contactRef} />
 					</>

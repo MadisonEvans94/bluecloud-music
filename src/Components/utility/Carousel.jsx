@@ -40,7 +40,7 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
 			>
 				{items.map((item, i) => (
 					<div key={i} className="w-full flex-none px-4">
-						{item}
+						{item.title}
 					</div>
 				))}
 			</div>

@@ -1,33 +1,18 @@
 import React from "react";
-import Carousel from "./Utility/Carousel";
 import StoreItem from "./StoreItem";
 
-const storeItems = [
-	<StoreItem
-		itemDescription="a cool sample pack"
-		imageSrc="https://images.unsplash.com/photo-1690294893706-b0a945dd8ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80"
-		itemName="sample pack 1!"
-	/>,
-	<StoreItem
-		itemDescription="another one"
-		imageSrc="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80"
-		itemName="sample pack 1!"
-	/>,
-	<StoreItem
-		itemDescription="a cool sample pack"
-		imageSrc="https://images.unsplash.com/photo-1690294893706-b0a945dd8ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80"
-		itemName="sample pack 1!"
-	/>,
-];
-
-const StoreContent = React.forwardRef(({ className }, ref) => {
+const StoreContent = React.forwardRef(({ className, storeItems }, ref) => {
 	return (
 		<div
 			ref={ref}
 			id="store"
 			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative snap-center ${className}`}
 		>
-			<Carousel items={storeItems} />
+			<StoreItem
+				title={storeItems[0].title}
+				imgUrl={storeItems[0].imgUrl}
+				shortDescription={storeItems[0].shortDescription}
+			/>
 		</div>
 	);
 });

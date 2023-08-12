@@ -5,9 +5,9 @@ import AppContext from "../Context/AppContext";
 import { useContext } from "react";
 
 const StoreItem = ({
-	itemName = "item",
-	imageSrc = "",
-	itemDescription,
+	title = "item",
+	imgUrl = "",
+	shortDescription,
 	className,
 }) => {
 	const { setCurrentStoreItem } = useContext(AppContext);
@@ -15,7 +15,7 @@ const StoreItem = ({
 
 	const showItemDetails = () => {
 		setCurrentStoreItem({
-			itemName,
+			title,
 			itemPrice: 45.5,
 			itemSummary:
 				"This is the main description for my newest sample pack. But in reality it's just a placeholder. I just need some text to fill in the blank space so that I can get a good visual representation of what my mobile application will look like eventually.",
@@ -25,7 +25,7 @@ const StoreItem = ({
 				"6 808 samples",
 			],
 			demoUrl: "https://google.com/",
-			imageSrc,
+			imgUrl,
 		});
 		navigate("/itemDetails");
 	};
@@ -37,9 +37,9 @@ const StoreItem = ({
 			<div className="bg-primary flex flex-row items-center z-40 w-full h-32 absolute bottom-0 px-3">
 				<div>
 					<h2 className=" text-info text-subHeadingMobile">
-						{itemName}
+						{title}
 					</h2>
-					<p className="text-info">{itemDescription}</p>
+					<p className="text-info">{shortDescription}</p>
 				</div>
 
 				<img
@@ -50,7 +50,7 @@ const StoreItem = ({
 			</div>
 			<img
 				className="cursor-pointer object-cover h-full w-full object-center "
-				src={imageSrc}
+				src={imgUrl}
 				alt="item-img"
 				onClick={showItemDetails}
 			/>
