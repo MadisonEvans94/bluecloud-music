@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
-import PrimaryLayout from "./PrimaryLayout";
-import BlogContent from "./BlogContent";
-import ContactContent from "./ContactContent";
-import MusicContent from "./MusicContent";
-import StoreContent from "./StoreContent";
-import StoreInfo from "./StoreInfo";
-import MusicInfo from "./MusicInfo";
-import BlogInfo from "./BlogInfo";
-import ContactInfo from "./ContactInfo";
+import PrimaryLayout from "../Components/PrimaryLayout";
+import BlogContent from "../Components/BlogContent";
+import ContactContent from "../Components/ContactContent";
+import MusicContent from "../Components/MusicContent";
+import StoreContent from "../Components/StoreContent";
+import StoreInfo from "../Components/StoreInfo";
+import MusicInfo from "../Components/MusicInfo";
+import BlogInfo from "../Components/BlogInfo";
+import ContactInfo from "../Components/ContactInfo";
 
 const Home = () => {
 	const [infoSection, setInfoSection] = useState(<MusicInfo />); // setting initial state to MusicInfo

@@ -1,7 +1,7 @@
 import React from "react";
-import PrimaryLayout from "./PrimaryLayout";
-import Header from "./Header";
-import Paragraph from "./Paragraph";
+import PrimaryLayout from "../Components/PrimaryLayout";
+import Header from "../Components/Header";
+import Paragraph from "../Components/Paragraph";
 
 const Left = () => {
 	return (

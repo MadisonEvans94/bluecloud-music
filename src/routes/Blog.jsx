@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import Subheader from "./Subheader";
-import Paragraph from "./Paragraph";
-import ImageContainer from "./ImageContainer";
+import Header from "../Components/Header";
+import Subheader from "../Components/Subheader";
+import Paragraph from "../Components/Paragraph";
+import ImageContainer from "../Components/ImageContainer";
 
 const Blog = ({
 	title = "title",

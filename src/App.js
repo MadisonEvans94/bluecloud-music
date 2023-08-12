@@ -3,10 +3,9 @@ import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "./routes/Landing";
 import { AnimatePresence } from "framer-motion";
-import Home from "./Components/Home";
-import Blog from "./Components/Blog";
-import Store from "./Components/Store";
-import Music from "./Components/Home";
+import Home from "./routes/Home";
+import Blog from "./routes/Blog";
+import Store from "./routes/Store";
 import ItemDetails from "./Components/ItemDetails";
 import AppContext from "./Components/Context/AppContext";
 import useFetchData from "./CustomHooks/useFetchData";
@@ -24,7 +23,7 @@ function App() {
 					<Route path="/home" element={<Home />} />
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/store" element={<Store />} />
-					<Route path="/music" element={<Music />} />
+
 					<Route path="/itemDetails" element={<ItemDetails />} />
 				</Routes>
 			</AnimatePresence>
