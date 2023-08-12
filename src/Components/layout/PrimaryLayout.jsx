@@ -9,7 +9,7 @@ const PrimaryLayout = ({ infoSection, contentSection }) => {
 				<div className="h-3/4 overflow-auto sm:h-auto sm:col-span-2 sm:order-2 order-1 snap-y snap-mandatory">
 					{contentSection}
 				</div>
-				<div className="border border-r h-1/4 sm:h-auto sm:col-span-1 sm:order-1 order-2">
+				<div className="h-1/4 sm:h-auto sm:col-span-1 sm:order-1 order-2">
 					{infoSection}
 				</div>
 			</div>

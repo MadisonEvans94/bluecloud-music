@@ -33,7 +33,7 @@ const handlePlayPause = () => {
 };
 
 return (
-	<div className={`bg-white p-4 rounded shadow-md w-full mx-auto mt-10 ${className}`}>
+	<div className={`bg-white p-4 rounded shadow-md w-full max-w-[600px] mx-auto mt-10 ${className}`}>
 		<div ref={waveformRef} className="relative mb-4">
 	
 		</div>
