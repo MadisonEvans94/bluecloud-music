@@ -1,0 +1,166 @@
+[
+	{
+		"id": "FEATURED#0001",
+		"title": "Lucky - Blue Cloud Remix",
+		"imgUrl": "https://example_image.com/001",
+		"description": "This is a remix of the song Lucky",
+		"songUrl": "https://spotify.com/lucky-bluecloud-remix"
+	},
+	{
+		"id": "BLOG#0001",
+		"title": "How I've been Producing Music Lately",
+		"year": "2023",
+		"month": "01",
+		"day": "24",
+		"shortDescription": "This blog talks about my music making process",
+		"content": [
+			{
+				"type": "paragraph",
+				"info": "In recent months, I've delved into the intricate world of digital music production, embracing the cutting-edge tools that are shaping the industry today. By leveraging advanced DAWs (Digital Audio Workstations), I've found a seamless way to integrate synthesizers, samplers, and live instruments. This has allowed me to experiment with new sounds and textures, bridging the gap between classical instrumentation and contemporary electronic music. My recent work emphasizes the organic blending of these elements, creating a rich auditory experience that resonates on a deeply emotional level."
+			},
+			{
+				"type": "image",
+				"info": {
+					"url": "https://images.unsplash.com/photo-1509622460822-e6f328c33ac4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1569&q=80",
+					"caption": "me cookin up in the lab"
+				}
+			},
+			{
+				"type": "paragraph",
+				"info": "The key to my current production approach is the strategic use of plugins, automation, and sound design. I'm always exploring new techniques and methodologies, from intricate EQing to innovative uses of reverb and delay. By continually challenging myself to push the boundaries, I'm not only growing as a producer but also contributing to the evolution of music. The future holds great promise, and I am eager to see where this creative journey will lead."
+			}
+		]
+	},
+	{
+		"id": "BLOG#0002",
+		"title": "Understanding the Compressor From an Engineering Perspective",
+		"year": "2023",
+		"month": "04",
+		"day": "20",
+		"shortDescription": "This blog talks about the compressor from an Engineering Perspective",
+		"content": [
+			{
+				"type": "paragraph",
+				"info": "The compressor is an indispensable tool in modern music production, functioning as both a creative effect and a utility for controlling dynamics. From an engineering perspective, a compressor can be viewed as a sophisticated algorithm that modulates the amplitude of an audio signal based on a set of defined parameters. It works by reducing the gain of a signal that exceeds a certain threshold, with the degree of reduction determined by the ratio setting."
+			},
+			{
+				"type": "image",
+				"info": {
+					"url": "https://images.unsplash.com/photo-1618233980710-f7ca074de8cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+					"caption": "analog compressor"
+				}
+			},
+			{
+				"type": "paragraph",
+				"info": "In technical terms, the compressor is comprised of several key components, including the threshold, ratio, attack, release, and knee. Understanding the precise function and interaction of these elements is essential for mastering compression techniques. The threshold sets the level at which compression begins, while the ratio determines how much compression is applied. Attack and release shape the responsiveness of the compression, and the knee controls how gradually or abruptly the compression engages. By meticulously tweaking these parameters, engineers can achieve a wide array of sonic textures, from transparent leveling to aggressive pumping effects."
+			}
+		]
+	},
+	{
+		"id": "BLOG#0003",
+		"title": "The challenge of balancing Life and music",
+		"year": "2023",
+		"month": "01",
+		"day": "24",
+		"shortDescription": "This blog talks about balancing life with music",
+		"content": [
+			{
+				"type": "paragraph",
+				"info": "Balancing the demands of a musical career with personal life can be an overwhelming challenge. The pursuit of creative expression often requires intense focus and dedication, which can lead to long hours in the studio and the neglect of other life responsibilities. While the drive to create can be exhilarating and fulfilling, it's also essential to recognize the importance of self-care, relationships, and personal well-being."
+			},
+			{
+				"type": "image",
+				"info": {
+					"url": "https://images.unsplash.com/photo-1511180427842-5878e7a53e2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+					"caption": "what a typical saturday night looks like as an artist"
+				}
+			},
+			{
+				"type": "paragraph",
+				"info": "In my own journey, I've found that setting clear boundaries and priorities has been crucial in maintaining a healthy balance. Scheduling regular time for family, friends, and self-care ensures that my life is not consumed entirely by music. Additionally, setting realistic goals and expectations helps prevent burnout and keeps my passion for music alive. It's a continuous process of self-discovery and growth, and though the path may be fraught with challenges, the rewards of living a life rich in creativity and personal connection make it all worthwhile."
+			},
+			{
+				"type": "image",
+				"info": {
+					"url": "https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80",
+					"caption": "image caption"
+				}
+			}
+		]
+	},
+	{
+		"id": "STORE#0001",
+		"title": "Alure",
+		"type": "samplePack",
+		"genre": "hip-hop",
+		"shortDescription": "Unleash your creativity with Alure, a premium hip-hop sample pack filled with pulsating beats and soulful melodies.",
+		"price": 12.0,
+		"imgUrl": "https://example_image.com/005",
+		"longDescription": "'Alure' offers a rich collection of over 200 curated samples, including powerful drums, warm basslines, and expressive vocals tailored to inspire hip-hop producers. Whether you're crafting a smooth R&B hit or an energetic trap banger, these expertly designed sounds will bring your tracks to life. Experience the essence of hip-hop and elevate your production game with Alure",
+
+		"whatIsIncluded": [
+			"25 kick samples",
+			"57 vocal samples",
+			"13 hats",
+			"43 percussive samples"
+		],
+		"demoUrl": "https://example_song.com/001"
+	},
+	{
+		"id": "STORE#0002",
+		"title": "Zima",
+		"type": "samplePack",
+		"genre": "hip-hop",
+		"shortDescription": "'Zima' is a comprehensive electronic music sample pack, delivering cutting-edge sounds for modern dance music producers.",
+		"price": 20.0,
+		"imgUrl": "https://example_image.com/005",
+		"longDescription": "Explore a universe of sonic possibilities with 'Zima', an electronic music powerhouse featuring over 300 high-quality samples. From electrifying synths and pounding drums to atmospheric pads and intricate FX, 'Zima' provides everything you need to produce top-tier electronic tracks. Crafted by professionals, this sample pack captures the essence of contemporary dance music and is a must-have for aspiring EDM producers.",
+		"whatIsIncluded": [
+			"21 kick samples",
+			"5 vocal samples",
+			"43 guitar samples",
+			"31 piano samples"
+		],
+		"demoUrl": "https://example_song.com/001"
+	},
+	{
+		"id": "STORE#0003",
+		"title": "Sky Chords",
+		"type": "presetPack",
+		"genre": "hip-hop",
+		"shortDescription": "Unlock limitless potential with 'Sky Chords', a versatile midi pack offering innovative chord progressions for producers.",
+		"price": 20.0,
+		"imgUrl": "https://example_image.com/005",
+		"longDescription": "Take your compositions to new heights with Sky Chords. This unique midi pack offers a curated selection of 100+ chord progressions and melodies designed to inspire and enhance your musical creativity. Suitable for various genres, from pop to electronic, Sky Chords allows you to experiment with professionally crafted midi files, providing endless opportunities to develop your signature sound.",
+		"whatIsIncluded": ["13 midi chords", "4 presets"],
+		"demoUrl": "https://example_song.com/001"
+	},
+	{
+		"id": "STORE#0004",
+		"title": "Elementals",
+		"type": "presetPack",
+		"genre": "hip-hop",
+		"shortDescription": "Elementals is a versatile midi pack designed to fuel creativity, providing producers with essential melodies and chords.",
+		"price": 20.0,
+		"imgUrl": "https://example_image.com/005",
+		"longDescription": "Discover the building blocks of music production with Elementals, a comprehensive midi pack filled with 150+ expertly crafted midi files. Whether you're working on a pop anthem or a techno masterpiece, this collection offers a wide range of chords and melodies to spark your creativity. Dive into Elementals and elevate your production process with these essential musical elements.",
+		"whatIsIncluded": ["13 midi chords", "8 presets"],
+		"demoUrl": "https://example_song.com/001"
+	},
+	{
+		"id": "STORE#0005",
+		"title": "Neptune",
+		"type": "midiPack",
+		"genre": "hip-hop",
+		"shortDescription": "'Neptune' is an advanced audio VST plugin that offers unparalleled reverberation and stereo imaging for professional producers.",
+		"price": 20.0,
+		"imgUrl": "https://example_image.com/005",
+		"longDescription": "this is a long description of this particular store item",
+		"whatIsIncluded": [
+			"25 kick samples",
+			"57 vocal samples",
+			"13 midi chords"
+		],
+		"demoUrl": "https://example_song.com/001"
+	}
+]
