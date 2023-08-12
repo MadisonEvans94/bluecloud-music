@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Landing from "./Pages/Landing/Landing";
+import Landing from "./routes/Landing/Landing";
 import { AnimatePresence } from "framer-motion";
 import Home from "./Components/Home";
 import Blog from "./Components/Blog";
