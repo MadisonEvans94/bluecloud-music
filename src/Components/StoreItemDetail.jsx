@@ -5,18 +5,21 @@ import Paragraph from "./Utility/Paragraph";
 import AudioPlayer from "./Utility/AudioPlayer";
 import { useContext } from "react";
 import AppContext from "../Context/AppContext";
+import { useParams } from "react-router-dom";
 
 const ItemDetails = () => {
-	const { currentStoreItem } = useContext(AppContext);
+	const { dbData } = useContext(AppContext);
+	const { pk } = useParams();
+	const item = dbData[pk];
 	return (
 		<div className="px-5">
-			<Header>{currentStoreItem.itemName}</Header>
-			<ItemDetailsCard />
-			<SubHeader>Product Summary</SubHeader>
-			<Paragraph>{currentStoreItem.itemSummary}</Paragraph>
-			<SubHeader>What's Included?</SubHeader>
+			<Header>{item.title}</Header>
+			<ItemDetailsCard img={item.imgUrl} />
+			<SubHeader>Summary</SubHeader>
+			<Paragraph>{item.longDescription}</Paragraph>
+			<SubHeader>What's Included</SubHeader>
 			<ul className="text-info">
-				{currentStoreItem.itemElements.map((item, i) => {
+				{item.whatIsIncluded.map((item, i) => {
 					return <li key={i}>{item}</li>;
 				})}
 			</ul>
@@ -55,13 +58,13 @@ const ItemDetails = () => {
 	);
 };
 
-function ItemDetailsCard() {
+function ItemDetailsCard({ img }) {
 	return (
 		<div className="w-full ">
 			<div className="h-96 overflow-hidden flex flex-row  mx-auto w-full justify-center">
 				<img
 					className="object-cover h-full w-96"
-					src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80"
+					src={img}
 					alt="details"
 				/>
 				<div className=" w-96 flex flex-col text-info px-5">

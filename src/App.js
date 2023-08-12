@@ -16,13 +16,10 @@ function App() {
 	// console.log("DATA:", dbData, "LOADING: ", loading, "ERROR: ", error);
 
 	const location = useLocation();
-	const [currentStoreItem, setCurrentStoreItem] = useState(null);
 
 	return (
 		<AppContext.Provider
 			value={{
-				currentStoreItem,
-				setCurrentStoreItem,
 				dbData,
 			}}
 		>
@@ -30,7 +27,10 @@ function App() {
 				<Routes location={location} key={location.key}>
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />} />
-					<Route path="/itemDetails" element={<StoreItemDetail />} />
+					<Route
+						path="/itemDetails/:pk"
+						element={<StoreItemDetail />}
+					/>
 					<Route path="/blogs/:pk" element={<BlogDetail />} />
 				</Routes>
 			</AnimatePresence>
