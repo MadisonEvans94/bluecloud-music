@@ -15,7 +15,7 @@ const BlogInfo = () => {
 				<div className="my-auto px-5">
 					<Header>Blogs</Header>
 					<Paragraph>
-						Explore My Blogs, a place where you can see some of my
+						Read My Blogs, a place where you can see some of my
 						music and technology insights
 					</Paragraph>
 				</div>

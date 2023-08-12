@@ -1,16 +1,19 @@
 import React from "react";
 import Subheader from "./Utility/Subheader";
 import Paragraph from "./Utility/Paragraph";
+import { Link } from "react-router-dom";
 
 // TODO:
-// [ ] add functionality for linking to new page
+// [x] add functionality for linking to new page
 
 const BlogCard = ({ blog }) => {
 	return (
-		<div className="cursor-pointer border rounded-lg pb-5 px-5">
-			<Subheader text={blog.title} />
-			<Paragraph>{blog.shortDescription}</Paragraph>
-		</div>
+		<Link to="/blogs/1">
+			<div className="cursor-pointer border rounded-lg pb-5 px-5">
+				<Subheader text={blog.title} />
+				<Paragraph>{blog.shortDescription}</Paragraph>
+			</div>
+		</Link>
 	);
 };
 

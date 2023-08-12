@@ -1,13 +1,15 @@
 [
 	{
-		"id": "FEATURED#0001",
+		"pk": "FEATURED#0001",
+		"sk": "FEATURED#0001",
 		"title": "Take Your Time",
 		"imgUrl": "https://i.pinimg.com/564x/3e/68/45/3e6845eb925145328ca3e5b0de5b3d4f.jpg",
 		"description": "Take Your Time is like a cozy, musical hug for your ears. With smooth keys, playful percussion, and warm synths, it's a chill beat that invites you to kick back and soak in the moment. It's all about self-care and enjoying life at your own pace. Tune in, zone out, and take your time with this one. it's a vibe that's hard to resist.",
 		"songUrl": "https://demo.com/"
 	},
 	{
-		"id": "BLOG#0001",
+		"pk": "2023",
+		"sk": "BLOG#0001",
 		"title": "How I've been Producing Music Lately",
 		"year": "2023",
 		"month": "01",
@@ -32,7 +34,8 @@
 		]
 	},
 	{
-		"id": "BLOG#0002",
+		"pk": "2023",
+		"sk": "BLOG#0002",
 		"title": "Understanding the Compressor From an Engineering Perspective",
 		"year": "2023",
 		"month": "04",
@@ -57,7 +60,8 @@
 		]
 	},
 	{
-		"id": "BLOG#0003",
+		"pk": "2023",
+		"sk": "BLOG#0003",
 		"title": "The challenge of balancing Life and music",
 		"year": "2023",
 		"month": "01",
@@ -89,16 +93,15 @@
 		]
 	},
 	{
-		"id": "STORE#0001",
+		"pk": "samplePack",
+		"sk": "STORE#0001",
 		"title": "Alure",
 		"type": "samplePack",
 		"genre": "hip-hop",
 		"shortDescription": "Unleash your creativity with Alure, a premium hip-hop sample pack filled with pulsating beats and soulful melodies.",
-
 		"price": 12.0,
 		"imgUrl": "https://i.pinimg.com/736x/3f/d9/fb/3fd9fbf2937885a33ddc0951eba7b5ca.jpg",
 		"longDescription": "'Alure' offers a rich collection of over 200 curated samples, including powerful drums, warm basslines, and expressive vocals tailored to inspire hip-hop producers. Whether you're crafting a smooth R&B hit or an energetic trap banger, these expertly designed sounds will bring your tracks to life. Experience the essence of hip-hop and elevate your production game with Alure",
-
 		"whatIsIncluded": [
 			"25 kick samples",
 			"57 vocal samples",
@@ -108,7 +111,8 @@
 		"demoUrl": "https://example_song.com/001"
 	},
 	{
-		"id": "STORE#0002",
+		"pk": "samplePack",
+		"sk": "STORE#0002",
 		"title": "Zima",
 		"type": "samplePack",
 		"genre": "hip-hop/electronic",
@@ -128,7 +132,8 @@
 		"demoUrl": "https://example_song.com/001"
 	},
 	{
-		"id": "STORE#0003",
+		"pk": "presetPack",
+		"sk": "STORE#0003",
 		"title": "Sky Chords",
 		"type": "presetPack",
 		"genre": "bass",
@@ -142,7 +147,8 @@
 		"demoUrl": "https://example_song.com/001"
 	},
 	{
-		"id": "STORE#0004",
+		"pk": "presetPack",
+		"sk": "STORE#0004",
 		"title": "Elementals",
 		"type": "presetPack",
 		"genre": "edm",
@@ -156,7 +162,8 @@
 		"demoUrl": "https://example_song.com/001"
 	},
 	{
-		"id": "STORE#0005",
+		"pk": "vst",
+		"sk": "STORE#0005",
 		"title": "Neptune",
 		"type": "vst",
 		"genre": "",

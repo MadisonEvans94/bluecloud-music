@@ -31,7 +31,7 @@ function App() {
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/itemDetails" element={<StoreItemDetail />} />
-					<Route path="/blogDetail" element={<BlogDetail />} />
+					<Route path="/blogs/:pk" element={<BlogDetail />} />
 				</Routes>
 			</AnimatePresence>
 		</AppContext.Provider>
