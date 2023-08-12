@@ -1,21 +1,6 @@
 import React from "react";
-import Carousel from "./Carousel";
+import Carousel from "./Utility/Carousel";
 import StoreItem from "./StoreItem";
-
-// TODO
-// [x] import store item
-// [x] create fake list of store items
-// [x] import carousel
-// [x] fix the width of the store item to be full of parent container
-// [x] integrate carousel with store items
-// [x] make carousel buttons functional
-// [x] make the itemsDetail navigation functional
-// [ ] disable buttons when end of list is reached
-// [ ] create a global state for the item details
-// [ ] create a context for the shopping cart items
-// [ ] make mvp for the item details page
-// [ ] add framer motion transition
-// [ ] make it pretty
 
 const storeItems = [
 	<StoreItem
