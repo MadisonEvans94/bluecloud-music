@@ -42,7 +42,7 @@ const StoreItem = ({
 					alt="checkout"
 				/>
 			</div>
-			<Link to="/itemDetails/1">
+			<Link to="/itemDetails/4">
 				<img
 					className="cursor-pointer object-cover h-full w-full object-center "
 					src={imgUrl}
