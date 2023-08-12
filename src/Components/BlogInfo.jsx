@@ -15,9 +15,8 @@ const BlogInfo = () => {
 				<div className="my-auto px-5">
 					<Header>Blogs</Header>
 					<Paragraph>
-						Explore 'My Music', the creative corner of an
-						independent alternative electronic music producer.
-						Discover enchanting soundscapes
+						Explore My Blogs, a place where you can see some of my
+						music and technology insights
 					</Paragraph>
 				</div>
 			</motion.div>

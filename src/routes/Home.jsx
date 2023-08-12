@@ -85,7 +85,10 @@ const Home = () => {
 								dbData[8],
 							]}
 						/>
-						<BlogContent ref={blogRef} />
+						<BlogContent
+							ref={blogRef}
+							blogs={[dbData[1], dbData[2], dbData[3]]}
+						/>
 						<ContactContent ref={contactRef} />
 					</>
 				}
