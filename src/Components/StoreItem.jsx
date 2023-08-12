@@ -1,5 +1,5 @@
 import React from "react";
-import shoppingCart from "../../assets/Figma/icons/shoppingCart.svg";
+import shoppingCart from "../assets/Figma/icons/shoppingCart.svg";
 import { useNavigate } from "react-router-dom";
 import AppContext from "./Context/AppContext";
 import { useContext } from "react";

@@ -3,10 +3,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import LinkContainer from "./LinkContainer";
-import appleMusic from "../../assets/Figma/icons/appleMusic.svg";
-import spotify from "../../assets/Figma/icons/spotify.svg";
-import soundcloud from "../../assets/Figma/icons/soundcloud.svg";
-import bandcamp from "../../assets/Figma/icons/bandcamp.svg";
+import appleMusic from "../assets/Figma/icons/appleMusic.svg";
+import spotify from "../assets/Figma/icons/spotify.svg";
+import soundcloud from "../assets/Figma/icons/soundcloud.svg";
+import bandcamp from "../assets/Figma/icons/bandcamp.svg";
 
 const icons = [
 	{ icon: appleMusic, link: "https://google.com" },
