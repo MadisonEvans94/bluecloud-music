@@ -4,7 +4,7 @@ import SubHeader from "./Subheader";
 import Paragraph from "./Utility/Paragraph";
 import AudioPlayer from "./AudioPlayer";
 import { useContext } from "react";
-import AppContext from "./Context/AppContext";
+import AppContext from "../Context/AppContext";
 
 const ItemDetails = () => {
 	const { currentStoreItem } = useContext(AppContext);

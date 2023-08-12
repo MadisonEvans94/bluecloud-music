@@ -5,7 +5,7 @@ import Landing from "./routes/Landing";
 import { AnimatePresence } from "framer-motion";
 import Home from "./routes/Home";
 import ItemDetails from "./Components/ItemDetails";
-import AppContext from "./Components/Context/AppContext";
+import AppContext from "./Context/AppContext";
 import useFetchData from "./CustomHooks/useFetchData";
 
 function App() {
