@@ -38,16 +38,23 @@ const AudioPlayer = ({ className, url }) => {
 		<>
 			{/*  */}
 			<div className="flex flex-row bg-primary rounded-full items-center px-4">
-				<button
-					onClick={handlePlayPause}
-					className="text-white font-bold px-4 flex flex-row justify-center items-center h-full rounded transition duration-150 ease-in-out"
-				>
+				<div className="px-4 flex flex-row justify-center items-center h-full">
 					{isPlaying ? (
-						<img src={pauseButton} alt="pause" />
+						<img
+							onClick={handlePlayPause}
+							className="cursor-pointer text-white drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition"
+							src={pauseButton}
+							alt="pause"
+						/>
 					) : (
-						<img src={playButton} alt="play" />
+						<img
+							onClick={handlePlayPause}
+							className="cursor-pointer text-white drop-shadow-default hover:drop-shadow-hover active:drop-shadow-active transition"
+							src={playButton}
+							alt="play"
+						/>
 					)}
-				</button>
+				</div>
 				<div
 					className={`rounded w-full max-w-[600px] mx-auto ${className}`}
 				>
