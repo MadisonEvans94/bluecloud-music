@@ -11,7 +11,7 @@ const AudioPlayer = ({ className, url }) => {
 	React.useEffect(() => {
 		wavesurfer.current = WaveSurfer.create({
 			container: waveformRef.current,
-			waveColor: "blue",
+			waveColor: "#FCFCFC",
 			progressColor: "darkblue",
 			cursorColor: "gray",
 			barWidth: 4,
@@ -37,10 +37,10 @@ const AudioPlayer = ({ className, url }) => {
 	return (
 		<>
 			{/*  */}
-			<div className="flex flex-row border items-center">
+			<div className="flex flex-row bg-primary rounded-full items-center px-4">
 				<button
 					onClick={handlePlayPause}
-					className="text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out"
+					className="text-white font-bold px-4 flex flex-row justify-center items-center h-full rounded transition duration-150 ease-in-out"
 				>
 					{isPlaying ? (
 						<img src={pauseButton} alt="pause" />
@@ -49,9 +49,9 @@ const AudioPlayer = ({ className, url }) => {
 					)}
 				</button>
 				<div
-					className={`p-4 rounded w-full max-w-[600px] mx-auto mt-10 ${className}`}
+					className={`rounded w-full max-w-[600px] mx-auto ${className}`}
 				>
-					<div ref={waveformRef} className="relative mb-4" />
+					<div ref={waveformRef} className="relative" />
 				</div>
 			</div>
 		</>
