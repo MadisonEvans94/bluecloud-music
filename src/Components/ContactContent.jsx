@@ -12,7 +12,7 @@ const ContactContent = React.forwardRef(({ className }, ref) => {
 			<Paragraph className="mb-12">
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
 				praesentium hic provident ipsam architecto natus earum,
-				molestias sed exercitationem ullam.
+				molestias sed exercitationem ullam
 			</Paragraph>
 			<ContactForm />
 		</div>
