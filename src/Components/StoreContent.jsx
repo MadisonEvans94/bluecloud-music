@@ -9,9 +9,9 @@ const StoreContent = React.forwardRef(({ className, storeItems }, ref) => {
 			id="store"
 			className={`h-screen pl-10 pr-24 flex flex-col justify-center my-auto relative snap-center ${className}`}
 		>
-			<div className="border w-full mx-auto h-fit flex flex-col items-center">
+			<div className="w-full mx-auto h-fit flex flex-col items-center">
 				<Header>asdf</Header>
-				<div className="w-96 h-96 border">
+				<div className="w-96 h-96">
 					<img
 						src="https://freesvg.org/img/tapecassette.png"
 						alt=""

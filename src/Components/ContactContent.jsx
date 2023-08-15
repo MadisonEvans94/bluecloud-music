@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Utility/Header";
 import Paragraph from "./Utility/Paragraph";
 
 // TODO
@@ -10,6 +9,11 @@ const ContactContent = React.forwardRef(({ className }, ref) => {
 			id="contact"
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
+			<Paragraph className="mb-12">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+				praesentium hic provident ipsam architecto natus earum,
+				molestias sed exercitationem ullam.
+			</Paragraph>
 			<ContactForm />
 		</div>
 	);
