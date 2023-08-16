@@ -15,11 +15,11 @@ const BlogCard = ({ blog, variation }) => {
 							<Paragraph>{blog.shortDescription}</Paragraph>
 						</div>
 						<div className="w-full">
-							{/* <img
+							<img
 								className="object-contain"
 								src={sample}
 								alt="blog-pic"
-							/> */}
+							/>
 						</div>
 					</div>
 				</Link>
@@ -34,7 +34,7 @@ const BlogCard = ({ blog, variation }) => {
 						</div>
 
 						<div className="object-contain h-full flex flex-col justify-center">
-							{/* <img src={sample} alt="asdf" /> */}
+							<img src={sample} alt="asdf" />
 						</div>
 					</div>
 				</Link>
