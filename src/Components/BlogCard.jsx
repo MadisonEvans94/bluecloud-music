@@ -2,9 +2,9 @@ import React from "react";
 import Subheader from "./Utility/Subheader";
 import Paragraph from "./Utility/Paragraph";
 import { Link } from "react-router-dom";
-import sample from "../assets/images/store_in_construction.png";
+// import sample from "../assets/images/store_in_construction.png";
 
-const BlogCard = ({ blog, variation }) => {
+const BlogCard = ({ blog, variation, imgSrc }) => {
 	switch (variation) {
 		case 0:
 			return (
@@ -17,7 +17,7 @@ const BlogCard = ({ blog, variation }) => {
 						<div className="w-full">
 							<img
 								className="object-contain h-80"
-								src={sample}
+								src={imgSrc}
 								alt="blog-pic"
 							/>
 						</div>
@@ -36,7 +36,7 @@ const BlogCard = ({ blog, variation }) => {
 						<div className="object-contain h-full flex flex-col justify-center">
 							<img
 								className="h-80 object-contain"
-								src={sample}
+								src={imgSrc}
 								alt="asdf"
 							/>
 						</div>

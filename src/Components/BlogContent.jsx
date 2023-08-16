@@ -1,6 +1,8 @@
 import React from "react";
 
 import BlogCard from "./BlogCard";
+import sine from "../assets/Figma/icons/sine.svg";
+import sample from "../assets/images/store_in_construction.png";
 
 // TODO
 const BlogContent = React.forwardRef(({ className, blogs }, ref) => {
@@ -20,6 +22,7 @@ const BlogContent = React.forwardRef(({ className, blogs }, ref) => {
 						blog={blogs[0]}
 						key={blogs[0].blogId}
 						variation={0}
+						imgSrc={sine}
 					/>
 				</div>
 				<div class="col-span-1 row-span-2">
@@ -27,6 +30,7 @@ const BlogContent = React.forwardRef(({ className, blogs }, ref) => {
 						blog={blogs[1]}
 						key={blogs[1].blogId}
 						variation={1}
+						imgSrc={sample}
 					/>
 				</div>
 				<div class="col-span-1 row-span-2">
@@ -34,6 +38,7 @@ const BlogContent = React.forwardRef(({ className, blogs }, ref) => {
 						blog={blogs[2]}
 						key={blogs[2].blogId}
 						variation={1}
+						imgSrc={sample}
 					/>
 				</div>
 			</div>
