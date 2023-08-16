@@ -29,7 +29,7 @@ const MusicContent = React.forwardRef(({ className, featured }, ref) => {
 			/>
 			<Header>{featured.title}</Header>
 			<Paragraph>{featured.description}</Paragraph>
-			<AudioPlayer className="my-5" url={audioTest} />
+			<AudioPlayer className="mt-12" url={audioTest} />
 		</div>
 	);
 });

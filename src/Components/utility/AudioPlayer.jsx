@@ -37,7 +37,9 @@ const AudioPlayer = ({ className, url }) => {
 	return (
 		<>
 			{/*  */}
-			<div className="flex flex-row bg-primary rounded-full items-center px-4">
+			<div
+				className={`flex flex-row bg-primary rounded-full items-center px-4 w-[800px] mx-auto ${className}`}
+			>
 				<div className="px-4 flex flex-row justify-center items-center h-full">
 					{isPlaying ? (
 						<img
@@ -55,9 +57,7 @@ const AudioPlayer = ({ className, url }) => {
 						/>
 					)}
 				</div>
-				<div
-					className={`rounded w-full max-w-[600px] mx-auto ${className}`}
-				>
+				<div className={`rounded w-full mx-auto my-5`}>
 					<div ref={waveformRef} className="relative" />
 				</div>
 			</div>

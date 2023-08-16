@@ -18,10 +18,10 @@ const StoreContent = React.forwardRef(({ className, storeItems }, ref) => {
 					alt=""
 				/>
 				<Paragraph>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Blanditiis iure iste aliquid doloribus tempore fugit quidem
-					error labore non corporis, eligendi, officia nesciunt iusto
-					sunt sint tempora at debitis architecto.
+					The store is currently under construction. I have a ton of
+					cool ideas I want to share, but like all good things, it
+					takes time. Stay tuned for a product rollout soon! Sample
+					packs, presets, plugins... All are in the works
 				</Paragraph>
 			</div>
 		</div>
