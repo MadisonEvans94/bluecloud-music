@@ -9,10 +9,16 @@ import soundcloud from "../assets/Figma/icons/soundcloud.svg";
 import bandcamp from "../assets/Figma/icons/bandcamp.svg";
 
 const icons = [
-	{ icon: appleMusic, link: "https://google.com" },
-	{ icon: spotify, link: "https://google.com" },
-	{ icon: soundcloud, link: "https://google.com" },
-	{ icon: bandcamp, link: "https://google.com" },
+	{
+		icon: appleMusic,
+		link: "https://music.apple.com/us/artist/blue-cloud/1510449426",
+	},
+	{
+		icon: spotify,
+		link: "https://open.spotify.com/artist/3W9mqyUptTa6FdiwM9SH11",
+	},
+	{ icon: soundcloud, link: "https://soundcloud.com/bluecloudmusic" },
+	{ icon: bandcamp, link: "https://bluecloudmusic.bandcamp.com/" },
 ];
 
 const MusicInfo = () => {
