@@ -11,6 +11,7 @@
 		"pk": "2023",
 		"sk": "BLOG#0001",
 		"title": "How I've been Producing Music Lately",
+		"blogId": "1",
 		"year": "2023",
 		"month": "01",
 		"day": "24",
@@ -36,6 +37,7 @@
 	{
 		"pk": "2023",
 		"sk": "BLOG#0002",
+		"blogId": "2",
 		"title": "Understanding the Compressor From an Engineering Perspective",
 		"year": "2023",
 		"month": "04",
@@ -62,6 +64,7 @@
 	{
 		"pk": "2023",
 		"sk": "BLOG#0003",
+		"blogId": "3",
 		"title": "The challenge of balancing Life and music",
 		"year": "2023",
 		"month": "01",

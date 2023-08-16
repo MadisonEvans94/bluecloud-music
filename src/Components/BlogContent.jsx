@@ -11,8 +11,9 @@ const BlogContent = React.forwardRef(({ className, blogs }, ref) => {
 			id="blog"
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 		>
-			{blogs.map((blog, i) => (
-				<BlogCard blog={blog} key={i} />
+			{/* TODO: update the indexing */}
+			{blogs.map((blog) => (
+				<BlogCard blog={blog} key={blog.blogId} version={1} />
 			))}
 		</div>
 	);
