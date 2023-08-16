@@ -16,7 +16,7 @@ const BlogCard = ({ blog, variation }) => {
 						</div>
 						<div className="w-full">
 							<img
-								className="object-contain"
+								className="object-contain h-80"
 								src={sample}
 								alt="blog-pic"
 							/>
@@ -34,7 +34,11 @@ const BlogCard = ({ blog, variation }) => {
 						</div>
 
 						<div className="object-contain h-full flex flex-col justify-center">
-							<img src={sample} alt="asdf" />
+							<img
+								className="h-80 object-contain"
+								src={sample}
+								alt="asdf"
+							/>
 						</div>
 					</div>
 				</Link>
