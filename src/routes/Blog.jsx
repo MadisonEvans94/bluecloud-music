@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Components/utility/Header";
+
 import Subheader from "../Components/Subheader";
 import Paragraph from "../Components/Paragraph";
 import ImageContainer from "../Components/ImageContainer";

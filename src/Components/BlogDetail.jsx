@@ -11,7 +11,7 @@ const BlogDetail = () => {
 	const { pk } = useParams();
 
 	return (
-		<div>
+		<div className="px-8">
 			<Header>{dbData[pk].title}</Header>
 			<Subheader>{dbData[pk].shortDescription}</Subheader>
 			{dbData[pk].content.map((content, i) => {
@@ -19,8 +19,8 @@ const BlogDetail = () => {
 					return <Paragraph key={i}>{content.info}</Paragraph>;
 				} else if (content.type === "image") {
 					return (
-						<div key={i}>
-							<div className="h-96 max-w-xl overflow-hidden">
+						<div key={i} className="w-full my-4">
+							<div className="h-96 max-w-xl overflow-hidden w-full mx-auto">
 								<img
 									className="w-full h-full object-cover object-center"
 									src={content.info.url}
@@ -28,7 +28,9 @@ const BlogDetail = () => {
 								/>
 							</div>
 
-							<p className="text-info">{content.info.caption}</p>
+							<p className="text-info mx-auto w-full text-center">
+								{content.info.caption}
+							</p>
 						</div>
 					);
 				}
