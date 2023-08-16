@@ -48,7 +48,7 @@ const Home = () => {
 				});
 			},
 			{
-				threshold: 1, // trigger callback when at least 10% of the target is visible
+				threshold: 0.9, // trigger callback when at least 10% of the target is visible
 			}
 		);
 
