@@ -15,22 +15,22 @@ const BlogContent = React.forwardRef(({ className, blogs }, ref) => {
 			{/* {blogs.map((blog) => (
 				<BlogCard blog={blog} key={blog.blogId} variation={1} />
 			))} */}
-			<div class="grid grid-cols-2 h-full">
-				<div class="col-span-2 row-span-1 p-4">
+			<div class="grid grid-cols-2 h-full border gap-4 border-black">
+				<div class="col-span-1 row-span-1">
 					<BlogCard
 						blog={blogs[0]}
 						key={blogs[0].blogId}
 						variation={0}
 					/>
 				</div>
-				<div class="col-span-1 row-span-2 p-4">
+				<div class="col-span-1 row-span-2">
 					<BlogCard
 						blog={blogs[1]}
 						key={blogs[1].blogId}
 						variation={1}
 					/>
 				</div>
-				<div class="col-span-1 row-span-2 p-4">
+				<div class="col-span-1 row-span-2">
 					<BlogCard
 						blog={blogs[2]}
 						key={blogs[2].blogId}

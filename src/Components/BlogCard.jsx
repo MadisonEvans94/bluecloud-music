@@ -14,9 +14,9 @@ const BlogCard = ({ blog, variation }) => {
 							<Subheader text={blog.title} />
 							<Paragraph>{blog.shortDescription}</Paragraph>
 						</div>
-						<div className=" w-full">
+						<div className="w-full">
 							<img
-								className="object-contain  "
+								className="object-contain"
 								src={sample}
 								alt="blog-pic"
 							/>
@@ -33,7 +33,7 @@ const BlogCard = ({ blog, variation }) => {
 							<Paragraph>{blog.shortDescription}</Paragraph>
 						</div>
 
-						<div className="h-full flex flex-col justify-center">
+						<div className="object-contain h-full flex flex-col justify-center">
 							<img src={sample} alt="asdf" />
 						</div>
 					</div>

@@ -31,7 +31,7 @@ const MusicInfo = () => {
 						independent alternative electronic music producer.
 						Discover enchanting soundscapes
 					</Paragraph>
-					<LinkContainer icons={icons} className="" />
+					<LinkContainer icons={icons} />
 				</div>
 			</motion.div>
 		</AnimatePresence>
