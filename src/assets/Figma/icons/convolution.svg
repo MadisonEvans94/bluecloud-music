@@ -1,0 +1,16 @@
+<svg width="421" height="768" viewBox="0 0 421 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 197H141" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <line x1="5.99948" y1="479.999" x2="140" y2="479.976" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <line x1="6.03508" y1="764.035" x2="85.0355" y2="764.965" stroke="#FCFCFC" stroke-width="6"
+        stroke-linecap="round" />
+    <path d="M279 197L417 197" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M277 480.024L417 480" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M308 764.019L417.5 764.019" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M141 3.02441L279 3.00037" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M141 284L277 480" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M140 570C249 570 292.589 667.295 308 764" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M141 197L141 3" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M141 480L141 284" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M85 765C137.906 727 160 636 137.906 569.52" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+    <path d="M279 197L279 3" stroke="#FCFCFC" stroke-width="6" stroke-linecap="round" />
+</svg>

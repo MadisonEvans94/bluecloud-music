@@ -2,9 +2,9 @@
 	{
 		"pk": "FEATURED#0001",
 		"sk": "FEATURED#0001",
-		"title": "Take Your Time",
+		"title": "[Title of Featured Song]",
 		"imgUrl": "",
-		"description": "Take Your Time is like a cozy, musical hug for your ears. With smooth keys, playful percussion, and warm synths, it's a chill beat that invites you to kick back and soak in the moment. It's all about self-care and enjoying life at your own pace. Tune in, zone out, and take your time with this one. it's a vibe that's hard to resist.",
+		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus nobis iste quas quos asperiores, molestiae quisquam commodi. Nisi, ea!",
 		"songUrl": "https://demo.com/"
 	},
 	{
@@ -19,18 +19,47 @@
 		"content": [
 			{
 				"type": "paragraph",
-				"info": "In recent months, I've delved into the intricate world of digital music production, embracing the cutting-edge tools that are shaping the industry today. By leveraging advanced DAWs (Digital Audio Workstations), I've found a seamless way to integrate synthesizers, samplers, and live instruments. This has allowed me to experiment with new sounds and textures, bridging the gap between classical instrumentation and contemporary electronic music. My recent work emphasizes the organic blending of these elements, creating a rich auditory experience that resonates on a deeply emotional level."
+				"subHeader": "Intro",
+				"info": "In the vast universe of sound, where frequencies dance and harmonics resonate, lies a simple yet profound mathematical function that has become the cornerstone of audio engineering and music production: the sine wave. This pure and unadulterated waveform, described by a simple oscillatory function, serves as the building block for all complex sounds. Yet, in its simplicity, it hides a world of complexity and creativity that can be unlocked through a process known as saturation. Saturation, a non-linear transformation of a signal, can turn a simple sine wave into a rich tapestry of harmonics, adding color, depth, and character to the sound. It's akin to a painter starting with a blank canvas, where the pure sine wave is the white paint, and saturation is the palette of colors that can be mixed and blended to create a masterpiece. But why does this simple process spark so much creativity and innovation in sound design and music production? How does the addition of harmonics through saturation relate to the way we perceive sound, and what can the Fourier Transform reveal about this intricate relationship? In this exploration, we will dive into the mathematical elegance of the Fourier Transform, unravel the physics of vibrating systems, and journey through the psychoacoustic landscape of human hearing. We will uncover the secrets of generating harmonics through saturation and tie it all back to the art of mixing in music production."
 			},
 			{
 				"type": "image",
 				"info": {
-					"url": "https://images.unsplash.com/photo-1509622460822-e6f328c33ac4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1569&q=80",
+					"url": "https://www.nti-audio.com/portals/0/pic/news/FFT-Time-Frequency-View-540.png",
+					"caption": "Fast Fourier Transform (FFT)"
+				}
+			},
+			{
+				"type": "paragraph",
+				"subHeader": "What Can The Fourier Transform Tell Us?",
+				"info": "The Fourier Transform, a mathematical tool named after the French mathematician Jean-Baptiste Joseph Fourier, is a bridge that connects the time domain and the frequency domain. It's a gateway that reveals the hidden symphony of frequencies within a complex sound wave, such as the rich textures created through saturation. The Fourier Transform decomposes a signal into its constituent sine and cosine waves, each represented by a specific frequency, amplitude, and phase. In mathematical terms, it's an integral transform that takes a continuous time-domain function and transforms it into a continuous frequency-domain function. The equation is expressed as: F(f)=∫−∞−∞∞x(t)⋅e −j2πftdtwhere i "
+			},
+
+			{
+				"type": "image",
+				"info": {
+					"url": "https://www.testandmeasurementtips.com/wp-content/uploads/2020/04/transfer-curve.jpg",
+					"caption": "me cookin up in the lab"
+				}
+			},
+
+			{
+				"type": "image",
+				"info": {
+					"url": "https://www.researchgate.net/profile/Ignacio-Martinez-4/publication/235008404/figure/fig4/AS:299849468661767@1448501092823/The-modern-human-audiogram-and-speech-frequencies-The-solid-line-represents-the-minimum.png",
 					"caption": "me cookin up in the lab"
 				}
 			},
 			{
 				"type": "paragraph",
-				"info": "The key to my current production approach is the strategic use of plugins, automation, and sound design. I'm always exploring new techniques and methodologies, from intricate EQing to innovative uses of reverb and delay. By continually challenging myself to push the boundaries, I'm not only growing as a producer but also contributing to the evolution of music. The future holds great promise, and I am eager to see where this creative journey will lead."
+				"info": "In recent months, I've delved into the intricate world of digital music production, embracing the cutting-edge tools that are shaping the industry today. By leveraging advanced DAWs (Digital Audio Workstations), I've found a seamless way to integrate synthesizers, samplers, and live instruments. This has allowed me to experiment with new sounds and textures, bridging the gap between classical instrumentation and contemporary electronic music. My recent work emphasizes the organic blending of these elements, creating a rich auditory experience that resonates on a deeply emotional level."
+			},
+			{
+				"type": "image",
+				"info": {
+					"url": "https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/19534/images/UmO49yItRsm73NerkYgR_Great_Church_Sound_-_EQ_Chart_-_2019.png",
+					"caption": "me cookin up in the lab"
+				}
 			}
 		]
 	},
@@ -38,11 +67,11 @@
 		"pk": "2023",
 		"sk": "BLOG#0002",
 		"blogId": "2",
-		"title": "The Compressor",
+		"title": "Quantifying Melodic Resolution",
 		"year": "2023",
 		"month": "04",
 		"day": "20",
-		"shortDescription": "This blog talks about the compressor from an Engineering Perspective",
+		"shortDescription": "An examination of western melodic chord structures and how reharmonization can be viewed simply as path finding problems",
 		"content": [
 			{
 				"type": "paragraph",
@@ -65,11 +94,11 @@
 		"pk": "2023",
 		"sk": "BLOG#0003",
 		"blogId": "3",
-		"title": "Saturation",
+		"title": "Convolution: Engineering Your Own Space",
 		"year": "2023",
 		"month": "01",
 		"day": "24",
-		"shortDescription": "This blog talks about balancing life with music",
+		"shortDescription": "An analysis of convolution and simulating 3D spaces",
 		"content": [
 			{
 				"type": "paragraph",

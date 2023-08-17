@@ -14,7 +14,7 @@ const MusicContent = React.forwardRef(({ className, featured }, ref) => {
 			className={`pl-10 pr-24 flex flex-col justify-center my-auto relative h-screen bg-cover bg-center snap-center ${className}`}
 			style={{ position: "relative" }}
 		>
-			<img
+			{/* <img
 				src={featured.imgUrl}
 				alt={featured.title}
 				style={{
@@ -26,7 +26,7 @@ const MusicContent = React.forwardRef(({ className, featured }, ref) => {
 					zIndex: -1,
 					objectFit: "cover",
 				}}
-			/>
+			/> */}
 			<Header>{featured.title}</Header>
 			<Paragraph>{featured.description}</Paragraph>
 			<AudioPlayer className="mt-12" url={audioTest} />

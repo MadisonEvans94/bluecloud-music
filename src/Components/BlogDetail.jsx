@@ -13,10 +13,19 @@ const BlogDetail = () => {
 	return (
 		<div className="px-8">
 			<Header>{dbData[pk].title}</Header>
-			<Subheader>{dbData[pk].shortDescription}</Subheader>
+			<Paragraph>{dbData[pk].shortDescription}</Paragraph>
 			{dbData[pk].content.map((content, i) => {
 				if (content.type === "paragraph") {
-					return <Paragraph key={i}>{content.info}</Paragraph>;
+					return (
+						<>
+							<Subheader className="mb-8">
+								{content.subHeader}
+							</Subheader>
+							<Paragraph className="mb-8" key={i}>
+								{content.info}
+							</Paragraph>
+						</>
+					);
 				} else if (content.type === "image") {
 					return (
 						<div key={i} className="w-full my-4">
@@ -33,6 +42,8 @@ const BlogDetail = () => {
 							</p>
 						</div>
 					);
+				} else {
+					return <></>;
 				}
 			})}
 		</div>
