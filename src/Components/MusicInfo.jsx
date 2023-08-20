@@ -33,9 +33,7 @@ const MusicInfo = () => {
 				<div className="my-auto px-5">
 					<Header>My Music</Header>
 					<Paragraph>
-						Explore 'My Music', the creative corner of an
-						independent alternative electronic music producer.
-						Discover enchanting soundscapes
+						Find all my latest releases in one place
 					</Paragraph>
 					<LinkContainer icons={icons} />
 				</div>
