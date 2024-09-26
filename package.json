@@ -17,7 +17,7 @@
 		"react-scripts": "5.0.1",
 		"react-spotify-embed": "^2.0.3",
 		"serve": "^14.2.0",
-		"styled-components": "^5.3.6",
+		"styled-components": "^5.3.11",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
